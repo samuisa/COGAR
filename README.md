@@ -31,3 +31,5 @@ source install/local_setup.sh
 ros2 launch bme_gazebo_sensors spawn_robot_ex.launch.py
 
 ```
+
+In the RVIZ2 simulation select **pelvis** as fixed frame for the G1 robot
