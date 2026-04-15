@@ -20,3 +20,14 @@ Research needed: Indoor localization methods, scan matching, Monte Carlo localiz
 Deliverables: Standalone localization benchmark pipeline, quantitative comparison across localization methods, robustness evaluation report, recommended localization strategy
 
 
+# Command robot spawn
+
+```bash
+
+source /opt/ros/humble/setup.bash
+colcon build
+source install/local_setup.sh
+
+ros2 launch bme_gazebo_sensors spawn_robot_ex.launch.py
+
+```
