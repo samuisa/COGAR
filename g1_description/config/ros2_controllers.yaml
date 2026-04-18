@@ -9,8 +9,16 @@ controller_manager:
     position_controller:
       type: position_controllers/JointGroupPositionController
 
+# Aggiungi questa sezione per il broadcaster
+joint_state_broadcaster:
+  ros__parameters:
+    use_sim_time: true
+
 position_controller:
   ros__parameters:
+    use_sim_time: true
+    # Fondamentale: specifica quale interfaccia di comando usare
+    interface_name: position 
     joints:
       - left_hip_pitch_joint
       - left_hip_roll_joint
@@ -41,5 +49,3 @@ position_controller:
       - right_wrist_roll_joint
       - right_wrist_pitch_joint
       - right_wrist_yaw_joint
-
-

@@ -69,11 +69,32 @@ def generate_launch_description():
             package="ros_gz_bridge",
             executable="parameter_bridge",
             arguments=[
-                "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
-                "/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist",
-                "/odom@nav_msgs/msg/Odometry@gz.msgs.Odometry",
-                "/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan"
-            ]
+                "/clock@rosgraph_msgs/msg/Clock[ignition.msgs.Clock",
+                "/cmd_vel@geometry_msgs/msg/Twist@ignition.msgs.Twist",
+                "/odom@nav_msgs/msg/Odometry@ignition.msgs.Odometry",
+                "/tf@tf2_msgs/msg/TFMessage[ignition.msgs.Pose_V",
+                "/tf_static@tf2_msgs/msg/TFMessage[ignition.msgs.Pose_V",
+                
+                # LiDAR
+                "/lidar/points/points@sensor_msgs/msg/PointCloud2[ignition.msgs.PointCloudPacked",
+                
+                # CAMERA
+                "/camera/image@sensor_msgs/msg/Image[ignition.msgs.Image",
+                "/camera/depth_image@sensor_msgs/msg/Image[ignition.msgs.Image",
+                "/camera/camera_info@sensor_msgs/msg/CameraInfo[ignition.msgs.CameraInfo",
+                "/camera/points@sensor_msgs/msg/PointCloud2[ignition.msgs.PointCloudPacked"
+            ],
+            remappings=[
+                # Correzione Lidar: da /lidar/points/points a /lidar/points
+                ("/lidar/points/points", "/lidar/points"),
+                
+                # Nomi standard per la Camera (stile Realsense)
+                ("/camera/image",       "/camera/color/image_raw"),
+                ("/camera/depth_image", "/camera/depth/image_raw"),
+                ("/camera/camera_info", "/camera/color/camera_info"),
+                ("/camera/points",      "/camera/depth/color/points"),
+            ],
+            output='screen'
         ),
 
         Node(
