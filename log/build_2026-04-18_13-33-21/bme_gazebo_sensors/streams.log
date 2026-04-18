@@ -1,0 +1,44 @@
+[0.017s] Invoking command in '/home/samuisa/Documents/COGAR/ros_ws/src/build/bme_gazebo_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/samuisa/Documents/COGAR/ros_ws/src/build/bme_gazebo_sensors -- -j16 -l16
+[0.066s] Invoked command in '/home/samuisa/Documents/COGAR/ros_ws/src/build/bme_gazebo_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/samuisa/Documents/COGAR/ros_ws/src/build/bme_gazebo_sensors -- -j16 -l16
+[0.068s] Invoking command in '/home/samuisa/Documents/COGAR/ros_ws/src/build/bme_gazebo_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/samuisa/Documents/COGAR/ros_ws/src/build/bme_gazebo_sensors
+[0.081s] -- Install configuration: ""
+[0.081s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/launch
+[0.083s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/launch/world.launch.py
+[0.083s] -- Installing: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/launch/spawn_robot_ex.launch.py
+[0.083s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/launch/spawn_robot.launch.py
+[0.083s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds
+[0.083s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/world.sdf
+[0.083s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/home.sdf
+[0.083s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/world_empty.sdf
+[0.085s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/my_world.sdf
+[0.085s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/worlds/my.sdf
+[0.085s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/rviz
+[0.085s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/rviz/urdf.rviz
+[0.085s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/rviz/gps.rviz
+[0.085s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/rviz/rviz.rviz
+[0.086s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/urdf
+[0.087s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/urdf/materials.xacro
+[0.087s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/urdf/mogi_bot.gazebo
+[0.087s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/urdf/mogi_bot.urdf
+[0.087s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/meshes
+[0.087s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/meshes/lidar.dae
+[0.087s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/meshes/mogi_bot.dae
+[0.087s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/meshes/wheel.dae
+[0.087s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/config
+[0.087s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/config/ekf.yaml
+[0.087s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/ament_index/resource_index/package_run_dependencies/bme_gazebo_sensors
+[0.087s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/ament_index/resource_index/parent_prefix_path/bme_gazebo_sensors
+[0.087s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/environment/ament_prefix_path.sh
+[0.087s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/environment/ament_prefix_path.dsv
+[0.087s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/environment/path.sh
+[0.088s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/environment/path.dsv
+[0.088s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/local_setup.bash
+[0.088s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/local_setup.sh
+[0.088s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/local_setup.zsh
+[0.088s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/local_setup.dsv
+[0.090s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/package.dsv
+[0.090s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/ament_index/resource_index/packages/bme_gazebo_sensors
+[0.090s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/cmake/bme_gazebo_sensorsConfig.cmake
+[0.091s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/cmake/bme_gazebo_sensorsConfig-version.cmake
+[0.091s] -- Up-to-date: /home/samuisa/Documents/COGAR/ros_ws/src/install/bme_gazebo_sensors/share/bme_gazebo_sensors/package.xml
+[0.111s] Invoked command in '/home/samuisa/Documents/COGAR/ros_ws/src/build/bme_gazebo_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/samuisa/Documents/COGAR/ros_ws/src/build/bme_gazebo_sensors
