@@ -33,7 +33,8 @@ def generate_launch_description():
         DeclareLaunchArgument('rviz_config', default_value='rviz.rviz'),
         
         # ---> ECCO LA MODIFICA: Ora cerca il file .sdf! <---
-        DeclareLaunchArgument('world', default_value='small_house.sdf'),
+        # ---> ECCO LA MODIFICA: Passiamo il path assoluto al file .sdf! <---
+        DeclareLaunchArgument('world', default_value=os.path.join(pkg_aws_house, 'worlds', 'small_house.sdf')),
         
         DeclareLaunchArgument('model', default_value='g1_29dof.urdf'),
         DeclareLaunchArgument('x', default_value='0.0'),

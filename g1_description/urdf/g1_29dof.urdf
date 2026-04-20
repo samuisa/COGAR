@@ -974,7 +974,8 @@
           <far>10.0</far>
         </clip>
       </camera>
-      <ignition_frame_id>d435_link_optical</ignition_frame_id> </sensor>
+      <ignition_frame_id>d435_link</ignition_frame_id> 
+    </sensor>
   </gazebo>
 
   <gazebo reference="mid360_link">
