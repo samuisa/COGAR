@@ -1,0 +1,22 @@
+# Dockerfile.base
+FROM ros:humble-ros-base
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Il listone di pacchetti pesanti che ci mette 10 minuti
+RUN apt-get update && apt-get install -y \
+    ros-humble-ros-gz \
+    ros-humble-gazebo-ros-pkgs \
+    ros-humble-rviz2 \
+    ros-humble-nav2-bringup \
+    ros-humble-ros2-control \
+    ros-humble-ros2-controllers \
+    ros-humble-gazebo-ros2-control \
+    ros-humble-ign-ros2-control \
+    ros-humble-teleop-twist-keyboard \
+    xterm \
+    python3-rosdep \
+    && rm -rf /var/lib/apt/lists/*
+
+# Inizializza rosdep
+RUN rosdep init || true && rosdep update 
