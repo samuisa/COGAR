@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+cd "$(dirname "$0")/.."
+
 # Function to show the reminder once inside
 print_reminder() {
     echo ""
