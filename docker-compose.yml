@@ -1,0 +1,17 @@
+services:
+  ros2_app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: cogar_container
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - .:/workspace              
+    network_mode: host
+    stdin_open: true              
+    tty: true                     
+    # Mantiene il container acceso e in attesa senza lanciare nulla:
+    command: sleep infinity

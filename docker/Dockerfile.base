@@ -1,0 +1,29 @@
+# Dockerfile.base
+FROM ros:humble-ros-base
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Package list (Aggiunto python3-pip)
+RUN apt-get update && apt-get install -y \
+    ros-humble-ros-gz \
+    ros-humble-gazebo-ros-pkgs \
+    ros-humble-rviz2 \
+    ros-humble-nav2-bringup \
+    ros-humble-ros2-control \
+    ros-humble-ros2-controllers \
+    ros-humble-rtabmap-ros \
+    ros-humble-gazebo-ros2-control \
+    ros-humble-ign-ros2-control \
+    ros-humble-pointcloud-to-laserscan \
+    ros-humble-teleop-twist-keyboard \
+    ros-humble-robot-localization \
+    xterm \
+    python3-rosdep \
+    python3-pip \
+    && rm -rf /var/lib/apt/lists/*
+
+# Installazione librerie Python per la Dashboard
+RUN pip3 install pandas dash plotly
+
+# rosdep initialization
+RUN rosdep init || true && rosdep update
