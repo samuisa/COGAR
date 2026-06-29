@@ -1,0 +1,225 @@
+\doxysection{dashboard Namespace Reference}
+\hypertarget{namespacedashboard}{}\label{namespacedashboard}\index{dashboard@{dashboard}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedashboard_a3656e58a3aa1e65d7bb89beed9a750da}{update\+\_\+graphs}} (selected\+\_\+run)
+\begin{DoxyCompactList}\small\item\em Updates the interactive charts based on the file selected from the dropdown menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacedashboard_a8adf42c115c3d5953e9ede6f43a4e9c2}{base\+\_\+results\+\_\+dir}} = "{}/workspace/results"{}
+\item 
+dict \mbox{\hyperlink{namespacedashboard_a175273753beb0b60cedf307a9bdb4e86}{search\+\_\+paths}}
+\item 
+dict \mbox{\hyperlink{namespacedashboard_a7641704376e021e40f58157e41350651}{all\+\_\+runs\+\_\+data}} = \{\}
+\item 
+list \mbox{\hyperlink{namespacedashboard_a3a022ef4e56fa07d3c8d368eed33dbb7}{category\+\_\+means}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacedashboard_a80de9003a4c922c88ec06c69d9af7ad9}{cat\+\_\+trans\+\_\+errors}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacedashboard_a190e5eebef8ceeb5987e942b828cbaae}{cat\+\_\+rot\+\_\+errors}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespacedashboard_a96cd0028ded82a077cc1a7db73b41553}{df}} = pd.\+read\+\_\+csv(file\+\_\+path)
+\item 
+str \mbox{\hyperlink{namespacedashboard_a1f53a219c382172d87afd5b6e32b3a3e}{run\+\_\+label}} = f"{}\{category\} -\/ \{os.\+path.\+basename(file\+\_\+path)\}"{}
+\item 
+\mbox{\hyperlink{namespacedashboard_ad9f2fac3d5c15b44284c6af0c43c1e8d}{means\+\_\+df}} = pd.\+Data\+Frame(\mbox{\hyperlink{namespacedashboard_a3a022ef4e56fa07d3c8d368eed33dbb7}{category\+\_\+means}})
+\item 
+\mbox{\hyperlink{namespacedashboard_aaac31bf6fde26e8b94b22d74001f4162}{fig\+\_\+compare}} = go.\+Figure()
+\item 
+\mbox{\hyperlink{namespacedashboard_a304233ad7d5775bc61cee91144b118b6}{title\+\_\+text}}
+\item 
+\mbox{\hyperlink{namespacedashboard_a8d0e5c64902fccce43ae9552a93f2be4}{barmode}}
+\item 
+\mbox{\hyperlink{namespacedashboard_ac3b92c79685ce652d2d9a5a275b29a4c}{xaxis\+\_\+title}}
+\item 
+\mbox{\hyperlink{namespacedashboard_a5c9511da81b6f57ed0035cd1762600de}{yaxis\+\_\+title}}
+\item 
+\mbox{\hyperlink{namespacedashboard_afec1669f1c226c312e04e0775803da43}{template}}
+\item 
+\mbox{\hyperlink{namespacedashboard_a0dc4d8c06bb063b02c536005f36adc7c}{app}} = dash.\+Dash(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+\mbox{\hyperlink{namespacedashboard_a651edf1f918ca2f360e565e52f64ff33}{layout}}
+\item 
+\mbox{\hyperlink{namespacedashboard_a3a47aa412cc4aa860f0373650b7f7116}{children}}
+\item 
+\mbox{\hyperlink{namespacedashboard_a12b0373c1038d60f2e6f9fc52558211a}{debug}}
+\item 
+\mbox{\hyperlink{namespacedashboard_a1dd4e4347aed611ec0fa2e7ddfb5dc9d}{True}}
+\item 
+\mbox{\hyperlink{namespacedashboard_aa1626afaa5e6c94ee1dfda2628d2979c}{host}}
+\item 
+\mbox{\hyperlink{namespacedashboard_aba375d885134c0c576b72e2416656ae1}{port}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedashboard_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedashboard_a3656e58a3aa1e65d7bb89beed9a750da}\index{dashboard@{dashboard}!update\_graphs@{update\_graphs}}
+\index{update\_graphs@{update\_graphs}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{update\_graphs()}{update\_graphs()}}
+{\footnotesize\ttfamily \label{namespacedashboard_a3656e58a3aa1e65d7bb89beed9a750da} 
+dashboard.\+update\+\_\+graphs (\begin{DoxyParamCaption}\item[{}]{selected\+\_\+run}{}\end{DoxyParamCaption})}
+
+
+
+Updates the interactive charts based on the file selected from the dropdown menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em selected\+\_\+run} & String containing the test\textquotesingle{}s identifier name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A tuple containing (Map Trajectory Figure, Error vs Time Figure). 
+\end{DoxyReturn}
+
+
+\label{doc-var-members}
+\Hypertarget{namespacedashboard_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedashboard_a7641704376e021e40f58157e41350651}\index{dashboard@{dashboard}!all\_runs\_data@{all\_runs\_data}}
+\index{all\_runs\_data@{all\_runs\_data}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{all\_runs\_data}{all\_runs\_data}}
+{\footnotesize\ttfamily \label{namespacedashboard_a7641704376e021e40f58157e41350651} 
+dict dashboard.\+all\+\_\+runs\+\_\+data = \{\}}
+
+\Hypertarget{namespacedashboard_a0dc4d8c06bb063b02c536005f36adc7c}\index{dashboard@{dashboard}!app@{app}}
+\index{app@{app}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily \label{namespacedashboard_a0dc4d8c06bb063b02c536005f36adc7c} 
+dashboard.\+app = dash.\+Dash(\+\_\+\+\_\+name\+\_\+\+\_\+)}
+
+\Hypertarget{namespacedashboard_a8d0e5c64902fccce43ae9552a93f2be4}\index{dashboard@{dashboard}!barmode@{barmode}}
+\index{barmode@{barmode}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{barmode}{barmode}}
+{\footnotesize\ttfamily \label{namespacedashboard_a8d0e5c64902fccce43ae9552a93f2be4} 
+dashboard.\+barmode}
+
+\Hypertarget{namespacedashboard_a8adf42c115c3d5953e9ede6f43a4e9c2}\index{dashboard@{dashboard}!base\_results\_dir@{base\_results\_dir}}
+\index{base\_results\_dir@{base\_results\_dir}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{base\_results\_dir}{base\_results\_dir}}
+{\footnotesize\ttfamily \label{namespacedashboard_a8adf42c115c3d5953e9ede6f43a4e9c2} 
+str dashboard.\+base\+\_\+results\+\_\+dir = "{}/workspace/results"{}}
+
+\Hypertarget{namespacedashboard_a190e5eebef8ceeb5987e942b828cbaae}\index{dashboard@{dashboard}!cat\_rot\_errors@{cat\_rot\_errors}}
+\index{cat\_rot\_errors@{cat\_rot\_errors}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{cat\_rot\_errors}{cat\_rot\_errors}}
+{\footnotesize\ttfamily \label{namespacedashboard_a190e5eebef8ceeb5987e942b828cbaae} 
+list dashboard.\+cat\+\_\+rot\+\_\+errors = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{namespacedashboard_a80de9003a4c922c88ec06c69d9af7ad9}\index{dashboard@{dashboard}!cat\_trans\_errors@{cat\_trans\_errors}}
+\index{cat\_trans\_errors@{cat\_trans\_errors}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{cat\_trans\_errors}{cat\_trans\_errors}}
+{\footnotesize\ttfamily \label{namespacedashboard_a80de9003a4c922c88ec06c69d9af7ad9} 
+list dashboard.\+cat\+\_\+trans\+\_\+errors = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{namespacedashboard_a3a022ef4e56fa07d3c8d368eed33dbb7}\index{dashboard@{dashboard}!category\_means@{category\_means}}
+\index{category\_means@{category\_means}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{category\_means}{category\_means}}
+{\footnotesize\ttfamily \label{namespacedashboard_a3a022ef4e56fa07d3c8d368eed33dbb7} 
+list dashboard.\+category\+\_\+means = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{namespacedashboard_a3a47aa412cc4aa860f0373650b7f7116}\index{dashboard@{dashboard}!children@{children}}
+\index{children@{children}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{children}{children}}
+{\footnotesize\ttfamily \label{namespacedashboard_a3a47aa412cc4aa860f0373650b7f7116} 
+dashboard.\+children}
+
+\Hypertarget{namespacedashboard_a12b0373c1038d60f2e6f9fc52558211a}\index{dashboard@{dashboard}!debug@{debug}}
+\index{debug@{debug}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily \label{namespacedashboard_a12b0373c1038d60f2e6f9fc52558211a} 
+dashboard.\+debug}
+
+\Hypertarget{namespacedashboard_a96cd0028ded82a077cc1a7db73b41553}\index{dashboard@{dashboard}!df@{df}}
+\index{df@{df}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{df}{df}}
+{\footnotesize\ttfamily \label{namespacedashboard_a96cd0028ded82a077cc1a7db73b41553} 
+dashboard.\+df = pd.\+read\+\_\+csv(file\+\_\+path)}
+
+\Hypertarget{namespacedashboard_aaac31bf6fde26e8b94b22d74001f4162}\index{dashboard@{dashboard}!fig\_compare@{fig\_compare}}
+\index{fig\_compare@{fig\_compare}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{fig\_compare}{fig\_compare}}
+{\footnotesize\ttfamily \label{namespacedashboard_aaac31bf6fde26e8b94b22d74001f4162} 
+dashboard.\+fig\+\_\+compare = go.\+Figure()}
+
+\Hypertarget{namespacedashboard_aa1626afaa5e6c94ee1dfda2628d2979c}\index{dashboard@{dashboard}!host@{host}}
+\index{host@{host}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{host}{host}}
+{\footnotesize\ttfamily \label{namespacedashboard_aa1626afaa5e6c94ee1dfda2628d2979c} 
+dashboard.\+host}
+
+\Hypertarget{namespacedashboard_a651edf1f918ca2f360e565e52f64ff33}\index{dashboard@{dashboard}!layout@{layout}}
+\index{layout@{layout}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{layout}{layout}}
+{\footnotesize\ttfamily \label{namespacedashboard_a651edf1f918ca2f360e565e52f64ff33} 
+dashboard.\+layout}
+
+\Hypertarget{namespacedashboard_ad9f2fac3d5c15b44284c6af0c43c1e8d}\index{dashboard@{dashboard}!means\_df@{means\_df}}
+\index{means\_df@{means\_df}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{means\_df}{means\_df}}
+{\footnotesize\ttfamily \label{namespacedashboard_ad9f2fac3d5c15b44284c6af0c43c1e8d} 
+dashboard.\+means\+\_\+df = pd.\+Data\+Frame(\mbox{\hyperlink{namespacedashboard_a3a022ef4e56fa07d3c8d368eed33dbb7}{category\+\_\+means}})}
+
+\Hypertarget{namespacedashboard_aba375d885134c0c576b72e2416656ae1}\index{dashboard@{dashboard}!port@{port}}
+\index{port@{port}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily \label{namespacedashboard_aba375d885134c0c576b72e2416656ae1} 
+dashboard.\+port}
+
+\Hypertarget{namespacedashboard_a1f53a219c382172d87afd5b6e32b3a3e}\index{dashboard@{dashboard}!run\_label@{run\_label}}
+\index{run\_label@{run\_label}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{run\_label}{run\_label}}
+{\footnotesize\ttfamily \label{namespacedashboard_a1f53a219c382172d87afd5b6e32b3a3e} 
+str dashboard.\+run\+\_\+label = f"{}\{category\} -\/ \{os.\+path.\+basename(file\+\_\+path)\}"{}}
+
+\Hypertarget{namespacedashboard_a175273753beb0b60cedf307a9bdb4e86}\index{dashboard@{dashboard}!search\_paths@{search\_paths}}
+\index{search\_paths@{search\_paths}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{search\_paths}{search\_paths}}
+{\footnotesize\ttfamily \label{namespacedashboard_a175273753beb0b60cedf307a9bdb4e86} 
+dict dashboard.\+search\+\_\+paths}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}Standard"{}}:\ os.path.join(base\_results\_dir,\ \textcolor{stringliteral}{"{}amcl"{}},\ \textcolor{stringliteral}{"{}*.csv"{}}),}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}Dinamici"{}}:\ os.path.join(base\_results\_dir,\ \textcolor{stringliteral}{"{}amcl\_actors"{}},\ \textcolor{stringliteral}{"{}*.csv"{}}),}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}Noise"{}}:\ os.path.join(base\_results\_dir,\ \textcolor{stringliteral}{"{}amcl\_noise"{}},\ \textcolor{stringliteral}{"{}*.csv"{}}),}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}Extreme\ Noise"{}}:\ os.path.join(base\_results\_dir,\ \textcolor{stringliteral}{"{}amcl\_extr"{}},\ \textcolor{stringliteral}{"{}*.csv"{}}),}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}Kidnapping"{}}:\ os.path.join(base\_results\_dir,\ \textcolor{stringliteral}{"{}amcl\_kidnapping"{}},\ \textcolor{stringliteral}{"{}*.csv"{}})}
+\DoxyCodeLine{00007\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacedashboard_afec1669f1c226c312e04e0775803da43}\index{dashboard@{dashboard}!template@{template}}
+\index{template@{template}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{template}{template}}
+{\footnotesize\ttfamily \label{namespacedashboard_afec1669f1c226c312e04e0775803da43} 
+dashboard.\+template}
+
+\Hypertarget{namespacedashboard_a304233ad7d5775bc61cee91144b118b6}\index{dashboard@{dashboard}!title\_text@{title\_text}}
+\index{title\_text@{title\_text}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{title\_text}{title\_text}}
+{\footnotesize\ttfamily \label{namespacedashboard_a304233ad7d5775bc61cee91144b118b6} 
+dashboard.\+title\+\_\+text}
+
+\Hypertarget{namespacedashboard_a1dd4e4347aed611ec0fa2e7ddfb5dc9d}\index{dashboard@{dashboard}!True@{True}}
+\index{True@{True}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{True}{True}}
+{\footnotesize\ttfamily \label{namespacedashboard_a1dd4e4347aed611ec0fa2e7ddfb5dc9d} 
+dashboard.\+True}
+
+\Hypertarget{namespacedashboard_ac3b92c79685ce652d2d9a5a275b29a4c}\index{dashboard@{dashboard}!xaxis\_title@{xaxis\_title}}
+\index{xaxis\_title@{xaxis\_title}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{xaxis\_title}{xaxis\_title}}
+{\footnotesize\ttfamily \label{namespacedashboard_ac3b92c79685ce652d2d9a5a275b29a4c} 
+dashboard.\+xaxis\+\_\+title}
+
+\Hypertarget{namespacedashboard_a5c9511da81b6f57ed0035cd1762600de}\index{dashboard@{dashboard}!yaxis\_title@{yaxis\_title}}
+\index{yaxis\_title@{yaxis\_title}!dashboard@{dashboard}}
+\doxysubsubsection{\texorpdfstring{yaxis\_title}{yaxis\_title}}
+{\footnotesize\ttfamily \label{namespacedashboard_a5c9511da81b6f57ed0035cd1762600de} 
+dashboard.\+yaxis\+\_\+title}
+

@@ -1,0 +1,106 @@
+\doxysection{dynamic\+\_\+obstacles Namespace Reference}
+\hypertarget{namespacedynamic__obstacles}{}\label{namespacedynamic__obstacles}\index{dynamic\_obstacles@{dynamic\_obstacles}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdynamic__obstacles_1_1DynamicObstacles}{Dynamic\+Obstacles}}
+\begin{DoxyCompactList}\small\item\em Node that periodically sends velocities to Gazebo topics to animate obstacles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedynamic__obstacles_a019e18737d3d1debe143dd321ee6c8f2}{spawn\+\_\+actor}} (name, x, y, r, g, b)
+\begin{DoxyCompactList}\small\item\em Creates an SDF file on the fly and calls the system to insert the obstacle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacedynamic__obstacles_ad3209f64b54da6eb0d800b6b85df2d45}{main}} (args=None)
+\begin{DoxyCompactList}\small\item\em Main function that summons the models and creates the bridge to ros\+\_\+gz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacedynamic__obstacles_a152d8cdb313e397300299641917c19ea}{ACTOR\+\_\+\+SDF}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedynamic__obstacles_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedynamic__obstacles_ad3209f64b54da6eb0d800b6b85df2d45}\index{dynamic\_obstacles@{dynamic\_obstacles}!main@{main}}
+\index{main@{main}!dynamic\_obstacles@{dynamic\_obstacles}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{namespacedynamic__obstacles_ad3209f64b54da6eb0d800b6b85df2d45} 
+dynamic\+\_\+obstacles.\+main (\begin{DoxyParamCaption}\item[{}]{args}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Main function that summons the models and creates the bridge to ros\+\_\+gz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Standard ROS 2 arguments. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacedynamic__obstacles_a019e18737d3d1debe143dd321ee6c8f2}\index{dynamic\_obstacles@{dynamic\_obstacles}!spawn\_actor@{spawn\_actor}}
+\index{spawn\_actor@{spawn\_actor}!dynamic\_obstacles@{dynamic\_obstacles}}
+\doxysubsubsection{\texorpdfstring{spawn\_actor()}{spawn\_actor()}}
+{\footnotesize\ttfamily \label{namespacedynamic__obstacles_a019e18737d3d1debe143dd321ee6c8f2} 
+dynamic\+\_\+obstacles.\+spawn\+\_\+actor (\begin{DoxyParamCaption}\item[{}]{name}{, }\item[{}]{x}{, }\item[{}]{y}{, }\item[{}]{r}{, }\item[{}]{g}{, }\item[{}]{b}{}\end{DoxyParamCaption})}
+
+
+
+Creates an SDF file on the fly and calls the system to insert the obstacle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the entity in Gazebo. \\
+\hline
+{\em x} & Initial X coordinate. \\
+\hline
+{\em y} & Initial Y coordinate. \\
+\hline
+{\em r} & Red channel of the material (0.\+0-\/1.\+0). \\
+\hline
+{\em g} & Green channel of the material (0.\+0-\/1.\+0). \\
+\hline
+{\em b} & Blue channel of the material (0.\+0-\/1.\+0). \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-var-members}
+\Hypertarget{namespacedynamic__obstacles_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedynamic__obstacles_a152d8cdb313e397300299641917c19ea}\index{dynamic\_obstacles@{dynamic\_obstacles}!ACTOR\_SDF@{ACTOR\_SDF}}
+\index{ACTOR\_SDF@{ACTOR\_SDF}!dynamic\_obstacles@{dynamic\_obstacles}}
+\doxysubsubsection{\texorpdfstring{ACTOR\_SDF}{ACTOR\_SDF}}
+{\footnotesize\ttfamily \label{namespacedynamic__obstacles_a152d8cdb313e397300299641917c19ea} 
+str dynamic\+\_\+obstacles.\+ACTOR\+\_\+\+SDF}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \textcolor{stringliteral}{"{}"{}"{}<?xml\ version="{}1.0"{}\ ?>}}
+\DoxyCodeLine{00002\ \textcolor{stringliteral}{<sdf\ version="{}1.8"{}>}}
+\DoxyCodeLine{00003\ \textcolor{stringliteral}{\ \ <model\ name="{}\{actor\_name\}"{}>}}
+\DoxyCodeLine{00004\ \textcolor{stringliteral}{\ \ \ \ <link\ name="{}base\_link"{}>}}
+\DoxyCodeLine{00005\ \textcolor{stringliteral}{\ \ \ \ \ \ <inertial>}}
+\DoxyCodeLine{00006\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ <pose>0\ 0\ -\/0.8\ 0\ 0\ 0</pose>\ }}
+\DoxyCodeLine{00007\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ <mass>50.0</mass>}}
+\DoxyCodeLine{00008\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ <inertia><ixx>10.0</ixx><iyy>10.0</iyy><izz>10.0</izz></inertia>}}
+\DoxyCodeLine{00009\ \textcolor{stringliteral}{\ \ \ \ \ \ </inertial>}}
+\DoxyCodeLine{00010\ \textcolor{stringliteral}{\ \ \ \ \ \ <collision\ name="{}collision"{}>}}
+\DoxyCodeLine{00011\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ <geometry><cylinder><radius>0.15</radius><length>1.7</length></cylinder></geometry>}}
+\DoxyCodeLine{00012\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ <surface>}}
+\DoxyCodeLine{00013\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ <friction><ode><mu>0.0</mu><mu2>0.0</mu2></ode></friction>}}
+\DoxyCodeLine{00014\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ </surface>}}
+\DoxyCodeLine{00015\ \textcolor{stringliteral}{\ \ \ \ \ \ </collision>}}
+\DoxyCodeLine{00016\ \textcolor{stringliteral}{\ \ \ \ \ \ <visual\ name="{}visual"{}>}}
+\DoxyCodeLine{00017\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ <geometry><cylinder><radius>0.15</radius><length>1.7</length></cylinder></geometry>}}
+\DoxyCodeLine{00018\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ <material><ambient>\{r\}\ \{g\}\ \{b\}\ 1</ambient><diffuse>\{r\}\ \{g\}\ \{b\}\ 1</diffuse></material>}}
+\DoxyCodeLine{00019\ \textcolor{stringliteral}{\ \ \ \ \ \ </visual>}}
+\DoxyCodeLine{00020\ \textcolor{stringliteral}{\ \ \ \ </link>}}
+\DoxyCodeLine{00021\ \textcolor{stringliteral}{\ \ \ \ <plugin\ filename="{}ignition-\/gazebo-\/velocity-\/control-\/system"{}\ name="{}ignition::gazebo::systems::VelocityControl"{}>}}
+\DoxyCodeLine{00022\ \textcolor{stringliteral}{\ \ \ \ \ \ <link\_name>base\_link</link\_name>}}
+\DoxyCodeLine{00023\ \textcolor{stringliteral}{\ \ \ \ \ \ <topic>/model/\{actor\_name\}/cmd\_vel</topic>}}
+\DoxyCodeLine{00024\ \textcolor{stringliteral}{\ \ \ \ </plugin>}}
+\DoxyCodeLine{00025\ \textcolor{stringliteral}{\ \ </model>}}
+\DoxyCodeLine{00026\ \textcolor{stringliteral}{</sdf>}}
+\DoxyCodeLine{00027\ \textcolor{stringliteral}{"{}"{}"{}}}
+
+\end{DoxyCode}

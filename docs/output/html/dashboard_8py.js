@@ -1,0 +1,26 @@
+var dashboard_8py =
+[
+    [ "dashboard.update_graphs", "namespacedashboard.html#a3656e58a3aa1e65d7bb89beed9a750da", null ],
+    [ "dashboard.all_runs_data", "namespacedashboard.html#a7641704376e021e40f58157e41350651", null ],
+    [ "dashboard.app", "namespacedashboard.html#a0dc4d8c06bb063b02c536005f36adc7c", null ],
+    [ "dashboard.barmode", "namespacedashboard.html#a8d0e5c64902fccce43ae9552a93f2be4", null ],
+    [ "dashboard.base_results_dir", "namespacedashboard.html#a8adf42c115c3d5953e9ede6f43a4e9c2", null ],
+    [ "dashboard.cat_rot_errors", "namespacedashboard.html#a190e5eebef8ceeb5987e942b828cbaae", null ],
+    [ "dashboard.cat_trans_errors", "namespacedashboard.html#a80de9003a4c922c88ec06c69d9af7ad9", null ],
+    [ "dashboard.category_means", "namespacedashboard.html#a3a022ef4e56fa07d3c8d368eed33dbb7", null ],
+    [ "dashboard.children", "namespacedashboard.html#a3a47aa412cc4aa860f0373650b7f7116", null ],
+    [ "dashboard.debug", "namespacedashboard.html#a12b0373c1038d60f2e6f9fc52558211a", null ],
+    [ "dashboard.df", "namespacedashboard.html#a96cd0028ded82a077cc1a7db73b41553", null ],
+    [ "dashboard.fig_compare", "namespacedashboard.html#aaac31bf6fde26e8b94b22d74001f4162", null ],
+    [ "dashboard.host", "namespacedashboard.html#aa1626afaa5e6c94ee1dfda2628d2979c", null ],
+    [ "dashboard.layout", "namespacedashboard.html#a651edf1f918ca2f360e565e52f64ff33", null ],
+    [ "dashboard.means_df", "namespacedashboard.html#ad9f2fac3d5c15b44284c6af0c43c1e8d", null ],
+    [ "dashboard.port", "namespacedashboard.html#aba375d885134c0c576b72e2416656ae1", null ],
+    [ "dashboard.run_label", "namespacedashboard.html#a1f53a219c382172d87afd5b6e32b3a3e", null ],
+    [ "dashboard.search_paths", "namespacedashboard.html#a175273753beb0b60cedf307a9bdb4e86", null ],
+    [ "dashboard.template", "namespacedashboard.html#afec1669f1c226c312e04e0775803da43", null ],
+    [ "dashboard.title_text", "namespacedashboard.html#a304233ad7d5775bc61cee91144b118b6", null ],
+    [ "dashboard.True", "namespacedashboard.html#a1dd4e4347aed611ec0fa2e7ddfb5dc9d", null ],
+    [ "dashboard.xaxis_title", "namespacedashboard.html#ac3b92c79685ce652d2d9a5a275b29a4c", null ],
+    [ "dashboard.yaxis_title", "namespacedashboard.html#a5c9511da81b6f57ed0035cd1762600de", null ]
+];

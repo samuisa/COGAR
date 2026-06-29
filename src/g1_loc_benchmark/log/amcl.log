@@ -1,0 +1,974 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-06-28-12-28-50-409197-samu-186322
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign gazebo-1]: process started with pid [186337]
+[INFO] [robot_state_publisher-2]: process started with pid [186339]
+[INFO] [create-3]: process started with pid [186341]
+[INFO] [parameter_bridge-4]: process started with pid [186344]
+[INFO] [rviz2-5]: process started with pid [186346]
+[INFO] [static_transform_publisher-6]: process started with pid [186348]
+[INFO] [component_container_isolated-7]: process started with pid [186350]
+[INFO] [python3-8]: process started with pid [186352]
+[INFO] [python3-9]: process started with pid [186354]
+[static_transform_publisher-6] [WARN] [1782649730.941410043] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-6] [INFO] [1782649730.949617733] [static_transform_publisher_qOqvUzyX2TfXLB5C]: Spinning until stopped - publishing transform
+[static_transform_publisher-6] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-6] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-6] from 'base_link' to 'base_footprint'
+[rviz2-5] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[create-3] [INFO] [1782649730.958797424] [ros_gz_sim]: Requesting list of world names.
+[robot_state_publisher-2] [WARN] [1782649730.967681537] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-2] [INFO] [1782649730.967781596] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1782649730.967817866] [robot_state_publisher]: got segment d435_link
+[robot_state_publisher-2] [INFO] [1782649730.967822256] [robot_state_publisher]: got segment d435_link_optical
+[robot_state_publisher-2] [INFO] [1782649730.967825806] [robot_state_publisher]: got segment head_link
+[robot_state_publisher-2] [INFO] [1782649730.967828886] [robot_state_publisher]: got segment imu_in_pelvis
+[robot_state_publisher-2] [INFO] [1782649730.967831856] [robot_state_publisher]: got segment imu_in_torso
+[robot_state_publisher-2] [INFO] [1782649730.967834666] [robot_state_publisher]: got segment left_ankle_pitch_link
+[robot_state_publisher-2] [INFO] [1782649730.967837766] [robot_state_publisher]: got segment left_ankle_roll_link
+[robot_state_publisher-2] [INFO] [1782649730.967840736] [robot_state_publisher]: got segment left_elbow_link
+[robot_state_publisher-2] [INFO] [1782649730.967843826] [robot_state_publisher]: got segment left_hip_pitch_link
+[robot_state_publisher-2] [INFO] [1782649730.967846776] [robot_state_publisher]: got segment left_hip_roll_link
+[robot_state_publisher-2] [INFO] [1782649730.967849666] [robot_state_publisher]: got segment left_hip_yaw_link
+[robot_state_publisher-2] [INFO] [1782649730.967852496] [robot_state_publisher]: got segment left_knee_link
+[robot_state_publisher-2] [INFO] [1782649730.967855306] [robot_state_publisher]: got segment left_rubber_hand
+[robot_state_publisher-2] [INFO] [1782649730.967858346] [robot_state_publisher]: got segment left_shoulder_pitch_link
+[robot_state_publisher-2] [INFO] [1782649730.967861306] [robot_state_publisher]: got segment left_shoulder_roll_link
+[robot_state_publisher-2] [INFO] [1782649730.967864186] [robot_state_publisher]: got segment left_shoulder_yaw_link
+[robot_state_publisher-2] [INFO] [1782649730.967867066] [robot_state_publisher]: got segment left_wrist_pitch_link
+[robot_state_publisher-2] [INFO] [1782649730.967869966] [robot_state_publisher]: got segment left_wrist_roll_link
+[robot_state_publisher-2] [INFO] [1782649730.967873295] [robot_state_publisher]: got segment left_wrist_yaw_link
+[robot_state_publisher-2] [INFO] [1782649730.967876215] [robot_state_publisher]: got segment logo_link
+[robot_state_publisher-2] [INFO] [1782649730.967879695] [robot_state_publisher]: got segment mid360_link
+[robot_state_publisher-2] [INFO] [1782649730.967882735] [robot_state_publisher]: got segment pelvis
+[robot_state_publisher-2] [INFO] [1782649730.967885725] [robot_state_publisher]: got segment pelvis_contour_link
+[robot_state_publisher-2] [INFO] [1782649730.967888535] [robot_state_publisher]: got segment right_ankle_pitch_link
+[robot_state_publisher-2] [INFO] [1782649730.967891385] [robot_state_publisher]: got segment right_ankle_roll_link
+[robot_state_publisher-2] [INFO] [1782649730.967894355] [robot_state_publisher]: got segment right_elbow_link
+[robot_state_publisher-2] [INFO] [1782649730.967897125] [robot_state_publisher]: got segment right_hip_pitch_link
+[robot_state_publisher-2] [INFO] [1782649730.967900025] [robot_state_publisher]: got segment right_hip_roll_link
+[robot_state_publisher-2] [INFO] [1782649730.967902845] [robot_state_publisher]: got segment right_hip_yaw_link
+[robot_state_publisher-2] [INFO] [1782649730.967905915] [robot_state_publisher]: got segment right_knee_link
+[robot_state_publisher-2] [INFO] [1782649730.967908885] [robot_state_publisher]: got segment right_rubber_hand
+[robot_state_publisher-2] [INFO] [1782649730.967911685] [robot_state_publisher]: got segment right_shoulder_pitch_link
+[robot_state_publisher-2] [INFO] [1782649730.967914825] [robot_state_publisher]: got segment right_shoulder_roll_link
+[robot_state_publisher-2] [INFO] [1782649730.967917755] [robot_state_publisher]: got segment right_shoulder_yaw_link
+[robot_state_publisher-2] [INFO] [1782649730.967920705] [robot_state_publisher]: got segment right_wrist_pitch_link
+[robot_state_publisher-2] [INFO] [1782649730.967923925] [robot_state_publisher]: got segment right_wrist_roll_link
+[robot_state_publisher-2] [INFO] [1782649730.967926845] [robot_state_publisher]: got segment right_wrist_yaw_link
+[robot_state_publisher-2] [INFO] [1782649730.967929755] [robot_state_publisher]: got segment torso_link
+[robot_state_publisher-2] [INFO] [1782649730.967932725] [robot_state_publisher]: got segment waist_roll_link
+[robot_state_publisher-2] [INFO] [1782649730.967935755] [robot_state_publisher]: got segment waist_support_link
+[robot_state_publisher-2] [INFO] [1782649730.967938585] [robot_state_publisher]: got segment waist_yaw_link
+[parameter_bridge-4] [INFO] [1782649730.971650719] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (ignition.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782649730.972304632] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (ignition.msgs.Twist)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782649730.973106984] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/odom (ignition.msgs.Odometry) -> /odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782649730.973734468] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/model/g1_robot/tf (ignition.msgs.Pose_V) -> /model/g1_robot/tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782649730.974348612] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tf (ignition.msgs.Pose_V) -> /tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782649730.974558320] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/scan (ignition.msgs.LaserScan) -> /scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782649730.975168314] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/image (ignition.msgs.Image) -> /camera/image (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782649730.975465391] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/depth_image (ignition.msgs.Image) -> /camera/depth_image (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782649730.975694699] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/camera_info (ignition.msgs.CameraInfo) -> /camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782649730.976018476] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/points (ignition.msgs.PointCloudPacked) -> /camera/points (sensor_msgs/msg/PointCloud2)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782649730.976327713] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/ground_truth_pose (ignition.msgs.Odometry) -> /ground_truth_pose (nav_msgs/msg/Odometry)] (Lazy 0)
+[rviz2-5] amdgpu: os_same_file_description couldn't determine if two DRM fds reference the same file description.
+[rviz2-5] If they do, bad things may happen!
+[rviz2-5] amdgpu: drmGetDevice2 failed.
+[component_container_isolated-7] [INFO] [1782649731.059062316] [nav2_container]: Load Library: /opt/ros/humble/lib/libmap_server_core.so
+[component_container_isolated-7] [INFO] [1782649731.065883769] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::CostmapFilterInfoServer>
+[component_container_isolated-7] [INFO] [1782649731.065913999] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapSaver>
+[component_container_isolated-7] [INFO] [1782649731.065917819] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-7] [INFO] [1782649731.065923059] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-7] [INFO] [1782649731.070820821] [map_server]: 
+[component_container_isolated-7] 	map_server lifecycle node launched. 
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map_server' in container '/nav2_container'
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1782649731.070849131] [map_server]: Creating
+[component_container_isolated-7] [INFO] [1782649731.072393906] [nav2_container]: Load Library: /opt/ros/humble/lib/libamcl_core.so
+[component_container_isolated-7] [INFO] [1782649731.074070300] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-7] [INFO] [1782649731.074084910] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-7] [INFO] [1782649731.078348288] [amcl]: 
+[component_container_isolated-7] 	amcl lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1782649731.078606375] [amcl]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/amcl' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1782649731.079723494] [nav2_container]: Load Library: /opt/ros/humble/lib/libnav2_lifecycle_manager_core.so
+[component_container_isolated-7] [INFO] [1782649731.080051891] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-7] [INFO] [1782649731.080060761] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-7] [INFO] [1782649731.083620027] [lifecycle_manager_localization]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_localization' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1782649731.084800795] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[component_container_isolated-7] [INFO] [1782649731.086342520] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-7] [INFO] [1782649731.086359110] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[component_container_isolated-7] [INFO] [1782649731.086444179] [map_server]: Configuring
+[component_container_isolated-7] [INFO] [1782649731.086492888] [map_io]: Loading yaml file: /workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/maps/turtlebot3_waffle_pi/map.yaml
+[component_container_isolated-7] [INFO] [1782649731.086654307] [map_io]: resolution: 0.05
+[component_container_isolated-7] [INFO] [1782649731.086658927] [map_io]: origin[0]: -12.5
+[component_container_isolated-7] [INFO] [1782649731.086661807] [map_io]: origin[1]: -12.5
+[component_container_isolated-7] [INFO] [1782649731.086664377] [map_io]: origin[2]: 0
+[component_container_isolated-7] [INFO] [1782649731.086667137] [map_io]: free_thresh: 0.196
+[component_container_isolated-7] [INFO] [1782649731.086669807] [map_io]: occupied_thresh: 0.65
+[component_container_isolated-7] [INFO] [1782649731.086673017] [map_io]: mode: trinary
+[component_container_isolated-7] [INFO] [1782649731.086676027] [map_io]: negate: 0
+[component_container_isolated-7] [INFO] [1782649731.086794496] [map_io]: Loading image_file: /workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/maps/turtlebot3_waffle_pi/map.pgm
+[component_container_isolated-7] [INFO] [1782649731.099010747] [map_io]: Read map /workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/maps/turtlebot3_waffle_pi/map.pgm: 500 X 500 map @ 0.05 m/cell
+[component_container_isolated-7] [INFO] [1782649731.100729800] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[component_container_isolated-7] [INFO] [1782649731.100774989] [amcl]: Configuring
+[component_container_isolated-7] [INFO] [1782649731.100825769] [amcl]: initTransforms
+[component_container_isolated-7] [INFO] [1782649731.103830159] [amcl]: initPubSub
+[component_container_isolated-7] [INFO] [1782649731.105017668] [amcl]: Subscribed to map topic.
+[component_container_isolated-7] [INFO] [1782649731.106059598] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[component_container_isolated-7] [INFO] [1782649731.106105157] [map_server]: Activating
+[component_container_isolated-7] [INFO] [1782649731.106341845] [map_server]: Creating bond (map_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782649731.106478814] [amcl]: Received a 500 X 500 map @ 0.050 m/pix
+[rviz2-5] [INFO] [1782649731.123863284] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-5] [INFO] [1782649731.123948473] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-5] [INFO] [1782649731.133843967] [rviz2]: Stereo is NOT SUPPORTED
+[ign gazebo-1] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[component_container_isolated-7] [INFO] [1782649731.183323124] [nav2_container]: Load Library: /opt/ros/humble/lib/libcontroller_server_core.so
+[component_container_isolated-7] [INFO] [1782649731.185045227] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-7] [INFO] [1782649731.185078677] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-7] [INFO] [1782649731.190864941] [controller_server]: 
+[component_container_isolated-7] 	controller_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1782649731.193644124] [controller_server]: Creating controller server
+[component_container_isolated-7] [INFO] [1782649731.199328098] [local_costmap.local_costmap]: 
+[component_container_isolated-7] 	local_costmap lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1782649731.199799704] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/controller_server' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1782649731.201413768] [nav2_container]: Load Library: /opt/ros/humble/lib/libsmoother_server_core.so
+[component_container_isolated-7] [INFO] [1782649731.202391908] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-7] [INFO] [1782649731.202403608] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-7] [INFO] [1782649731.207763886] [lifecycle_manager_localization]: Server map_server connected with bond.
+[component_container_isolated-7] [INFO] [1782649731.207822845] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[component_container_isolated-7] [INFO] [1782649731.207990354] [amcl]: Activating
+[component_container_isolated-7] [INFO] [1782649731.208030073] [amcl]: Creating bond (amcl) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782649731.209110063] [smoother_server]: 
+[component_container_isolated-7] 	smoother_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1782649731.210424000] [smoother_server]: Creating smoother server
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/smoother_server' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1782649731.211314601] [nav2_container]: Load Library: /opt/ros/humble/lib/libplanner_server_core.so
+[component_container_isolated-7] [INFO] [1782649731.211898345] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-7] [INFO] [1782649731.211908575] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="AirconditionerA_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L44]: XML Attribute[frame] in element[pose] not defined in SDF.
+[component_container_isolated-7] [INFO] [1782649731.217565120] [planner_server]: 
+[component_container_isolated-7] 	planner_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1782649731.218607180] [planner_server]: Creating
+[component_container_isolated-7] [INFO] [1782649731.224000827] [global_costmap.global_costmap]: 
+[component_container_isolated-7] 	global_costmap lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1782649731.224267895] [global_costmap.global_costmap]: Creating Costmap
+[ign gazebo-1] amdgpu: os_same_file_description couldn't determine if two DRM fds reference the same file description.
+[ign gazebo-1] If they do, bad things may happen!
+[ign gazebo-1] amdgpu: drmGetDevice2 failed.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planner_server' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1782649731.225920989] [nav2_container]: Load Library: /opt/ros/humble/lib/libbehavior_server_core.so
+[component_container_isolated-7] [INFO] [1782649731.227621702] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-7] [INFO] [1782649731.227633312] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="AirconditionerB_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L52]: XML Attribute[frame] in element[pose] not defined in SDF.
+[component_container_isolated-7] [INFO] [1782649731.233066969] [behavior_server]: 
+[component_container_isolated-7] 	behavior_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/behavior_server' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1782649731.235148699] [nav2_container]: Load Library: /opt/ros/humble/lib/libbt_navigator_core.so
+[component_container_isolated-7] [INFO] [1782649731.236069750] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-7] [INFO] [1782649731.236081020] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-7] [INFO] [1782649731.241859483] [bt_navigator]: 
+[component_container_isolated-7] 	bt_navigator lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1782649731.241914593] [bt_navigator]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/bt_navigator' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1782649731.242682695] [nav2_container]: Load Library: /opt/ros/humble/lib/libwaypoint_follower_core.so
+[component_container_isolated-7] [INFO] [1782649731.243133461] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-7] [INFO] [1782649731.243146861] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Ball_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L59]: XML Attribute[frame] in element[pose] not defined in SDF.
+[component_container_isolated-7] [INFO] [1782649731.248897835] [waypoint_follower]: 
+[component_container_isolated-7] 	waypoint_follower lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1782649731.249198372] [waypoint_follower]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/waypoint_follower' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1782649731.250673457] [nav2_container]: Load Library: /opt/ros/humble/lib/libvelocity_smoother_core.so
+[component_container_isolated-7] [INFO] [1782649731.251112403] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-7] [INFO] [1782649731.251119843] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-7] [INFO] [1782649731.257267393] [velocity_smoother]: 
+[component_container_isolated-7] 	velocity_smoother lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Ball_01_003"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L67]: XML Attribute[frame] in element[pose] not defined in SDF.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/velocity_smoother' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1782649731.258182104] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-7] [INFO] [1782649731.258194674] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-7] [INFO] [1782649731.262746850] [lifecycle_manager_navigation]: Creating
+[component_container_isolated-7] [INFO] [1782649731.263739290] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_navigation' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1782649731.269732101] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-7] [INFO] [1782649731.269771541] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[component_container_isolated-7] [INFO] [1782649731.269853970] [controller_server]: Configuring controller interface
+[component_container_isolated-7] [INFO] [1782649731.270022159] [controller_server]: getting goal checker plugins..
+[component_container_isolated-7] [INFO] [1782649731.270085448] [controller_server]: Controller frequency set to 20.0000Hz
+[component_container_isolated-7] [INFO] [1782649731.270103248] [local_costmap.local_costmap]: Configuring
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Bed_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L74]: XML Attribute[frame] in element[pose] not defined in SDF.
+[component_container_isolated-7] [INFO] [1782649731.272120028] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[component_container_isolated-7] [INFO] [1782649731.273868281] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[component_container_isolated-7] [INFO] [1782649731.277129179] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[component_container_isolated-7] [INFO] [1782649731.277151829] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-7] [INFO] [1782649731.277657764] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-7] [INFO] [1782649731.281889223] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[component_container_isolated-7] [INFO] [1782649731.282298269] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[component_container_isolated-7] [INFO] [1782649731.282491097] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[component_container_isolated-7] [INFO] [1782649731.283426358] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[component_container_isolated-7] [INFO] [1782649731.283933613] [controller_server]: Setting transform_tolerance to 0.200000
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="NightStand_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L81]: XML Attribute[frame] in element[pose] not defined in SDF.
+[component_container_isolated-7] [INFO] [1782649731.289006283] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[component_container_isolated-7] [INFO] [1782649731.289312590] [controller_server]: Critic plugin initialized
+[component_container_isolated-7] [INFO] [1782649731.289386220] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[component_container_isolated-7] [INFO] [1782649731.289764676] [controller_server]: Critic plugin initialized
+[component_container_isolated-7] [INFO] [1782649731.289857295] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[component_container_isolated-7] [INFO] [1782649731.289978834] [controller_server]: Critic plugin initialized
+[component_container_isolated-7] [INFO] [1782649731.290074063] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[component_container_isolated-7] [INFO] [1782649731.290301301] [controller_server]: Critic plugin initialized
+[component_container_isolated-7] [INFO] [1782649731.290378680] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[component_container_isolated-7] [INFO] [1782649731.290592668] [controller_server]: Critic plugin initialized
+[component_container_isolated-7] [INFO] [1782649731.290669297] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[component_container_isolated-7] [INFO] [1782649731.290821796] [controller_server]: Critic plugin initialized
+[component_container_isolated-7] [INFO] [1782649731.290897425] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[component_container_isolated-7] [INFO] [1782649731.291043234] [controller_server]: Critic plugin initialized
+[component_container_isolated-7] [INFO] [1782649731.291055373] [controller_server]: Controller Server has FollowPath  controllers available.
+[component_container_isolated-7] [INFO] [1782649731.295134334] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[component_container_isolated-7] [INFO] [1782649731.295197783] [smoother_server]: Configuring smoother server
+[component_container_isolated-7] [INFO] [1782649731.298011676] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[component_container_isolated-7] [INFO] [1782649731.298327543] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="NightStand_01_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L88]: XML Attribute[frame] in element[pose] not defined in SDF.
+[component_container_isolated-7] [INFO] [1782649731.300206444] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[component_container_isolated-7] [INFO] [1782649731.300256334] [planner_server]: Configuring
+[component_container_isolated-7] [INFO] [1782649731.300283034] [global_costmap.global_costmap]: Configuring
+[component_container_isolated-7] [INFO] [1782649731.302688830] [global_costmap.global_costmap]: Using plugin "static_layer"
+[component_container_isolated-7] [INFO] [1782649731.303262644] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[component_container_isolated-7] [INFO] [1782649731.303554621] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[component_container_isolated-7] [INFO] [1782649731.303563561] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[component_container_isolated-7] [INFO] [1782649731.303994607] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[component_container_isolated-7] [INFO] [1782649731.305742970] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[component_container_isolated-7] [INFO] [1782649731.305754230] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-7] [INFO] [1782649731.306261735] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-7] [INFO] [1782649731.309358265] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[component_container_isolated-7] [INFO] [1782649731.309374995] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[component_container_isolated-7] [INFO] [1782649731.309770571] [planner_server]: Planner Server has GridBased  planners available.
+[component_container_isolated-7] [INFO] [1782649731.310180477] [lifecycle_manager_localization]: Server amcl connected with bond.
+[component_container_isolated-7] [INFO] [1782649731.310205537] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[component_container_isolated-7] [INFO] [1782649731.310227056] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Board_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L95]: XML Attribute[frame] in element[pose] not defined in SDF.
+[component_container_isolated-7] [INFO] [1782649731.313133598] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[component_container_isolated-7] [INFO] [1782649731.313197158] [behavior_server]: Configuring
+[component_container_isolated-7] [INFO] [1782649731.315652864] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[component_container_isolated-7] [INFO] [1782649731.316146699] [behavior_server]: Configuring spin
+[component_container_isolated-7] [INFO] [1782649731.318847632] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[component_container_isolated-7] [INFO] [1782649731.319331698] [behavior_server]: Configuring backup
+[component_container_isolated-7] [INFO] [1782649731.322104421] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[component_container_isolated-7] [INFO] [1782649731.322480147] [behavior_server]: Configuring drive_on_heading
+[component_container_isolated-7] [INFO] [1782649731.324839174] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ChairA_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L103]: XML Attribute[frame] in element[pose] not defined in SDF.
+[component_container_isolated-7] [INFO] [1782649731.325543047] [behavior_server]: Configuring assisted_teleop
+[component_container_isolated-7] [INFO] [1782649731.328339700] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[component_container_isolated-7] [INFO] [1782649731.328682277] [behavior_server]: Configuring wait
+[component_container_isolated-7] [INFO] [1782649731.330681497] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[component_container_isolated-7] [INFO] [1782649731.330766146] [bt_navigator]: Configuring
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ChairA_01_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L110]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ChairA_01_003"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L117]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ChairA_01_004"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L124]: XML Attribute[frame] in element[pose] not defined in SDF.
+[component_container_isolated-7] [INFO] [1782649731.365158771] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[component_container_isolated-7] [INFO] [1782649731.365263040] [waypoint_follower]: Configuring
+[component_container_isolated-7] [INFO] [1782649731.369071843] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[component_container_isolated-7] [INFO] [1782649731.369447349] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[component_container_isolated-7] [INFO] [1782649731.369540218] [velocity_smoother]: Configuring velocity smoother
+[component_container_isolated-7] [INFO] [1782649731.370815226] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[component_container_isolated-7] [INFO] [1782649731.370879665] [controller_server]: Activating
+[component_container_isolated-7] [INFO] [1782649731.370901725] [local_costmap.local_costmap]: Activating
+[component_container_isolated-7] [INFO] [1782649731.370911585] [local_costmap.local_costmap]: Checking transform
+[component_container_isolated-7] [INFO] [1782649731.370923665] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649731.373606468] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 500 X 500 at 0.050000 m/pix
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ChairA_01_005"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L131]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ChairD_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L138]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ChairD_01_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L145]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ChairD_01_003"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L152]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Chandelier_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L159]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Chandelier_01_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L166]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Chandelier_01_003"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L173]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Chandelier_01_004"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L180]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Carpet_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L187]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Carpet_01_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L194]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="SecurityCamera_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L201]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="CoffeeTable_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L208]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="CookingBench_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L214]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Curtain_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L223]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="KitchenTable_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L231]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ReadingDesk_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L238]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="BalconyTable_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L245]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Door_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L253]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Dumbbell_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L261]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Tablet_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L268]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="FitnessEquipment_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L275]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="FoldingDoor_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L282]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="FoldingDoor_01_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L289]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Handle_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L296]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="HouseWallB_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L304]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="FloorB_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L312]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="FoldingDoor_02_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L320]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="FoldingDoor_02_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L328]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="KitchenCabinet_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L336]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="KitchenUtensils_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L343]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="LightC_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L351]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="LightC_01_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L358]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitA_01"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L366]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitB_01"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L374]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitB_02"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L382]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitB_03"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L390]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitA_02"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L398]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitC_01"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L406]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitD_01"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L414]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitD_02"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L421]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitE_01"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L429]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitE_02"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L436]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitA_01"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L444]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitA_02"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L452]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitC_01"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L459]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitC_02"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L466]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitD_01"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L473]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitD_02"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L480]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitD_03"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L487]: XML Attribute[frame] in element[pose] not defined in SDF.
+[component_container_isolated-7] [INFO] [1782649731.870994108] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitD_04"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L494]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitB_01"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L501]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitB_02"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L508]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Rangehood_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L516]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Refrigerator_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L524]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="SeasoningBox_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L531]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ShoeRack_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L538]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="SofaC_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L545]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Tableware_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L552]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Trash_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L559]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Trash_01_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L566]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="TV_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L573]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="TV_02_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L580]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="TVCabinet_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L587]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Vase_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L594]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWall_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L601]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Wardrobe_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L609]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWindow_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L616]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWindow_01_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L623]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWindow_01_003"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L630]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWindow_01_004"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L637]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWindow_01_005"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L644]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWindow_01_006"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L651]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWindow_01_007"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L658]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWindow_01_008"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L665]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWindow_01_009"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L672]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/light[@name="LivingRoom_CeilingLight_0"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L676]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/light[@name="LivingRoom_CeilingLight_1"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L689]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/light[@name="LivingRoom_WallLight_0"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L702]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/light[@name="LivingRoom_WallLight_1"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L715]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/light[@name="TV_Light_0"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L728]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/light[@name="BedRoom_Portrait_Light_0"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L741]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/light[@name="BedRoom_CeilingLight_0"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L759]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/light[@name="Kitchen_CeilingLight_0"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L772]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;31m[Err] [SystemLoader.cc:94] [0m[1;31mFailed to load system plugin [[0m[1;31mlibgazebo_map_creator.so[0m[1;31m] : couldn't find shared library.[0m[1;31m[0m
+[create-3] [INFO] [1782649732.316665331] [ros_gz_sim]: Waiting messages on topic [robot_description].
+[component_container_isolated-7] [INFO] [1782649732.370983631] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[create-3] [INFO] [1782649732.416133741] [ros_gz_sim]: Requested creation of entity.
+[create-3] [INFO] [1782649732.416150481] [ros_gz_sim]: OK creation of entity.
+[INFO] [create-3]: process has finished cleanly [pid 186341]
+[component_container_isolated-7] [INFO] [1782649732.870980645] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[ign gazebo-1] [INFO] [1782649733.138900992] [GazeboSimROS2ControlPlugin]: robot_param_node is robot_state_publisher
+[ign gazebo-1] [INFO] [1782649733.138925772] [GazeboSimROS2ControlPlugin]: robot_param_node is robot_description
+[ign gazebo-1] [INFO] [1782649733.155129014] [gz_ros2_control]: connected to service!! robot_state_publisher asking for robot_description
+[ign gazebo-1] [INFO] [1782649733.155571160] [gz_ros2_control]: Received URDF from param server
+[ign gazebo-1] [INFO] [1782649733.159194194] [gz_ros2_control]: The position_proportional_gain has been set to: 0.1
+[ign gazebo-1] [INFO] [1782649733.159228324] [gz_ros2_control]: Loading joint: left_hip_pitch_joint
+[ign gazebo-1] [INFO] [1782649733.159237884] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159243624] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159249194] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159254164] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159258624] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159263134] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159274044] [gz_ros2_control]: Loading joint: left_hip_roll_joint
+[ign gazebo-1] [INFO] [1782649733.159280034] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159284383] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159289133] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159293923] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159298473] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159301993] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159308423] [gz_ros2_control]: Loading joint: left_hip_yaw_joint
+[ign gazebo-1] [INFO] [1782649733.159312123] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159315273] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159319903] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159324463] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159329303] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159333763] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159341853] [gz_ros2_control]: Loading joint: left_knee_joint
+[ign gazebo-1] [INFO] [1782649733.159346453] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159350603] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159355063] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159358893] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159361953] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159364793] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159370193] [gz_ros2_control]: Loading joint: left_ankle_pitch_joint
+[ign gazebo-1] [INFO] [1782649733.159373483] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159376413] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159379213] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159381973] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159384713] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159387532] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159392622] [gz_ros2_control]: Loading joint: left_ankle_roll_joint
+[ign gazebo-1] [INFO] [1782649733.159396082] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159399842] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159403862] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159409132] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159412062] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159414932] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159420302] [gz_ros2_control]: Loading joint: right_hip_pitch_joint
+[ign gazebo-1] [INFO] [1782649733.159423642] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159426352] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159429142] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159432022] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159437592] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159442342] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159461312] [gz_ros2_control]: Loading joint: right_hip_roll_joint
+[ign gazebo-1] [INFO] [1782649733.159465572] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159468422] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159471932] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159475252] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159478202] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159481522] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159487371] [gz_ros2_control]: Loading joint: right_hip_yaw_joint
+[ign gazebo-1] [INFO] [1782649733.159490901] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159493901] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159496841] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159518351] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159521601] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159525651] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159539781] [gz_ros2_control]: Loading joint: right_knee_joint
+[ign gazebo-1] [INFO] [1782649733.159543721] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159546581] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159549521] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159552281] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159554991] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159557841] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159563631] [gz_ros2_control]: Loading joint: right_ankle_pitch_joint
+[ign gazebo-1] [INFO] [1782649733.159568741] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159573271] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159577951] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159582101] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159587221] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159591580] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159597900] [gz_ros2_control]: Loading joint: right_ankle_roll_joint
+[ign gazebo-1] [INFO] [1782649733.159601200] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159603890] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159606910] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159610190] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159613330] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159616740] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159630940] [gz_ros2_control]: Loading joint: waist_yaw_joint
+[ign gazebo-1] [INFO] [1782649733.159642400] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159645850] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159649770] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159653220] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159656390] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159659190] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159667100] [gz_ros2_control]: Loading joint: waist_roll_joint
+[ign gazebo-1] [INFO] [1782649733.159670650] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159673720] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159679620] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159684110] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159687070] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159690179] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159704329] [gz_ros2_control]: Loading joint: waist_pitch_joint
+[ign gazebo-1] [INFO] [1782649733.159711789] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159715019] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159719359] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159723399] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159727149] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159730469] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159736229] [gz_ros2_control]: Loading joint: left_shoulder_pitch_joint
+[ign gazebo-1] [INFO] [1782649733.159739709] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159742519] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159746519] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159750589] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159754969] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159757849] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159763099] [gz_ros2_control]: Loading joint: left_shoulder_roll_joint
+[ign gazebo-1] [INFO] [1782649733.159767959] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159773759] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159778649] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159783399] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159787698] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159790388] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159799098] [gz_ros2_control]: Loading joint: left_shoulder_yaw_joint
+[ign gazebo-1] [INFO] [1782649733.159808038] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159810848] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159813668] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159816388] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159819268] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159829458] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159836178] [gz_ros2_control]: Loading joint: left_elbow_joint
+[ign gazebo-1] [INFO] [1782649733.159839378] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159842188] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159845048] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159847798] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159850928] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159853678] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159859238] [gz_ros2_control]: Loading joint: left_wrist_roll_joint
+[ign gazebo-1] [INFO] [1782649733.159862858] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159865608] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159868408] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159871288] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159874378] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159877058] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159882698] [gz_ros2_control]: Loading joint: left_wrist_pitch_joint
+[ign gazebo-1] [INFO] [1782649733.159887338] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159890137] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159894397] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159897257] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159900347] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159903037] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159908647] [gz_ros2_control]: Loading joint: left_wrist_yaw_joint
+[ign gazebo-1] [INFO] [1782649733.159912077] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159914767] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159920557] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159927867] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159934617] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159941507] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159948447] [gz_ros2_control]: Loading joint: right_shoulder_pitch_joint
+[ign gazebo-1] [INFO] [1782649733.159951677] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159954537] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159957437] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159960407] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159963477] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159966157] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159971287] [gz_ros2_control]: Loading joint: right_shoulder_roll_joint
+[ign gazebo-1] [INFO] [1782649733.159974777] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.159977517] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.159980307] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.159983177] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.159986177] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.159989556] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.160001776] [gz_ros2_control]: Loading joint: right_shoulder_yaw_joint
+[ign gazebo-1] [INFO] [1782649733.160005146] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.160007946] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.160010856] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.160013766] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.160016786] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.160019636] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.160038876] [gz_ros2_control]: Loading joint: right_elbow_joint
+[ign gazebo-1] [INFO] [1782649733.160046206] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.160049276] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.160054146] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.160060226] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.160064296] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.160067196] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.160073156] [gz_ros2_control]: Loading joint: right_wrist_roll_joint
+[ign gazebo-1] [INFO] [1782649733.160077106] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.160079956] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.160082716] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.160086926] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.160090015] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.160093085] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.160099425] [gz_ros2_control]: Loading joint: right_wrist_pitch_joint
+[ign gazebo-1] [INFO] [1782649733.160109035] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.160111935] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.160115905] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.160120535] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.160124835] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.160136035] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.160144895] [gz_ros2_control]: Loading joint: right_wrist_yaw_joint
+[ign gazebo-1] [INFO] [1782649733.160148135] [gz_ros2_control]: 	State:
+[ign gazebo-1] [INFO] [1782649733.160151655] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.160154545] [gz_ros2_control]: 		 velocity
+[ign gazebo-1] [INFO] [1782649733.160157625] [gz_ros2_control]: 		 effort
+[ign gazebo-1] [INFO] [1782649733.160160595] [gz_ros2_control]: 	Command:
+[ign gazebo-1] [INFO] [1782649733.160163435] [gz_ros2_control]: 		 position
+[ign gazebo-1] [INFO] [1782649733.160467172] [resource_manager]: Initialize hardware 'IgnitionSystem' 
+[ign gazebo-1] [WARN] [1782649733.160509071] [gz_ros2_control]: The ign_ros2_control plugin got renamed to gz_ros2_control.
+[ign gazebo-1] Update the <ros2_control> tag and gazebo plugin to
+[ign gazebo-1] <hardware>
+[ign gazebo-1]   <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+[ign gazebo-1] </hardware>
+[ign gazebo-1] <gazebo>
+[ign gazebo-1]   <plugin filename="gz_ros2_control-system"name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+[ign gazebo-1]     ...
+[ign gazebo-1]   </plugin>
+[ign gazebo-1] </gazebo>
+[ign gazebo-1] [INFO] [1782649733.160532631] [resource_manager]: Successful initialization of hardware 'IgnitionSystem'
+[ign gazebo-1] [INFO] [1782649733.160664300] [resource_manager]: 'configure' hardware 'IgnitionSystem' 
+[ign gazebo-1] [INFO] [1782649733.160667170] [gz_ros2_control]: System Successfully configured!
+[ign gazebo-1] [INFO] [1782649733.160672430] [resource_manager]: Successful 'configure' of hardware 'IgnitionSystem'
+[ign gazebo-1] [INFO] [1782649733.160685140] [resource_manager]: 'activate' hardware 'IgnitionSystem' 
+[ign gazebo-1] [INFO] [1782649733.160689940] [resource_manager]: Successful 'activate' of hardware 'IgnitionSystem'
+[ign gazebo-1] [INFO] [1782649733.160693330] [gz_ros2_control]: Loading controller_manager
+[ign gazebo-1] [WARN] [1782649733.223865494] [gz_ros2_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+[ign gazebo-1] amdgpu: os_same_file_description couldn't determine if two DRM fds reference the same file description.
+[ign gazebo-1] If they do, bad things may happen!
+[ign gazebo-1] amdgpu: drmGetDevice2 failed.
+[component_container_isolated-7] [INFO] [1782649733.370983859] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649733.870988842] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitA_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitB_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitB_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitB_03.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitA_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitC_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitD_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitD_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitE_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitE_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitA_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitA_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitC_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitD_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitD_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitD_03.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitD_04.jpg[0m[1;31m][0m[1;31m[0m
+[component_container_isolated-7] [INFO] [1782649734.370990136] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitB_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitA_02.jpg[0m[1;31m][0m[1;31m[0m
+[component_container_isolated-7] [INFO] [1782649734.870988000] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649735.057926837] [amcl]: createLaserObject
+[component_container_isolated-7] [INFO] [1782649735.371068923] [local_costmap.local_costmap]: start
+[component_container_isolated-7] [INFO] [1782649735.572025133] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782649735.674814570] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[component_container_isolated-7] [INFO] [1782649735.674858680] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[component_container_isolated-7] [INFO] [1782649735.675078988] [smoother_server]: Activating
+[component_container_isolated-7] [INFO] [1782649735.675121367] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782649735.777927275] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[component_container_isolated-7] [INFO] [1782649735.777962314] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[component_container_isolated-7] [INFO] [1782649735.778108273] [planner_server]: Activating
+[component_container_isolated-7] [INFO] [1782649735.778153253] [global_costmap.global_costmap]: Activating
+[component_container_isolated-7] [INFO] [1782649735.778162703] [global_costmap.global_costmap]: Checking transform
+[component_container_isolated-7] [INFO] [1782649735.778169532] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [spawner-10]: process started with pid [186914]
+[INFO] [spawner-11]: process started with pid [186916]
+[component_container_isolated-7] [INFO] [1782649736.278232056] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[spawner-11] [INFO] [1782649736.430934916] [spawner_position_controller]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-10] [INFO] [1782649736.431667179] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[component_container_isolated-7] [INFO] [1782649736.778233269] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649737.067832785] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[ign gazebo-1] [INFO] [1782649737.154240702] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[ign gazebo-1] [INFO] [1782649737.169303925] [controller_manager]: Loading controller 'position_controller'
+[spawner-10] [INFO] [1782649737.169928269] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[ign gazebo-1] [WARN] [1782649737.187350369] [position_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[ign gazebo-1] [INFO] [1782649737.189287430] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+[ign gazebo-1] [INFO] [1782649737.189431409] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[spawner-11] [INFO] [1782649737.190025383] [spawner_position_controller]: [94mLoaded [1mposition_controller[0m
+[ign gazebo-1] [INFO] [1782649737.199262483] [controller_manager]: Configuring controller 'position_controller'
+[ign gazebo-1] [INFO] [1782649737.199509341] [position_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[ign gazebo-1] [INFO] [1782649737.199528830] [position_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[ign gazebo-1] [INFO] [1782649737.199556650] [position_controller]: Using 'splines' interpolation method.
+[ign gazebo-1] [INFO] [1782649737.200287083] [position_controller]: Controller state will be published at 50.00 Hz.
+[ign gazebo-1] [INFO] [1782649737.201527741] [position_controller]: Goals with partial set of joints are allowed
+[ign gazebo-1] [INFO] [1782649737.201543981] [position_controller]: Action status changes will be monitored at 20.00 Hz.
+[spawner-10] [INFO] [1782649737.229813945] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[spawner-11] [INFO] [1782649737.250065708] [spawner_position_controller]: [92mConfigured and activated [1mposition_controller[0m
+[component_container_isolated-7] [INFO] [1782649737.278229523] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [spawner-10]: process has finished cleanly [pid 186914]
+[INFO] [spawner-11]: process has finished cleanly [pid 186916]
+[component_container_isolated-7] [INFO] [1782649737.778228117] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649738.278230420] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649738.778230924] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649739.245731175] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1782649739.278229468] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649739.778232751] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitA_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitB_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitB_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitB_03.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitA_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitC_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitD_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitD_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitE_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitE_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitA_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitA_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitC_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitD_01.jpg[0m[1;31m][0m[1;31m[0m
+[component_container_isolated-7] [INFO] [1782649740.278229735] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitD_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitD_03.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitD_04.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitB_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitA_02.jpg[0m[1;31m][0m[1;31m[0m
+[component_container_isolated-7] [INFO] [1782649740.778232889] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649741.278227393] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649741.360226663] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1782649741.778239976] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649742.278230900] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649742.778183784] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649743.278231567] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649743.480923710] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1782649743.778228631] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649744.278227365] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649744.778239008] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649745.278227722] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649745.627626044] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1782649745.778227706] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649746.278226739] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649746.778228203] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649747.278231377] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649747.680347615] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1782649747.778230050] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649748.278179695] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649748.778226718] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649749.278227631] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649749.778227555] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649749.889462720] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1782649750.278230929] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649750.778228263] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649751.278227466] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649751.778227770] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649752.013193988] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1782649752.278229034] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649752.778225717] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649753.278229541] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649753.778230355] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649754.194814782] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1782649754.278234608] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649754.778231402] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649755.278227256] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649755.778226489] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649756.278226483] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649756.391390140] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1782649756.778226417] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649757.278225521] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649757.778229574] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649758.278226338] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649758.501414851] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1782649758.778229542] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649759.278232135] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649759.778228799] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649760.278233083] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649760.623620674] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1782649760.778228386] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649761.278226380] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649761.778231274] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649762.278232278] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649762.665151634] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1782649762.778227501] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649763.278233945] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649763.778230408] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649764.278234112] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649764.778231096] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649764.819216096] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1782649765.278230799] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649765.778227553] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649766.278234347] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649766.778235550] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649766.928145969] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1782649767.278228914] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649767.778228348] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649768.278234062] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649768.778231675] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649769.059141176] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1782649769.278230789] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649769.778229123] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649770.278226136] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649770.778231630] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649771.225718916] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1782649771.278229334] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649771.778227467] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649772.278234881] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649772.778226945] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649773.278226809] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649773.399939802] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1782649773.778226712] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5] [INFO] [1782649774.132350379] [rviz]: Message Filter dropping message: frame 'mid360_link' at time 36.900 for reason 'discarding message because the queue is full'
+[component_container_isolated-7] [INFO] [1782649774.278230266] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649774.778225300] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649775.278227643] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649775.511292190] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1782649775.778227727] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649776.278226181] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649776.778226744] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5] [INFO] [1782649776.819749609] [rviz]: Message Filter dropping message: frame 'mid360_link' at time 39.500 for reason 'discarding message because the queue is full'
+[component_container_isolated-7] [INFO] [1782649777.278226758] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [WARN] [1782649777.596965179] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[component_container_isolated-7] [INFO] [1782649777.778225942] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1782649778.278228665] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5] [INFO] [1782649778.571280117] [rviz2]: Setting estimate pose: Frame:map, Position(0.0518665, -0.0357599, 0), Orientation(0, 0, -0.00914438, 0.999958) = Angle: -0.018289
+[component_container_isolated-7] [INFO] [1782649778.571427656] [amcl]: initialPoseReceived
+[component_container_isolated-7] [INFO] [1782649778.571481125] [amcl]: Setting pose (42.280000): 0.052 -0.036 -0.018
+[component_container_isolated-7] [INFO] [1782649778.778241109] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 42.480000 but the earliest data is at time 43.300000, when looking up transform from frame [base_link] to frame [map]
+[component_container_isolated-7] [INFO] [1782649779.278246213] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 42.960000 but the earliest data is at time 43.300000, when looking up transform from frame [base_link] to frame [map]
+[rviz2-5] [INFO] [1782649779.348346769] [rviz]: Message Filter dropping message: frame 'mid360_link' at time 42.000 for reason 'discarding message because the queue is full'
+[component_container_isolated-7] [INFO] [1782649779.778317966] [global_costmap.global_costmap]: start
+[component_container_isolated-7] [INFO] [1782649780.829120107] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[component_container_isolated-7] [INFO] [1782649780.830224207] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782649780.932562589] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[component_container_isolated-7] [INFO] [1782649780.932597628] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[component_container_isolated-7] [INFO] [1782649780.932809516] [behavior_server]: Activating
+[component_container_isolated-7] [INFO] [1782649780.932837716] [behavior_server]: Activating spin
+[component_container_isolated-7] [INFO] [1782649780.932853156] [behavior_server]: Activating backup
+[component_container_isolated-7] [INFO] [1782649780.932859876] [behavior_server]: Activating drive_on_heading
+[component_container_isolated-7] [INFO] [1782649780.932868186] [behavior_server]: Activating assisted_teleop
+[component_container_isolated-7] [INFO] [1782649780.932874976] [behavior_server]: Activating wait
+[component_container_isolated-7] [INFO] [1782649780.932884276] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782649781.036284187] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[component_container_isolated-7] [INFO] [1782649781.036326837] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[component_container_isolated-7] [INFO] [1782649781.036525745] [bt_navigator]: Activating
+[component_container_isolated-7] [INFO] [1782649781.062883748] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782649781.165001812] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[component_container_isolated-7] [INFO] [1782649781.165062981] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[component_container_isolated-7] [INFO] [1782649781.165358538] [waypoint_follower]: Activating
+[component_container_isolated-7] [INFO] [1782649781.165393748] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782649781.268869139] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[component_container_isolated-7] [INFO] [1782649781.268909638] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[component_container_isolated-7] [INFO] [1782649781.269169326] [velocity_smoother]: Activating
+[component_container_isolated-7] [INFO] [1782649781.269220595] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782649781.372590027] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[component_container_isolated-7] [INFO] [1782649781.372625157] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[component_container_isolated-7] [INFO] [1782649781.372632217] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[rviz2-5] [INFO] [1782649788.972779535] [rviz]: Message Filter dropping message: frame 'mid360_link' at time 42.400 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1782649789.878768730] [rviz2]: Trying to create a map of size 500 x 500 using 1 swatches
+[rviz2-5] [ERROR] [1782649789.910642179] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-5] active samplers with a different type refer to the same texture image unit
+[rviz2-5] [INFO] [1782649816.947304200] [rviz2]: Setting goal pose: Frame:map, Position(6.88564, -2.99823, 0), Orientation(0, 0, 0, 1) = Angle: 0
+[component_container_isolated-7] [INFO] [1782649816.947818175] [bt_navigator]: Begin navigating from current location (0.01, -0.06) to (6.89, -3.00)
+[component_container_isolated-7] [INFO] [1782649816.968334525] [controller_server]: Received a goal, begin computing control effort.
+[component_container_isolated-7] [WARN] [1782649816.968380665] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[parameter_bridge-4] [INFO] [1782649817.019025831] [ros_gz_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+[component_container_isolated-7] [INFO] [1782649818.018606192] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649819.068604092] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649820.068601759] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649821.118605059] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649822.118603316] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649823.168603296] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649824.218602976] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649825.218600163] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649826.268603653] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649827.268599491] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649828.318603390] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649829.368602990] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649830.368602657] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649831.418606447] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649832.418603155] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649833.468601424] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649834.518605684] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649835.518598712] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649836.568604781] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649837.568601748] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649838.618607618] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649839.618609686] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649840.668601955] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649841.718605805] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649842.718600552] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649843.768609632] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649844.768604220] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649845.818604929] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649846.868603249] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649847.868605936] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649848.918602146] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649849.918600394] [controller_server]: Passing new path to controller.
+[component_container_isolated-7] [INFO] [1782649850.670440931] [controller_server]: Reached the goal!
+[component_container_isolated-7] [INFO] [1782649850.708010235] [bt_navigator]: Goal succeeded
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[parameter_bridge-4] [INFO] [1782650385.308720758] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[static_transform_publisher-6] [INFO] [1782650385.308718708] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[component_container_isolated-7] [INFO] [1782650385.308716748] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[component_container_isolated-7] [INFO] [1782650385.308769228] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[component_container_isolated-7] [INFO] [1782650385.308816677] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[robot_state_publisher-2] [INFO] [1782650385.308727718] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[rviz2-5] [INFO] [1782650385.308731758] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[python3-8] =========================================================
+[python3-8] 🤖 G1 Controller avviato (Modalità Mappatura Pura).
+[python3-8] =========================================================
+[component_container_isolated-7] [INFO] [1782650385.398845299] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[component_container_isolated-7] [INFO] [1782650385.398914338] [waypoint_follower]: Deactivating
+[component_container_isolated-7] [INFO] [1782650385.398925298] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782650385.409060769] [waypoint_follower]: Cleaning up
+[component_container_isolated-7] [INFO] [1782650385.413370687] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782650385.413397637] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[component_container_isolated-7] [INFO] [1782650385.413416197] [behavior_server]: Deactivating
+[component_container_isolated-7] [INFO] [1782650385.413431817] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 186339]
+[INFO] [parameter_bridge-4]: process has finished cleanly [pid 186344]
+[component_container_isolated-7] [INFO] [1782650385.423479649] [behavior_server]: Cleaning up
+[INFO] [static_transform_publisher-6]: process has finished cleanly [pid 186348]
+[component_container_isolated-7] [INFO] [1782650385.426816996] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782650385.426831166] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[component_container_isolated-7] [INFO] [1782650385.426854056] [planner_server]: Deactivating
+[component_container_isolated-7] [INFO] [1782650385.426872046] [global_costmap.global_costmap]: Deactivating
+[INFO] [python3-8]: process has finished cleanly [pid 186352]
+[INFO] [python3-9]: process has finished cleanly [pid 186354]
+[INFO] [rviz2-5]: process has finished cleanly [pid 186346]
+[ign gazebo-1] [INFO] [1782650385.752248992] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ign gazebo-1] [INFO] [1782650385.752301022] [controller_manager]: Shutdown request received....
+[ign gazebo-1] [INFO] [1782650385.752341012] [controller_manager]: Shutting down all controllers in the controller manager.
+[ign gazebo-1] [INFO] [1782650385.752407051] [controller_manager]: Deactivating controller 'joint_state_broadcaster'
+[ign gazebo-1] [INFO] [1782650385.752439911] [controller_manager]: Shutting down controller 'joint_state_broadcaster'
+[ign gazebo-1] [INFO] [1782650385.752470980] [controller_manager]: Deactivating controller 'position_controller'
+[ign gazebo-1] [INFO] [1782650385.752501930] [controller_manager]: Shutting down controller 'position_controller'
+[ign gazebo-1] [INFO] [1782650385.752520120] [resource_manager]: 'deactivate' hardware 'IgnitionSystem' 
+[ign gazebo-1] [INFO] [1782650385.752534480] [resource_manager]: Successful 'deactivate' of hardware 'IgnitionSystem'
+[ign gazebo-1] [INFO] [1782650385.752537970] [resource_manager]: 'shutdown' hardware 'IgnitionSystem' 
+[ign gazebo-1] [INFO] [1782650385.752542030] [resource_manager]: Successful 'shutdown' of hardware 'IgnitionSystem'
+[ign gazebo-1] [INFO] [1782650385.752545490] [controller_manager]: Shutting down the controller manager.
+[component_container_isolated-7] [INFO] [1782650385.778455227] [planner_server]: Deactivating plugin GridBased of type NavfnPlanner
+[component_container_isolated-7] [INFO] [1782650385.778485446] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782650385.788561408] [planner_server]: Cleaning up
+[component_container_isolated-7] [INFO] [1782650385.793577029] [global_costmap.global_costmap]: Cleaning up
+[component_container_isolated-7] [INFO] [1782650385.795499551] [planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[component_container_isolated-7] [INFO] [1782650385.795556040] [planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[component_container_isolated-7] [INFO] [1782650385.800340833] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782650385.800349623] [velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[component_container_isolated-7] [INFO] [1782650385.800363933] [velocity_smoother]: Deactivating
+[component_container_isolated-7] [INFO] [1782650385.800375603] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782650385.810442575] [velocity_smoother]: Cleaning up
+[component_container_isolated-7] [INFO] [1782650385.810455585] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782650385.810459765] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[component_container_isolated-7] [INFO] [1782650385.810470835] [bt_navigator]: Deactivating
+[component_container_isolated-7] [INFO] [1782650385.810480195] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782650385.820553956] [bt_navigator]: Cleaning up
+[component_container_isolated-7] [INFO] [1782650385.854431466] [bt_navigator]: Completed Cleaning up
+[component_container_isolated-7] [INFO] [1782650385.854468835] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782650385.854477715] [lifecycle_manager_localization]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)
+[component_container_isolated-7] [INFO] [1782650385.854484915] [lifecycle_manager_localization]: [34m[1mTerminating bond timer...[0m[0m
+[component_container_isolated-7] [INFO] [1782650385.876032075] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[component_container_isolated-7] [INFO] [1782650385.876081545] [controller_server]: Deactivating
+[component_container_isolated-7] [INFO] [1782650385.876111654] [local_costmap.local_costmap]: Deactivating
+[component_container_isolated-7] [INFO] [1782650385.971226887] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782650385.981343638] [controller_server]: Cleaning up
+[component_container_isolated-7] [INFO] [1782650385.981704135] [local_costmap.local_costmap]: Cleaning up
+[component_container_isolated-7] [INFO] [1782650385.990165212] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782650385.990175882] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[component_container_isolated-7] [INFO] [1782650385.990187942] [amcl]: Deactivating
+[component_container_isolated-7] [INFO] [1782650385.990194952] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782650386.000271013] [amcl]: Cleaning up
+[component_container_isolated-7] [INFO] [1782650386.002250334] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782650386.002260544] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[component_container_isolated-7] [INFO] [1782650386.002276104] [smoother_server]: Deactivating
+[component_container_isolated-7] [INFO] [1782650386.002283654] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782650386.012354756] [smoother_server]: Cleaning up
+[component_container_isolated-7] [INFO] [1782650386.015628424] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782650386.015639094] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[component_container_isolated-7] [INFO] [1782650386.015652733] [map_server]: Deactivating
+[component_container_isolated-7] [INFO] [1782650386.015660653] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1782650386.025772365] [map_server]: Cleaning up
+[component_container_isolated-7] [INFO] [1782650386.025830704] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[ERROR] [ign gazebo-1]: process has died [pid 186337, exit code -2, cmd 'ruby /usr/bin/ign gazebo /workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf -r -v -v1 --force-version 6'].
+[INFO] [launch]: process[ign gazebo-1] was required: shutting down launched system
+[ERROR] [launch]: Caught exception in launch (see debug for traceback): Cannot shutdown a ROS adapter that is not running
+[ERROR] [component_container_isolated-7]: process[component_container_isolated-7] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [component_container_isolated-7]: sending signal 'SIGTERM' to process[component_container_isolated-7]
+[component_container_isolated-7] [INFO] [1782650390.414354044] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ERROR] [component_container_isolated-7]: process[component_container_isolated-7] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[INFO] [component_container_isolated-7]: sending signal 'SIGKILL' to process[component_container_isolated-7]
+[ERROR] [component_container_isolated-7]: process has died [pid 186350, exit code -9, cmd '/opt/ros/humble/lib/rclcpp_components/component_container_isolated --ros-args --log-level info --ros-args -r __node:=nav2_container --params-file /tmp/launch_params_w0r6znio --params-file /tmp/launch_params_2ft16ra2 -r /tf:=tf -r /tf_static:=tf_static'].

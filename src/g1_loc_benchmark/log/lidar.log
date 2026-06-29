@@ -1,0 +1,722 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-06-29-12-13-45-763907-samu-13116
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign gazebo-1]: process started with pid [13118]
+[INFO] [robot_state_publisher-2]: process started with pid [13120]
+[INFO] [create-3]: process started with pid [13123]
+[INFO] [parameter_bridge-4]: process started with pid [13125]
+[INFO] [rviz2-5]: process started with pid [13127]
+[INFO] [python3-6]: process started with pid [13129]
+[rviz2-5] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[create-3] [INFO] [1782735226.019452761] [ros_gz_sim]: Requesting list of world names.
+[robot_state_publisher-2] [INFO] [1782735226.029441225] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-2] [INFO] [1782735226.029493354] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1782735226.029498104] [robot_state_publisher]: got segment d435_link
+[robot_state_publisher-2] [INFO] [1782735226.029501474] [robot_state_publisher]: got segment d435_link_optical
+[robot_state_publisher-2] [INFO] [1782735226.029504754] [robot_state_publisher]: got segment head_link
+[robot_state_publisher-2] [INFO] [1782735226.029507624] [robot_state_publisher]: got segment imu_in_pelvis
+[robot_state_publisher-2] [INFO] [1782735226.029510884] [robot_state_publisher]: got segment imu_in_torso
+[robot_state_publisher-2] [INFO] [1782735226.029513774] [robot_state_publisher]: got segment left_ankle_pitch_link
+[robot_state_publisher-2] [INFO] [1782735226.029517224] [robot_state_publisher]: got segment left_ankle_roll_link
+[robot_state_publisher-2] [INFO] [1782735226.029520074] [robot_state_publisher]: got segment left_elbow_link
+[robot_state_publisher-2] [INFO] [1782735226.029522994] [robot_state_publisher]: got segment left_hip_pitch_link
+[robot_state_publisher-2] [INFO] [1782735226.029525674] [robot_state_publisher]: got segment left_hip_roll_link
+[robot_state_publisher-2] [INFO] [1782735226.029528374] [robot_state_publisher]: got segment left_hip_yaw_link
+[robot_state_publisher-2] [INFO] [1782735226.029531024] [robot_state_publisher]: got segment left_knee_link
+[robot_state_publisher-2] [INFO] [1782735226.029533754] [robot_state_publisher]: got segment left_rubber_hand
+[robot_state_publisher-2] [INFO] [1782735226.029536434] [robot_state_publisher]: got segment left_shoulder_pitch_link
+[robot_state_publisher-2] [INFO] [1782735226.029539174] [robot_state_publisher]: got segment left_shoulder_roll_link
+[robot_state_publisher-2] [INFO] [1782735226.029542154] [robot_state_publisher]: got segment left_shoulder_yaw_link
+[robot_state_publisher-2] [INFO] [1782735226.029544884] [robot_state_publisher]: got segment left_wrist_pitch_link
+[robot_state_publisher-2] [INFO] [1782735226.029547554] [robot_state_publisher]: got segment left_wrist_roll_link
+[robot_state_publisher-2] [INFO] [1782735226.029550524] [robot_state_publisher]: got segment left_wrist_yaw_link
+[robot_state_publisher-2] [INFO] [1782735226.029553434] [robot_state_publisher]: got segment logo_link
+[robot_state_publisher-2] [INFO] [1782735226.029846621] [robot_state_publisher]: got segment mid360_link
+[robot_state_publisher-2] [INFO] [1782735226.029849871] [robot_state_publisher]: got segment pelvis
+[robot_state_publisher-2] [INFO] [1782735226.029852701] [robot_state_publisher]: got segment pelvis_contour_link
+[robot_state_publisher-2] [INFO] [1782735226.029855581] [robot_state_publisher]: got segment right_ankle_pitch_link
+[robot_state_publisher-2] [INFO] [1782735226.029858491] [robot_state_publisher]: got segment right_ankle_roll_link
+[robot_state_publisher-2] [INFO] [1782735226.029861391] [robot_state_publisher]: got segment right_elbow_link
+[robot_state_publisher-2] [INFO] [1782735226.029864261] [robot_state_publisher]: got segment right_hip_pitch_link
+[robot_state_publisher-2] [INFO] [1782735226.029866931] [robot_state_publisher]: got segment right_hip_roll_link
+[robot_state_publisher-2] [INFO] [1782735226.029869651] [robot_state_publisher]: got segment right_hip_yaw_link
+[robot_state_publisher-2] [INFO] [1782735226.029872360] [robot_state_publisher]: got segment right_knee_link
+[robot_state_publisher-2] [INFO] [1782735226.029875050] [robot_state_publisher]: got segment right_rubber_hand
+[robot_state_publisher-2] [INFO] [1782735226.029878090] [robot_state_publisher]: got segment right_shoulder_pitch_link
+[robot_state_publisher-2] [INFO] [1782735226.029881040] [robot_state_publisher]: got segment right_shoulder_roll_link
+[robot_state_publisher-2] [INFO] [1782735226.029883750] [robot_state_publisher]: got segment right_shoulder_yaw_link
+[robot_state_publisher-2] [INFO] [1782735226.029886490] [robot_state_publisher]: got segment right_wrist_pitch_link
+[robot_state_publisher-2] [INFO] [1782735226.029889540] [robot_state_publisher]: got segment right_wrist_roll_link
+[robot_state_publisher-2] [INFO] [1782735226.029892250] [robot_state_publisher]: got segment right_wrist_yaw_link
+[robot_state_publisher-2] [INFO] [1782735226.029894920] [robot_state_publisher]: got segment torso_link
+[robot_state_publisher-2] [INFO] [1782735226.029897630] [robot_state_publisher]: got segment waist_roll_link
+[robot_state_publisher-2] [INFO] [1782735226.029900420] [robot_state_publisher]: got segment waist_support_link
+[robot_state_publisher-2] [INFO] [1782735226.029903120] [robot_state_publisher]: got segment waist_yaw_link
+[parameter_bridge-4] [INFO] [1782735226.032161468] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (ignition.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782735226.032657553] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (ignition.msgs.Twist)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782735226.033393367] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/odom (ignition.msgs.Odometry) -> /odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782735226.033974401] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/lidar/points/points (ignition.msgs.PointCloudPacked) -> /lidar/points/points (sensor_msgs/msg/PointCloud2)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782735226.034540375] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/image (ignition.msgs.Image) -> /camera/image (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782735226.034797443] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/depth_image (ignition.msgs.Image) -> /camera/depth_image (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782735226.035012831] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/camera_info (ignition.msgs.CameraInfo) -> /camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782735226.035610785] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/points (ignition.msgs.PointCloudPacked) -> /camera/points (sensor_msgs/msg/PointCloud2)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782735226.035817723] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/ground_truth_pose (ignition.msgs.Odometry) -> /ground_truth_pose (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782735226.036024351] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/model/g1_robot/tf (ignition.msgs.Pose_V) -> /model/g1_robot/tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1782735226.036917372] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tf (ignition.msgs.Pose_V) -> /tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[rviz2-5] amdgpu: os_same_file_description couldn't determine if two DRM fds reference the same file description.
+[rviz2-5] If they do, bad things may happen!
+[rviz2-5] amdgpu: drmGetDevice2 failed.
+[rviz2-5] [INFO] [1782735226.167690828] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-5] [INFO] [1782735226.167745678] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-5] [INFO] [1782735226.177056748] [rviz2]: Stereo is NOT SUPPORTED
+[ign gazebo-1] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="AirconditionerA_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L44]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] amdgpu: os_same_file_description couldn't determine if two DRM fds reference the same file description.
+[ign gazebo-1] If they do, bad things may happen!
+[ign gazebo-1] amdgpu: drmGetDevice2 failed.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="AirconditionerB_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L52]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Ball_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L59]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Ball_01_003"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L67]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Bed_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L74]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="NightStand_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L81]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="NightStand_01_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L88]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Board_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L95]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ChairA_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L103]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ChairA_01_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L110]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ChairA_01_003"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L117]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ChairA_01_004"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L124]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ChairA_01_005"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L131]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ChairD_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L138]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ChairD_01_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L145]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ChairD_01_003"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L152]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Chandelier_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L159]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Chandelier_01_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L166]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Chandelier_01_003"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L173]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Chandelier_01_004"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L180]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Carpet_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L187]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Carpet_01_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L194]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="SecurityCamera_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L201]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="CoffeeTable_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L208]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="CookingBench_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L214]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Curtain_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L223]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="KitchenTable_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L231]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ReadingDesk_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L238]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="BalconyTable_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L245]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Door_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L253]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Dumbbell_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L261]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Tablet_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L268]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="FitnessEquipment_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L275]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="FoldingDoor_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L282]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="FoldingDoor_01_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L289]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Handle_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L296]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="HouseWallB_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L304]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="FloorB_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L312]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="FoldingDoor_02_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L320]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="FoldingDoor_02_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L328]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="KitchenCabinet_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L336]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="KitchenUtensils_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L343]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="LightC_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L351]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="LightC_01_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L358]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitA_01"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L366]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitB_01"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L374]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitB_02"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L382]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitB_03"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L390]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitA_02"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L398]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitC_01"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L406]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitD_01"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L414]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitD_02"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L421]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitE_01"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L429]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="PortraitE_02"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L436]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitA_01"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L444]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitA_02"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L452]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitC_01"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L459]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitC_02"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L466]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitD_01"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L473]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitD_02"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L480]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitD_03"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L487]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitD_04"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L494]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitB_01"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L501]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="DeskPortraitB_02"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L508]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Rangehood_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L516]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Refrigerator_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L524]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="SeasoningBox_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L531]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="ShoeRack_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L538]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="SofaC_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L545]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Tableware_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L552]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Trash_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L559]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Trash_01_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L566]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="TV_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L573]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="TV_02_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L580]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="TVCabinet_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L587]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Vase_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L594]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWall_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L601]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="Wardrobe_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L609]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWindow_01_001"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L616]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWindow_01_002"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L623]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWindow_01_003"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L630]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWindow_01_004"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L637]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWindow_01_005"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L644]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWindow_01_006"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L651]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWindow_01_007"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L658]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWindow_01_008"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L665]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/model[@name="RoomWindow_01_009"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L672]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/light[@name="LivingRoom_CeilingLight_0"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L676]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/light[@name="LivingRoom_CeilingLight_1"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L689]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/light[@name="LivingRoom_WallLight_0"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L702]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/light[@name="LivingRoom_WallLight_1"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L715]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/light[@name="TV_Light_0"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L728]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/light[@name="BedRoom_Portrait_Light_0"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L741]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/light[@name="BedRoom_CeilingLight_0"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L759]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;33mWarning [Utils.cc:129][0m [/sdf/world[@name="default"]/light[@name="Kitchen_CeilingLight_0"]/pose[@frame=""]:/workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf:L772]: XML Attribute[frame] in element[pose] not defined in SDF.
+[ign gazebo-1] [1;31m[Err] [SystemLoader.cc:94] [0m[1;31mFailed to load system plugin [[0m[1;31mlibgazebo_map_creator.so[0m[1;31m] : couldn't find shared library.[0m[1;31m[0m
+[create-3] [INFO] [1782735227.397337884] [ros_gz_sim]: Waiting messages on topic [robot_description].
+[create-3] [INFO] [1782735227.497501076] [ros_gz_sim]: Requested creation of entity.
+[create-3] [INFO] [1782735227.497546215] [ros_gz_sim]: OK creation of entity.
+[INFO] [create-3]: process has finished cleanly [pid 13123]
+[ign gazebo-1] amdgpu: os_same_file_description couldn't determine if two DRM fds reference the same file description.
+[ign gazebo-1] If they do, bad things may happen!
+[ign gazebo-1] amdgpu: drmGetDevice2 failed.
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitA_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitB_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitB_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitB_03.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitA_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitC_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitD_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitD_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitE_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitE_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitA_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitA_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitC_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitD_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitD_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitD_03.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitD_04.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitB_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitA_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitA_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitB_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitB_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitB_03.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitA_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitC_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitD_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitD_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitE_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/PortraitE_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitA_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitA_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitC_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitD_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitD_02.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitD_03.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitD_04.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitB_01.jpg[0m[1;31m][0m[1;31m[0m
+[ign gazebo-1] [1;31m[GUI] [Err] [SystemPaths.cc:474] [0m[1;31mCould not resolve file [[0m[1;31m../../../../photos/DeskPortraitA_02.jpg[0m[1;31m][0m[1;31m[0m
+[INFO] [pointcloud_to_laserscan_node-7]: process started with pid [13544]
+[INFO] [rtabmap-8]: process started with pid [13546]
+[INFO] [controller_server-9]: process started with pid [13548]
+[INFO] [smoother_server-10]: process started with pid [13550]
+[INFO] [planner_server-11]: process started with pid [13552]
+[INFO] [behavior_server-12]: process started with pid [13554]
+[INFO] [bt_navigator-13]: process started with pid [13556]
+[INFO] [waypoint_follower-14]: process started with pid [13558]
+[INFO] [velocity_smoother-15]: process started with pid [13560]
+[INFO] [lifecycle_manager-16]: process started with pid [13562]
+[pointcloud_to_laserscan_node-7] [WARN] [1782735238.098945843] [pc_to_scan]: New subscription discovered on topic '/scan', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[lifecycle_manager-16] [INFO] [1782735238.102649197] [lifecycle_manager_navigation]: Creating
+[waypoint_follower-14] [INFO] [1782735238.103543028] [waypoint_follower]: 
+[waypoint_follower-14] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-14] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-14] [INFO] [1782735238.104055283] [waypoint_follower]: Creating
+[lifecycle_manager-16] [INFO] [1782735238.104638368] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[smoother_server-10] [INFO] [1782735238.104648837] [smoother_server]: 
+[smoother_server-10] 	smoother_server lifecycle node launched. 
+[smoother_server-10] 	Waiting on external lifecycle transitions to activate
+[smoother_server-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-11] [INFO] [1782735238.104788706] [planner_server]: 
+[planner_server-11] 	planner_server lifecycle node launched. 
+[planner_server-11] 	Waiting on external lifecycle transitions to activate
+[planner_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-9] [INFO] [1782735238.106124873] [controller_server]: 
+[controller_server-9] 	controller_server lifecycle node launched. 
+[controller_server-9] 	Waiting on external lifecycle transitions to activate
+[controller_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-10] [INFO] [1782735238.106197183] [smoother_server]: Creating smoother server
+[planner_server-11] [INFO] [1782735238.106199263] [planner_server]: Creating
+[bt_navigator-13] [INFO] [1782735238.108313932] [bt_navigator]: 
+[bt_navigator-13] 	bt_navigator lifecycle node launched. 
+[bt_navigator-13] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-13] [INFO] [1782735238.108396131] [bt_navigator]: Creating
+[velocity_smoother-15] [INFO] [1782735238.108630199] [velocity_smoother]: 
+[velocity_smoother-15] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-15] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-9] [INFO] [1782735238.109773928] [controller_server]: Creating controller server
+[behavior_server-12] [INFO] [1782735238.111402552] [behavior_server]: 
+[behavior_server-12] 	behavior_server lifecycle node launched. 
+[behavior_server-12] 	Waiting on external lifecycle transitions to activate
+[behavior_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-11] [INFO] [1782735238.113206825] [global_costmap.global_costmap]: 
+[planner_server-11] 	global_costmap lifecycle node launched. 
+[planner_server-11] 	Waiting on external lifecycle transitions to activate
+[planner_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-11] [INFO] [1782735238.113583621] [global_costmap.global_costmap]: Creating Costmap
+[controller_server-9] [INFO] [1782735238.116519733] [local_costmap.local_costmap]: 
+[controller_server-9] 	local_costmap lifecycle node launched. 
+[controller_server-9] 	Waiting on external lifecycle transitions to activate
+[controller_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-9] [INFO] [1782735238.116847190] [local_costmap.local_costmap]: Creating Costmap
+[rviz2-5] [WARN] [1782735238.132788016] [rviz]: New publisher discovered on topic '/scan', offering incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[rtabmap-8] [INFO] [1782735238.261950227] [rtabmap]: rtabmap(maps): latch                      = true
+[rtabmap-8] [INFO] [1782735238.262073686] [rtabmap]: rtabmap(maps): map_filter_radius          = 0.000000
+[rtabmap-8] [INFO] [1782735238.262086596] [rtabmap]: rtabmap(maps): map_filter_angle           = 30.000000
+[rtabmap-8] [INFO] [1782735238.262092016] [rtabmap]: rtabmap(maps): map_cleanup                = true
+[rtabmap-8] [INFO] [1782735238.262096186] [rtabmap]: rtabmap(maps): map_always_update          = false
+[rtabmap-8] [INFO] [1782735238.262100106] [rtabmap]: rtabmap(maps): map_empty_ray_tracing      = true
+[rtabmap-8] [INFO] [1782735238.262104066] [rtabmap]: rtabmap(maps): cloud_output_voxelized     = true
+[rtabmap-8] [INFO] [1782735238.262107926] [rtabmap]: rtabmap(maps): cloud_subtract_filtering   = false
+[rtabmap-8] [INFO] [1782735238.262111716] [rtabmap]: rtabmap(maps): cloud_subtract_filtering_min_neighbors = 2
+[rtabmap-8] [INFO] [1782735238.262158635] [rtabmap]: rtabmap(maps): octomap_tree_depth         = 16
+[lifecycle_manager-16] [INFO] [1782735238.267674982] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-16] [INFO] [1782735238.267700582] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-9] [INFO] [1782735238.267859730] [controller_server]: Configuring controller interface
+[controller_server-9] [INFO] [1782735238.267968099] [controller_server]: getting goal checker plugins..
+[controller_server-9] [INFO] [1782735238.268042888] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-9] [INFO] [1782735238.268061738] [local_costmap.local_costmap]: Configuring
+[controller_server-9] [INFO] [1782735238.271462215] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-9] [INFO] [1782735238.273395506] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[rtabmap-8] [INFO] [1782735238.274949412] [rtabmap]: rtabmap: frame_id      = base_footprint
+[rtabmap-8] [INFO] [1782735238.274969261] [rtabmap]: rtabmap: map_frame_id  = map
+[rtabmap-8] [INFO] [1782735238.274973721] [rtabmap]: rtabmap: log_to_rosout_level  = 4
+[rtabmap-8] [INFO] [1782735238.274977361] [rtabmap]: rtabmap: initial_pose  = 
+[rtabmap-8] [INFO] [1782735238.274980801] [rtabmap]: rtabmap: use_action_for_goal  = false
+[rtabmap-8] [INFO] [1782735238.274984051] [rtabmap]: rtabmap: tf_delay      = 0.050000
+[rtabmap-8] [INFO] [1782735238.274990551] [rtabmap]: rtabmap: tf_tolerance  = 0.100000
+[rtabmap-8] [INFO] [1782735238.274993991] [rtabmap]: rtabmap: odom_sensor_sync   = false
+[rtabmap-8] [INFO] [1782735238.274997101] [rtabmap]: rtabmap: pub_loc_pose_only_when_localizing = false
+[rtabmap-8] [INFO] [1782735238.275000311] [rtabmap]: rtabmap: wait_for_transform = 2.000000
+[rtabmap-8] [INFO] [1782735238.275003881] [rtabmap]: rtabmap: gen_scan  = false
+[rtabmap-8] [INFO] [1782735238.275007041] [rtabmap]: rtabmap: gen_depth  = false
+[rtabmap-8] [INFO] [1782735238.275010231] [rtabmap]: rtabmap: scan_cloud_max_points = 0
+[rtabmap-8] [INFO] [1782735238.275013631] [rtabmap]: rtabmap: scan_cloud_is_2d = false
+[controller_server-9] [INFO] [1782735238.276701265] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-9] [INFO] [1782735238.276721074] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-9] [INFO] [1782735238.277082111] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-9] [INFO] [1782735238.281351550] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-9] [INFO] [1782735238.281731026] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-9] [INFO] [1782735238.281865755] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-9] [INFO] [1782735238.282966254] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-9] [INFO] [1782735238.283350020] [controller_server]: Setting transform_tolerance to 0.200000
+[rtabmap-8] [INFO] [1782735238.286376191] [rtabmap]: Setting RTAB-Map parameter "Grid/RangeMax"="10.0" (rosparam)
+[rtabmap-8] [INFO] [1782735238.287238173] [rtabmap]: Setting RTAB-Map parameter "Icp/PointToPlane"="true" (rosparam)
+[controller_server-9] [INFO] [1782735238.287436131] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-9] [INFO] [1782735238.287604989] [controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1782735238.287650279] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-9] [INFO] [1782735238.287794377] [controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1782735238.287836917] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-9] [INFO] [1782735238.287900896] [controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1782735238.287935176] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-9] [INFO] [1782735238.288051775] [controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1782735238.288104764] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-9] [INFO] [1782735238.288206823] [controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1782735238.288254603] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-9] [INFO] [1782735238.288332792] [controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1782735238.288380512] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-9] [INFO] [1782735238.288471251] [controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1782735238.288478571] [controller_server]: Controller Server has FollowPath  controllers available.
+[rtabmap-8] [INFO] [1782735238.289155844] [rtabmap]: Setting RTAB-Map parameter "Mem/IncrementalMemory"="false" (rosparam)
+[rtabmap-8] [INFO] [1782735238.289217794] [rtabmap]: Setting RTAB-Map parameter "Mem/InitWMWithAllNodes"="true" (rosparam)
+[lifecycle_manager-16] [INFO] [1782735238.292125096] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[smoother_server-10] [INFO] [1782735238.292272094] [smoother_server]: Configuring smoother server
+[rtabmap-8] [INFO] [1782735238.292797199] [rtabmap]: Setting RTAB-Map parameter "Reg/Strategy"="1" (rosparam)
+[smoother_server-10] [INFO] [1782735238.297729431] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-10] [INFO] [1782735238.297921590] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[rtabmap-8] [WARN] [1782735238.298917650] [rtabmap]: Setting "Grid/Sensor" parameter to 0 (default 1) as "subscribe_scan" or "subscribe_scan_cloud" or "gen_scan" is true. The occupancy grid map will be constructed from laser scans. To get occupancy grid map from cloud projection, set "Grid/Sensor" to true. To suppress this warning, add <param name="Grid/Sensor" type="string" value="0"/>
+[rtabmap-8] [INFO] [1782735238.298952700] [rtabmap]: Setting "Icp/PointToPlaneRadius" parameter to 0 (default 0.000000) as "subscribe_scan_cloud" is true.
+[rtabmap-8] [WARN] [1782735238.298963029] [rtabmap]: Setting "RGBD/ProximityPathMaxNeighbors" parameter to 1 (default 0) as "subscribe_scan_cloud" is true and "Reg/Strategy" uses ICP. To disable, set "RGBD/ProximityPathMaxNeighbors" to 0. To suppress this warning, add <param name="RGBD/ProximityPathMaxNeighbors" type="string" value="1"/>
+[rtabmap-8] [INFO] [1782735238.299902210] [rtabmap]: Update RTAB-Map parameter "Grid/MaxGroundHeight"="0.02" from database
+[rtabmap-8] [INFO] [1782735238.299925500] [rtabmap]: Update RTAB-Map parameter "Grid/MaxObstacleHeight"="1.8" from database
+[rtabmap-8] [INFO] [1782735238.299943700] [rtabmap]: Update RTAB-Map parameter "Mem/DepthCompressionFormat"=".png" from database
+[rtabmap-8] [INFO] [1782735238.299970960] [rtabmap]: Update RTAB-Map parameter "RGBD/NeighborLinkRefining"="True" from database
+[rtabmap-8] [INFO] [1782735238.300055219] [rtabmap]: RTAB-Map detection rate = 1.000000 Hz
+[rtabmap-8] [INFO] [1782735238.300090608] [rtabmap]: rtabmap: Using database from "/workspace/install/gazebo_g1/share/gazebo_g1/maps/small_house.db" (911 MB).
+[lifecycle_manager-16] [INFO] [1782735238.303581515] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-11] [INFO] [1782735238.304534816] [planner_server]: Configuring
+[planner_server-11] [INFO] [1782735238.304589985] [global_costmap.global_costmap]: Configuring
+[planner_server-11] [INFO] [1782735238.308048852] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-11] [INFO] [1782735238.310170971] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-11] [INFO] [1782735238.310984453] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-11] [INFO] [1782735238.310997753] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-11] [INFO] [1782735238.311264691] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-11] [INFO] [1782735238.312754476] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-11] [INFO] [1782735238.312765976] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-11] [INFO] [1782735238.313102013] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-11] [INFO] [1782735238.317588670] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-11] [INFO] [1782735238.317608749] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-11] [INFO] [1782735238.317905976] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-16] [INFO] [1782735238.321841678] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-12] [INFO] [1782735238.321967787] [behavior_server]: Configuring
+[behavior_server-12] [INFO] [1782735238.326653572] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-12] [INFO] [1782735238.327135947] [behavior_server]: Configuring spin
+[behavior_server-12] [INFO] [1782735238.329931400] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-12] [INFO] [1782735238.330366186] [behavior_server]: Configuring backup
+[behavior_server-12] [INFO] [1782735238.332519465] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-12] [INFO] [1782735238.332934161] [behavior_server]: Configuring drive_on_heading
+[behavior_server-12] [INFO] [1782735238.335030501] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-12] [INFO] [1782735238.336092641] [behavior_server]: Configuring assisted_teleop
+[behavior_server-12] [INFO] [1782735238.338914023] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-12] [INFO] [1782735238.339493058] [behavior_server]: Configuring wait
+[lifecycle_manager-16] [INFO] [1782735238.342369160] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-13] [INFO] [1782735238.342585408] [bt_navigator]: Configuring
+[lifecycle_manager-16] [INFO] [1782735238.374543889] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-14] [INFO] [1782735238.374717637] [waypoint_follower]: Configuring
+[waypoint_follower-14] [INFO] [1782735238.381098556] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-16] [INFO] [1782735238.381432032] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[velocity_smoother-15] [INFO] [1782735238.381551241] [velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-16] [INFO] [1782735238.383184405] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-9] [INFO] [1782735238.383262075] [controller_server]: Activating
+[controller_server-9] [INFO] [1782735238.383291434] [local_costmap.local_costmap]: Activating
+[controller_server-9] [INFO] [1782735238.383302254] [local_costmap.local_costmap]: Checking transform
+[controller_server-9] [INFO] [1782735238.383389633] [local_costmap.local_costmap]: start
+[pointcloud_to_laserscan_node-7] [INFO] [1782735238.399450388] [pc_to_scan]: Got a subscriber to laserscan, starting pointcloud subscriber
+[controller_server-9] [INFO] [1782735238.633982011] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1782735238.737147484] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-16] [INFO] [1782735238.737184474] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[smoother_server-10] [INFO] [1782735238.737408962] [smoother_server]: Activating
+[smoother_server-10] [INFO] [1782735238.737457581] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1782735238.839928981] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[lifecycle_manager-16] [INFO] [1782735238.839972571] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-11] [INFO] [1782735238.840192218] [planner_server]: Activating
+[planner_server-11] [INFO] [1782735238.840240548] [global_costmap.global_costmap]: Activating
+[planner_server-11] [INFO] [1782735238.840254208] [global_costmap.global_costmap]: Checking transform
+[planner_server-11] [INFO] [1782735238.840277868] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-11] [INFO] [1782735239.340326735] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-11] [INFO] [1782735239.840326512] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-11] [INFO] [1782735240.340323520] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-11] [INFO] [1782735240.840325127] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-11] [INFO] [1782735241.340322005] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-11] [INFO] [1782735241.840322952] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-11] [INFO] [1782735242.340323380] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-11] [INFO] [1782735242.840326587] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-11] [INFO] [1782735243.340329225] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-11] [INFO] [1782735243.840326152] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-11] [INFO] [1782735244.340322260] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rtabmap-8] [INFO] [1782735244.688726332] [rtabmap]: rtabmap: 2D occupancy grid map loaded (398x244).
+[planner_server-11] [INFO] [1782735244.840323997] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rtabmap-8] [INFO] [1782735244.857579100] [rtabmap]: rtabmap: Working Memory = 603, Local map = 603.
+[rtabmap-8] [INFO] [1782735244.857660510] [rtabmap]: rtabmap: Database version = "0.22.1".
+[rtabmap-8] [INFO] [1782735244.857670700] [rtabmap]: rtabmap: Localization mode (Mem/IncrementalMemory=false)
+[rtabmap-8] [INFO] [1782735244.871047270] [rtabmap]: Setup callbacks
+[rtabmap-8] [INFO] [1782735244.871134959] [rtabmap]: rtabmap: subscribe_depth = false
+[rtabmap-8] [INFO] [1782735244.871141619] [rtabmap]: rtabmap: subscribe_rgb = false
+[rtabmap-8] [INFO] [1782735244.871145259] [rtabmap]: rtabmap: subscribe_stereo = false
+[rtabmap-8] [INFO] [1782735244.871149279] [rtabmap]: rtabmap: subscribe_rgbd = false (rgbd_cameras=1)
+[rtabmap-8] [INFO] [1782735244.871153529] [rtabmap]: rtabmap: subscribe_sensor_data = false
+[rtabmap-8] [INFO] [1782735244.871157069] [rtabmap]: rtabmap: subscribe_odom_info = false
+[rtabmap-8] [INFO] [1782735244.871159989] [rtabmap]: rtabmap: subscribe_user_data = false
+[rtabmap-8] [INFO] [1782735244.871163309] [rtabmap]: rtabmap: subscribe_scan = false
+[rtabmap-8] [INFO] [1782735244.871167859] [rtabmap]: rtabmap: subscribe_scan_cloud = true
+[rtabmap-8] [INFO] [1782735244.871171829] [rtabmap]: rtabmap: subscribe_scan_descriptor = false
+[rtabmap-8] [INFO] [1782735244.871175029] [rtabmap]: rtabmap: topic_queue_size = 10
+[rtabmap-8] [INFO] [1782735244.871178599] [rtabmap]: rtabmap: sync_queue_size  = 10
+[rtabmap-8] [INFO] [1782735244.871181569] [rtabmap]: rtabmap: qos_image       = 0
+[rtabmap-8] [INFO] [1782735244.871184619] [rtabmap]: rtabmap: qos_camera_info = 0
+[rtabmap-8] [INFO] [1782735244.871187599] [rtabmap]: rtabmap: qos_scan        = 0
+[rtabmap-8] [INFO] [1782735244.871192579] [rtabmap]: rtabmap: qos_odom        = 0
+[rtabmap-8] [INFO] [1782735244.871196249] [rtabmap]: rtabmap: qos_user_data   = 0
+[rtabmap-8] [INFO] [1782735244.871199119] [rtabmap]: rtabmap: approx_sync     = true
+[rtabmap-8] [INFO] [1782735244.871207109] [rtabmap]: Setup scan callback
+[rtabmap-8] [INFO] [1782735244.871992721] [rtabmap]: 
+[rtabmap-8] rtabmap subscribed to (approx sync):
+[rtabmap-8]    /odom \
+[rtabmap-8]    /lidar/points
+[rtabmap-8] [WARN] [1782735244.873139230] [rtabmap]: There is no image subscription, bag-of-words loop closure detection will be disabled...
+[rtabmap-8] [WARN] [1782735244.873155450] [rtabmap]: Setting Kp/MaxFeatures=-1 (bag-of-words disabled)
+[rtabmap-8] [INFO] [1782735244.945237353] [rtabmap]: rtabmap (1660): Rate=1.00s, Limit=0.000s, Conversion=0.0002s, RTAB-Map=0.0393s, Maps update=0.0007s pub=0.0004s delay=0.0570s (local map=603, WM=603)
+[planner_server-11] [INFO] [1782735244.945671159] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 398 X 244 at 0.050000 m/pix
+[planner_server-11] [INFO] [1782735245.340393284] [global_costmap.global_costmap]: start
+[rtabmap-8] [INFO] [1782735245.993019386] [rtabmap]: rtabmap (1661): Rate=1.00s, Limit=0.000s, Conversion=0.0102s, RTAB-Map=0.0783s, Maps update=0.0008s pub=0.0000s delay=0.0940s (local map=603, WM=603)
+[planner_server-11] [INFO] [1782735246.391071939] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-11] [INFO] [1782735246.391757202] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1782735246.494071234] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-16] [INFO] [1782735246.494119543] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-12] [INFO] [1782735246.494350071] [behavior_server]: Activating
+[behavior_server-12] [INFO] [1782735246.494373321] [behavior_server]: Activating spin
+[behavior_server-12] [INFO] [1782735246.494384911] [behavior_server]: Activating backup
+[behavior_server-12] [INFO] [1782735246.494391331] [behavior_server]: Activating drive_on_heading
+[behavior_server-12] [INFO] [1782735246.494398361] [behavior_server]: Activating assisted_teleop
+[behavior_server-12] [INFO] [1782735246.494408581] [behavior_server]: Activating wait
+[behavior_server-12] [INFO] [1782735246.494417550] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1782735246.597032139] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-16] [INFO] [1782735246.597074908] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-13] [INFO] [1782735246.597299986] [bt_navigator]: Activating
+[bt_navigator-13] [INFO] [1782735246.618902677] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1782735246.721106879] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-16] [INFO] [1782735246.721145119] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-14] [INFO] [1782735246.721369697] [waypoint_follower]: Activating
+[waypoint_follower-14] [INFO] [1782735246.721406077] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1782735246.823862116] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-16] [INFO] [1782735246.823895396] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[velocity_smoother-15] [INFO] [1782735246.824125304] [velocity_smoother]: Activating
+[velocity_smoother-15] [INFO] [1782735246.824178553] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1782735246.926883320] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[lifecycle_manager-16] [INFO] [1782735246.926920180] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-16] [INFO] [1782735246.926928440] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[rtabmap-8] [INFO] [1782735246.934975682] [rtabmap]: rtabmap (1662): Rate=1.00s, Limit=0.000s, Conversion=0.0002s, RTAB-Map=0.0306s, Maps update=0.0007s pub=0.0000s delay=0.0340s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735248.021256983] [rtabmap]: rtabmap (1663): Rate=1.00s, Limit=0.000s, Conversion=0.0002s, RTAB-Map=0.0308s, Maps update=0.0007s pub=0.0000s delay=0.0450s (local map=603, WM=603)
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:04.905) Rtabmap.cpp:1368::process() Update map correction based on last localization saved in database! correction = xyz=-6.298518,-1.893551,-0.194448 rpy=0.028921,-0.016696,1.688495, nearest id = 1649 of last pose = xyz=-6.298518,-1.893551,-0.194448 rpy=0.028921,-0.016696,1.688495, odom = xyz=0.000000,-0.000000,0.000000 rpy=0.000000,0.000000,-0.000000[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:04.919) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:05.925) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:06.915) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:08.001) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [INFO] [1782735249.081818713] [rtabmap]: rtabmap (1664): Rate=1.00s, Limit=0.000s, Conversion=0.0103s, RTAB-Map=0.0527s, Maps update=0.0008s pub=0.0000s delay=0.0640s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735250.083807569] [rtabmap]: rtabmap (1665): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0503s, Maps update=0.0006s pub=0.0000s delay=0.0530s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735251.137807852] [rtabmap]: rtabmap (1666): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0332s, Maps update=0.0006s pub=0.0000s delay=0.0440s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735252.192216711] [rtabmap]: rtabmap (1667): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0336s, Maps update=0.0008s pub=0.0000s delay=0.0350s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735253.184896077] [rtabmap]: rtabmap (1668): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0341s, Maps update=0.0006s pub=0.0000s delay=0.0420s (local map=603, WM=603)
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:09.040) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:10.044) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:11.115) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:12.169) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:13.161) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [INFO] [1782735254.218968862] [rtabmap]: rtabmap (1669): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0353s, Maps update=0.0006s pub=0.0000s delay=0.0350s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735255.316901121] [rtabmap]: rtabmap (1670): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0301s, Maps update=0.0009s pub=0.0000s delay=0.0370s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735256.317650888] [rtabmap]: rtabmap (1671): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0339s, Maps update=0.0006s pub=0.0000s delay=0.0420s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735257.324021482] [rtabmap]: rtabmap (1672): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0338s, Maps update=0.0006s pub=0.0000s delay=0.0360s (local map=603, WM=603)
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:14.195) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:15.295) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:16.294) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:17.300) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [INFO] [1782735258.418856550] [rtabmap]: rtabmap (1673): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0351s, Maps update=0.0007s pub=0.0000s delay=0.0390s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735259.460836880] [rtabmap]: rtabmap (1674): Rate=1.00s, Limit=0.000s, Conversion=0.0102s, RTAB-Map=0.0362s, Maps update=0.0007s pub=0.0000s delay=0.0590s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735260.444778929] [rtabmap]: rtabmap (1675): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0349s, Maps update=0.0010s pub=0.0000s delay=0.0410s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735261.519058506] [rtabmap]: rtabmap (1676): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0329s, Maps update=0.0007s pub=0.0000s delay=0.0450s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735262.554778596] [rtabmap]: rtabmap (1677): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0338s, Maps update=0.0007s pub=0.0000s delay=0.0500s (local map=603, WM=603)
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:18.394) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:19.436) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:20.420) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:21.495) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:22.530) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [INFO] [1782735263.648984121] [rtabmap]: rtabmap (1678): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0369s, Maps update=0.0007s pub=0.0000s delay=0.0440s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735264.702719896] [rtabmap]: rtabmap (1679): Rate=1.00s, Limit=0.000s, Conversion=0.0002s, RTAB-Map=0.0366s, Maps update=0.0007s pub=0.0000s delay=0.0460s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735265.772350708] [rtabmap]: rtabmap (1680): Rate=1.00s, Limit=0.000s, Conversion=0.0002s, RTAB-Map=0.0354s, Maps update=0.0009s pub=0.0000s delay=0.0520s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735266.774183845] [rtabmap]: rtabmap (1681): Rate=1.00s, Limit=0.000s, Conversion=0.0102s, RTAB-Map=0.0361s, Maps update=0.0007s pub=0.0000s delay=0.0540s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735267.796019869] [rtabmap]: rtabmap (1682): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0348s, Maps update=0.0008s pub=0.0000s delay=0.0650s (local map=603, WM=603)
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:23.623) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:24.676) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:25.748) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:26.748) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:27.772) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [INFO] [1782735268.866214226] [rtabmap]: rtabmap (1683): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0324s, Maps update=0.0007s pub=0.0000s delay=0.0370s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735269.887624864] [rtabmap]: rtabmap (1684): Rate=1.00s, Limit=0.000s, Conversion=0.0102s, RTAB-Map=0.0370s, Maps update=0.0008s pub=0.0000s delay=0.0580s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735270.882083992] [rtabmap]: rtabmap (1685): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0324s, Maps update=0.0006s pub=0.0000s delay=0.0360s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735271.970738962] [rtabmap]: rtabmap (1686): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0317s, Maps update=0.0006s pub=0.0000s delay=0.0400s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735273.000322434] [rtabmap]: rtabmap (1687): Rate=1.00s, Limit=0.000s, Conversion=0.0101s, RTAB-Map=0.0349s, Maps update=0.0007s pub=0.0000s delay=0.0570s (local map=603, WM=603)
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:28.843) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:29.861) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:30.860) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:31.948) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:32.976) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [INFO] [1782735273.986174676] [rtabmap]: rtabmap (1688): Rate=1.00s, Limit=0.000s, Conversion=0.0002s, RTAB-Map=0.0344s, Maps update=0.0007s pub=0.0000s delay=0.0410s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735275.049725207] [rtabmap]: rtabmap (1689): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0317s, Maps update=0.0007s pub=0.0000s delay=0.0420s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735276.117523017] [rtabmap]: rtabmap (1690): Rate=1.00s, Limit=0.000s, Conversion=0.0002s, RTAB-Map=0.0313s, Maps update=0.0007s pub=0.0000s delay=0.0340s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735277.109254432] [rtabmap]: rtabmap (1691): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0322s, Maps update=0.0007s pub=0.0000s delay=0.0390s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735278.144231199] [rtabmap]: rtabmap (1692): Rate=1.00s, Limit=0.000s, Conversion=0.0002s, RTAB-Map=0.0360s, Maps update=0.0007s pub=0.0000s delay=0.0460s (local map=603, WM=603)
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:33.961) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:35.026) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:36.095) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:37.086) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:38.119) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [INFO] [1782735279.218242258] [rtabmap]: rtabmap (1693): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0321s, Maps update=0.0007s pub=0.0000s delay=0.0350s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735280.224872899] [rtabmap]: rtabmap (1694): Rate=1.00s, Limit=0.000s, Conversion=0.0103s, RTAB-Map=0.0328s, Maps update=0.0007s pub=0.0000s delay=0.0530s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735281.232544510] [rtabmap]: rtabmap (1695): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0358s, Maps update=0.0007s pub=0.0000s delay=0.0390s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735282.322876412] [rtabmap]: rtabmap (1696): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0346s, Maps update=0.0007s pub=0.0000s delay=0.0400s (local map=603, WM=603)
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:39.195) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:40.201) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:41.206) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:42.299) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [INFO] [1782735283.347707007] [rtabmap]: rtabmap (1697): Rate=1.00s, Limit=0.000s, Conversion=0.0102s, RTAB-Map=0.0330s, Maps update=0.0007s pub=0.0000s delay=0.0560s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735284.335161423] [rtabmap]: rtabmap (1698): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0347s, Maps update=0.0007s pub=0.0000s delay=0.0410s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735285.419896079] [rtabmap]: rtabmap (1699): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0321s, Maps update=0.0006s pub=0.0000s delay=0.0440s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735286.468133898] [rtabmap]: rtabmap (1700): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0358s, Maps update=0.0006s pub=0.0000s delay=0.0520s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735287.455140428] [rtabmap]: rtabmap (1701): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0315s, Maps update=0.0007s pub=0.0000s delay=0.0390s (local map=603, WM=603)
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:43.324) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:44.310) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:45.397) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:46.443) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:47.433) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [INFO] [1782735288.504652165] [rtabmap]: rtabmap (1702): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0350s, Maps update=0.0007s pub=0.0000s delay=0.0450s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735289.577174479] [rtabmap]: rtabmap (1703): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0337s, Maps update=0.0008s pub=0.0000s delay=0.0350s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735290.600414969] [rtabmap]: rtabmap (1704): Rate=1.00s, Limit=0.000s, Conversion=0.0102s, RTAB-Map=0.0324s, Maps update=0.0007s pub=0.0000s delay=0.0490s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735291.620186043] [rtabmap]: rtabmap (1705): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0337s, Maps update=0.0007s pub=0.0000s delay=0.0480s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735292.680643634] [rtabmap]: rtabmap (1706): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0318s, Maps update=0.0010s pub=0.0000s delay=0.0360s (local map=603, WM=603)
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:48.479) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:49.552) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:50.577) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:51.597) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:52.656) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [INFO] [1782735293.686764680] [rtabmap]: rtabmap (1707): Rate=1.00s, Limit=0.000s, Conversion=0.0102s, RTAB-Map=0.0293s, Maps update=0.0006s pub=0.0000s delay=0.0490s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735294.673965558] [rtabmap]: rtabmap (1708): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0304s, Maps update=0.0006s pub=0.0000s delay=0.0350s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735295.755671334] [rtabmap]: rtabmap (1709): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0305s, Maps update=0.0006s pub=0.0000s delay=0.0400s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735296.785717098] [rtabmap]: rtabmap (1710): Rate=1.00s, Limit=0.000s, Conversion=0.0102s, RTAB-Map=0.0336s, Maps update=0.0006s pub=0.0000s delay=0.0560s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735297.767225762] [rtabmap]: rtabmap (1711): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0304s, Maps update=0.0006s pub=0.0000s delay=0.0370s (local map=603, WM=603)
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:53.666) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:54.652) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:55.734) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:56.763) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:57.745) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [INFO] [1782735298.817953867] [rtabmap]: rtabmap (1712): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0312s, Maps update=0.0007s pub=0.0000s delay=0.0440s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735299.869577063] [rtabmap]: rtabmap (1713): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0340s, Maps update=0.0006s pub=0.0000s delay=0.0500s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735300.886288946] [rtabmap]: rtabmap (1714): Rate=1.00s, Limit=0.000s, Conversion=0.0102s, RTAB-Map=0.0297s, Maps update=0.0006s pub=0.0000s delay=0.0460s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735301.912986153] [rtabmap]: rtabmap (1715): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0322s, Maps update=0.0006s pub=0.0000s delay=0.0650s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735302.968193324] [rtabmap]: rtabmap (1716): Rate=1.00s, Limit=0.000s, Conversion=0.0002s, RTAB-Map=0.0298s, Maps update=0.0007s pub=0.0000s delay=0.0350s (local map=603, WM=603)
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:58.795) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:14:59.844) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:00.865) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:01.890) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:02.946) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [INFO] [1782735303.974161252] [rtabmap]: rtabmap (1717): Rate=1.00s, Limit=0.000s, Conversion=0.0102s, RTAB-Map=0.0324s, Maps update=0.0009s pub=0.0000s delay=0.0510s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735304.962471940] [rtabmap]: rtabmap (1718): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0300s, Maps update=0.0006s pub=0.0000s delay=0.0340s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735306.061801045] [rtabmap]: rtabmap (1719): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0332s, Maps update=0.0007s pub=0.0000s delay=0.0400s (local map=603, WM=603)
+[rviz2-5] [INFO] [1782735306.455871346] [rviz2]: Trying to create a map of size 398 x 244 using 1 swatches
+[rviz2-5] [ERROR] [1782735306.488282703] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-5] active samplers with a different type refer to the same texture image unit
+[rtabmap-8] [INFO] [1782735307.086858257] [rtabmap]: rtabmap (1720): Rate=1.00s, Limit=0.000s, Conversion=0.0102s, RTAB-Map=0.0307s, Maps update=0.0008s pub=0.0000s delay=0.0520s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735308.073120375] [rtabmap]: rtabmap (1721): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0318s, Maps update=0.0006s pub=0.0000s delay=0.0380s (local map=603, WM=603)
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:03.950) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:04.941) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:06.037) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:07.065) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:08.050) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [INFO] [1782735309.130810313] [rtabmap]: rtabmap (1722): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0292s, Maps update=0.0007s pub=0.0000s delay=0.0420s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735310.176213429] [rtabmap]: rtabmap (1723): Rate=1.00s, Limit=0.000s, Conversion=0.0103s, RTAB-Map=0.0310s, Maps update=0.0008s pub=0.0000s delay=0.0570s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735311.168909044] [rtabmap]: rtabmap (1724): Rate=1.00s, Limit=0.000s, Conversion=0.0101s, RTAB-Map=0.0303s, Maps update=0.0008s pub=0.0000s delay=0.0490s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735312.190948966] [rtabmap]: rtabmap (1725): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0288s, Maps update=0.0006s pub=0.0000s delay=0.0440s (local map=603, WM=603)
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:09.110) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:10.154) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:11.147) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:12.170) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:13.235) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [INFO] [1782735313.257069042] [rtabmap]: rtabmap (1726): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0303s, Maps update=0.0007s pub=0.0000s delay=0.0350s (local map=603, WM=603)
+[rviz2-5] [INFO] [1782735313.671477307] [rviz2]: Setting estimate pose: Frame:map, Position(-0.502481, -0.0882692, 0), Orientation(0, 0, -0.00376721, 0.999993) = Angle: -0.00753445
+[rtabmap-8] [INFO] [1782735313.671728724] [rtabmap]: initialpose received: xyz=-0.502481,-0.088269,0.000000 rpy=0.000000,0.000000,-0.007534
+[rtabmap-8] [INFO] [1782735314.276089973] [rtabmap]: rtabmap (1727): Rate=1.00s, Limit=0.000s, Conversion=0.0102s, RTAB-Map=0.0452s, Maps update=0.0006s pub=0.0000s delay=0.0600s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735315.265508481] [rtabmap]: rtabmap (1728): Rate=1.00s, Limit=0.000s, Conversion=0.0002s, RTAB-Map=0.0425s, Maps update=0.0006s pub=0.0000s delay=0.0450s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735316.343819109] [rtabmap]: rtabmap (1729): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0414s, Maps update=0.0006s pub=0.0000s delay=0.0570s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735317.377562917] [rtabmap]: rtabmap (1730): Rate=1.00s, Limit=0.000s, Conversion=0.0102s, RTAB-Map=0.0434s, Maps update=0.0007s pub=0.0000s delay=0.0620s (local map=603, WM=603)
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:14.230) Rtabmap.cpp:1368::process() Update map correction based on last localization saved in database! correction = xyz=-0.502481,-0.088269,0.000000 rpy=0.000000,0.000000,-0.007534, nearest id = 573 of last pose = xyz=-0.502481,-0.088269,0.000000 rpy=0.000000,0.000000,-0.007534, odom = xyz=-0.000000,-0.000000,0.000000 rpy=0.000000,-0.000000,0.000000[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:14.241) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:14.241) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:15.232) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:15.232) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:16.311) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:16.311) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:17.343) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:17.343) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [INFO] [1782735318.364392270] [rtabmap]: rtabmap (1731): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0445s, Maps update=0.0008s pub=0.0000s delay=0.0510s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735319.429393577] [rtabmap]: rtabmap (1732): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0430s, Maps update=0.0008s pub=0.0000s delay=0.0590s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735320.458540590] [rtabmap]: rtabmap (1733): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0428s, Maps update=0.0006s pub=0.0000s delay=0.0590s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735321.451215485] [rtabmap]: rtabmap (1734): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0424s, Maps update=0.0007s pub=0.0000s delay=0.0490s (local map=603, WM=603)
+[rtabmap-8] [INFO] [1782735322.491875677] [rtabmap]: rtabmap (1735): Rate=1.00s, Limit=0.000s, Conversion=0.0001s, RTAB-Map=0.0426s, Maps update=0.0006s pub=0.0000s delay=0.0440s (local map=603, WM=603)
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[bt_navigator-13] [INFO] [1782735322.920179398] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-13] [INFO] [1782735322.920250047] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-13] [INFO] [1782735322.920306007] [bt_navigator]: Deactivating
+[bt_navigator-13] [INFO] [1782735322.920323716] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1782735322.920178558] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-16] [INFO] [1782735322.920251157] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[lifecycle_manager-16] [INFO] [1782735322.920288007] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[waypoint_follower-14] [INFO] [1782735322.920179748] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[waypoint_follower-14] [INFO] [1782735322.920278097] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-14] [INFO] [1782735322.920330016] [waypoint_follower]: Deactivating
+[waypoint_follower-14] [INFO] [1782735322.920343896] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[velocity_smoother-15] [INFO] [1782735322.920179868] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[velocity_smoother-15] [INFO] [1782735322.920274507] [velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-15] [INFO] [1782735322.920321556] [velocity_smoother]: Deactivating
+[velocity_smoother-15] [INFO] [1782735322.920339286] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[behavior_server-12] [INFO] [1782735322.920183198] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[behavior_server-12] [INFO] [1782735322.920251277] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-12] [INFO] [1782735322.920305317] [behavior_server]: Deactivating
+[behavior_server-12] [INFO] [1782735322.920331276] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[controller_server-9] [INFO] [1782735322.920188778] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-9] [INFO] [1782735322.920254987] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-9] [INFO] [1782735322.920308717] [controller_server]: Deactivating
+[controller_server-9] [INFO] [1782735322.920341006] [local_costmap.local_costmap]: Deactivating
+[smoother_server-10] [INFO] [1782735322.920192728] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[smoother_server-10] [INFO] [1782735322.920250037] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[smoother_server-10] [INFO] [1782735322.920305297] [smoother_server]: Deactivating
+[smoother_server-10] [INFO] [1782735322.920322086] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[pointcloud_to_laserscan_node-7] [INFO] [1782735322.920192098] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[rviz2-5] [INFO] [1782735322.920206978] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-2] [INFO] [1782735322.920200358] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-4] [INFO] [1782735322.920203658] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-11] [INFO] [1782735322.920222707] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-11] [INFO] [1782735322.920279377] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-11] [INFO] [1782735322.920320506] [planner_server]: Deactivating
+[planner_server-11] [INFO] [1782735322.920352486] [global_costmap.global_costmap]: Deactivating
+[rtabmap-8] [INFO] [1782735322.920585644] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[behavior_server-12] [INFO] [1782735322.930484238] [behavior_server]: Cleaning up
+[smoother_server-10] [INFO] [1782735322.930484208] [smoother_server]: Cleaning up
+[bt_navigator-13] [INFO] [1782735322.930489978] [bt_navigator]: Cleaning up
+[waypoint_follower-14] [INFO] [1782735322.930611637] [waypoint_follower]: Cleaning up
+[velocity_smoother-15] [INFO] [1782735322.930622547] [velocity_smoother]: Cleaning up
+[velocity_smoother-15] [INFO] [1782735322.930661837] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[velocity_smoother-15] [INFO] [1782735322.932061483] [velocity_smoother]: Destroying
+[behavior_server-12] [INFO] [1782735322.932374350] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[waypoint_follower-14] [INFO] [1782735322.932519349] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[smoother_server-10] [INFO] [1782735322.933835936] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[waypoint_follower-14] [INFO] [1782735322.934696118] [waypoint_follower]: Destroying
+[smoother_server-10] [INFO] [1782735322.935294162] [smoother_server]: Destroying
+[behavior_server-12] [INFO] [1782735322.941797439] [behavior_server]: Destroying
+[bt_navigator-13] [INFO] [1782735322.956603996] [bt_navigator]: Completed Cleaning up
+[bt_navigator-13] [INFO] [1782735322.956641335] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[bt_navigator-13] [INFO] [1782735322.959681006] [bt_navigator]: Destroying
+[rtabmap-8] [INFO] [1782735322.970980297] [rtabmap]: Parameters are not saved (No configuration file provided...)
+[controller_server-9] [INFO] [1782735322.983530736] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-9] [INFO] [1782735322.993672768] [controller_server]: Cleaning up
+[controller_server-9] [INFO] [1782735322.993744067] [local_costmap.local_costmap]: Cleaning up
+[controller_server-9] [INFO] [1782735322.997867007] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[lifecycle_manager-16] [INFO] [1782735322.999326803] [lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+[controller_server-9] [INFO] [1782735322.999779409] [local_costmap.local_costmap]: Destroying
+[controller_server-9] [INFO] [1782735323.001987977] [controller_server]: Destroying
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 13120]
+[INFO] [pointcloud_to_laserscan_node-7]: process has finished cleanly [pid 13544]
+[INFO] [parameter_bridge-4]: process has finished cleanly [pid 13125]
+[INFO] [velocity_smoother-15]: process has finished cleanly [pid 13560]
+[INFO] [waypoint_follower-14]: process has finished cleanly [pid 13558]
+[INFO] [smoother_server-10]: process has finished cleanly [pid 13550]
+[INFO] [behavior_server-12]: process has finished cleanly [pid 13554]
+[INFO] [bt_navigator-13]: process has finished cleanly [pid 13556]
+[INFO] [python3-6]: process has finished cleanly [pid 13129]
+[INFO] [rviz2-5]: process has finished cleanly [pid 13127]
+[INFO] [lifecycle_manager-16]: process has finished cleanly [pid 13562]
+[INFO] [controller_server-9]: process has finished cleanly [pid 13548]
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:18.329) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:18.329) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:19.395) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:19.395) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:20.424) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:20.424) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:21.418) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:21.418) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:22.458) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] [33m[ WARN] (2026-06-29 12:15:22.458) Memory.cpp:3217::computeTransform() Missing visual features or missing raw data to compute them. Transform cannot be estimated.[0m
+[rtabmap-8] rtabmap: Saving database/long-term memory... (located at /workspace/install/gazebo_g1/share/gazebo_g1/maps/small_house.db)
+[rtabmap-8] rtabmap: 2D occupancy grid map saved.
+[planner_server-11] [INFO] [1782735323.340552765] [planner_server]: Deactivating plugin GridBased of type NavfnPlanner
+[planner_server-11] [INFO] [1782735323.340599305] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-11] [INFO] [1782735323.350733757] [planner_server]: Cleaning up
+[planner_server-11] [INFO] [1782735323.352512709] [global_costmap.global_costmap]: Cleaning up
+[planner_server-11] [INFO] [1782735323.353334571] [planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[planner_server-11] [INFO] [1782735323.353390391] [planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[planner_server-11] [INFO] [1782735323.355340612] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-11] [INFO] [1782735323.356148164] [global_costmap.global_costmap]: Destroying
+[planner_server-11] [INFO] [1782735323.357581410] [planner_server]: Destroying
+[INFO] [planner_server-11]: process has finished cleanly [pid 13552]
+[rtabmap-8] rtabmap: Saving database/long-term memory...done! (located at /workspace/install/gazebo_g1/share/gazebo_g1/maps/small_house.db, 911 MB)
+[INFO] [rtabmap-8]: process has finished cleanly [pid 13546]
+[ERROR] [ign gazebo-1]: process has died [pid 13118, exit code -2, cmd 'ruby /usr/bin/ign gazebo /workspace/install/aws_robomaker_small_house_world/share/aws_robomaker_small_house_world/worlds/small_house.sdf -r -v -v1 --force-version 6'].
+[INFO] [launch]: process[ign gazebo-1] was required: shutting down launched system

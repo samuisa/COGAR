@@ -1,0 +1,139 @@
+\doxysection{auto\+\_\+explorer.\+Auto\+Explorer Class Reference}
+\hypertarget{classauto__explorer_1_1AutoExplorer}{}\label{classauto__explorer_1_1AutoExplorer}\index{auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}}
+
+
+Node that handles random movements to map the environment.  
+
+
+
+
+Inheritance diagram for auto\+\_\+explorer.\+Auto\+Explorer\+:
+% FIG 0
+
+
+Collaboration diagram for auto\+\_\+explorer.\+Auto\+Explorer\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classauto__explorer_1_1AutoExplorer_a44fb2e6d28fa83642f5625cfd109c860}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em Constructor of the \doxylink{classauto__explorer_1_1AutoExplorer}{Auto\+Explorer} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classauto__explorer_1_1AutoExplorer_a7aa847bac74d491b4abe025dade7d9e4}{scan\+\_\+callback}} (self, msg)
+\begin{DoxyCompactList}\small\item\em Callback executed upon receiving a new Laser\+Scan message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classauto__explorer_1_1AutoExplorer_a8b766f6a935ab68e69926ba9f9840905}{cmd\+\_\+pub}} = self.\+create\+\_\+publisher(Twist, \textquotesingle{}/cmd\+\_\+vel\textquotesingle{}, 10)
+\item 
+\mbox{\hyperlink{classauto__explorer_1_1AutoExplorer_a1f2590d47a0416fbc4545856d1291648}{scan\+\_\+sub}} = self.\+create\+\_\+subscription(Laser\+Scan, \textquotesingle{}/scan\textquotesingle{}, self.\+scan\+\_\+callback, qos\+\_\+profile\+\_\+sensor\+\_\+data)
+\item 
+float \mbox{\hyperlink{classauto__explorer_1_1AutoExplorer_ae841b0b32f6aa1c64827920ae1c25e0f}{speed\+\_\+linear}} = 0.\+25
+\item 
+float \mbox{\hyperlink{classauto__explorer_1_1AutoExplorer_a0227819f70868c776517f8ac798b2fd3}{speed\+\_\+angular}} = 0.\+40
+\item 
+float \mbox{\hyperlink{classauto__explorer_1_1AutoExplorer_a91d97ff910c5352846663c412c4a44e5}{safe\+\_\+distance}} = 0.\+6
+\item 
+bool \mbox{\hyperlink{classauto__explorer_1_1AutoExplorer_a2b526afc38fc28b67108a12ac6ba37f8}{is\+\_\+turning}} = False
+\item 
+float \mbox{\hyperlink{classauto__explorer_1_1AutoExplorer_a11d7ddb361adb00820e2e208c59e020a}{turn\+\_\+direction}} = 1.\+0
+\item 
+float \mbox{\hyperlink{classauto__explorer_1_1AutoExplorer_a255fd71208da2b485ce127beb62ccb01}{turn\+\_\+end\+\_\+time}} = 0.\+0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Node that handles random movements to map the environment. 
+
+Subscribes to the /scan topic to read obstacle distances and publishes commands on the /cmd\+\_\+vel topic to guide the robot while avoiding collisions using a simple heuristic approach. 
+
+\label{doc-constructors}
+\Hypertarget{classauto__explorer_1_1AutoExplorer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classauto__explorer_1_1AutoExplorer_a44fb2e6d28fa83642f5625cfd109c860}\index{auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classauto__explorer_1_1AutoExplorer_a44fb2e6d28fa83642f5625cfd109c860} 
+auto\+\_\+explorer.\+Auto\+Explorer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Constructor of the \doxylink{classauto__explorer_1_1AutoExplorer}{Auto\+Explorer} class. 
+
+Initializes publishers/subscribers and defines the kinematic parameters and safety distances of the robot. 
+
+\label{doc-func-members}
+\Hypertarget{classauto__explorer_1_1AutoExplorer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classauto__explorer_1_1AutoExplorer_a7aa847bac74d491b4abe025dade7d9e4}\index{auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}!scan\_callback@{scan\_callback}}
+\index{scan\_callback@{scan\_callback}!auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}}
+\doxysubsubsection{\texorpdfstring{scan\_callback()}{scan\_callback()}}
+{\footnotesize\ttfamily \label{classauto__explorer_1_1AutoExplorer_a7aa847bac74d491b4abe025dade7d9e4} 
+auto\+\_\+explorer.\+Auto\+Explorer.\+scan\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{msg}{}\end{DoxyParamCaption})}
+
+
+
+Callback executed upon receiving a new Laser\+Scan message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & sensor\+\_\+msgs/\+Laser\+Scan message containing Li\+DAR data. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{classauto__explorer_1_1AutoExplorer_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classauto__explorer_1_1AutoExplorer_a8b766f6a935ab68e69926ba9f9840905}\index{auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}!cmd\_pub@{cmd\_pub}}
+\index{cmd\_pub@{cmd\_pub}!auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}}
+\doxysubsubsection{\texorpdfstring{cmd\_pub}{cmd\_pub}}
+{\footnotesize\ttfamily \label{classauto__explorer_1_1AutoExplorer_a8b766f6a935ab68e69926ba9f9840905} 
+auto\+\_\+explorer.\+Auto\+Explorer.\+cmd\+\_\+pub = self.\+create\+\_\+publisher(Twist, \textquotesingle{}/cmd\+\_\+vel\textquotesingle{}, 10)}
+
+\Hypertarget{classauto__explorer_1_1AutoExplorer_a2b526afc38fc28b67108a12ac6ba37f8}\index{auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}!is\_turning@{is\_turning}}
+\index{is\_turning@{is\_turning}!auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}}
+\doxysubsubsection{\texorpdfstring{is\_turning}{is\_turning}}
+{\footnotesize\ttfamily \label{classauto__explorer_1_1AutoExplorer_a2b526afc38fc28b67108a12ac6ba37f8} 
+bool auto\+\_\+explorer.\+Auto\+Explorer.\+is\+\_\+turning = False}
+
+\Hypertarget{classauto__explorer_1_1AutoExplorer_a91d97ff910c5352846663c412c4a44e5}\index{auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}!safe\_distance@{safe\_distance}}
+\index{safe\_distance@{safe\_distance}!auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}}
+\doxysubsubsection{\texorpdfstring{safe\_distance}{safe\_distance}}
+{\footnotesize\ttfamily \label{classauto__explorer_1_1AutoExplorer_a91d97ff910c5352846663c412c4a44e5} 
+float auto\+\_\+explorer.\+Auto\+Explorer.\+safe\+\_\+distance = 0.\+6}
+
+\Hypertarget{classauto__explorer_1_1AutoExplorer_a1f2590d47a0416fbc4545856d1291648}\index{auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}!scan\_sub@{scan\_sub}}
+\index{scan\_sub@{scan\_sub}!auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}}
+\doxysubsubsection{\texorpdfstring{scan\_sub}{scan\_sub}}
+{\footnotesize\ttfamily \label{classauto__explorer_1_1AutoExplorer_a1f2590d47a0416fbc4545856d1291648} 
+auto\+\_\+explorer.\+Auto\+Explorer.\+scan\+\_\+sub = self.\+create\+\_\+subscription(Laser\+Scan, \textquotesingle{}/scan\textquotesingle{}, self.\+scan\+\_\+callback, qos\+\_\+profile\+\_\+sensor\+\_\+data)}
+
+\Hypertarget{classauto__explorer_1_1AutoExplorer_a0227819f70868c776517f8ac798b2fd3}\index{auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}!speed\_angular@{speed\_angular}}
+\index{speed\_angular@{speed\_angular}!auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}}
+\doxysubsubsection{\texorpdfstring{speed\_angular}{speed\_angular}}
+{\footnotesize\ttfamily \label{classauto__explorer_1_1AutoExplorer_a0227819f70868c776517f8ac798b2fd3} 
+float auto\+\_\+explorer.\+Auto\+Explorer.\+speed\+\_\+angular = 0.\+40}
+
+\Hypertarget{classauto__explorer_1_1AutoExplorer_ae841b0b32f6aa1c64827920ae1c25e0f}\index{auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}!speed\_linear@{speed\_linear}}
+\index{speed\_linear@{speed\_linear}!auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}}
+\doxysubsubsection{\texorpdfstring{speed\_linear}{speed\_linear}}
+{\footnotesize\ttfamily \label{classauto__explorer_1_1AutoExplorer_ae841b0b32f6aa1c64827920ae1c25e0f} 
+float auto\+\_\+explorer.\+Auto\+Explorer.\+speed\+\_\+linear = 0.\+25}
+
+\Hypertarget{classauto__explorer_1_1AutoExplorer_a11d7ddb361adb00820e2e208c59e020a}\index{auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}!turn\_direction@{turn\_direction}}
+\index{turn\_direction@{turn\_direction}!auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}}
+\doxysubsubsection{\texorpdfstring{turn\_direction}{turn\_direction}}
+{\footnotesize\ttfamily \label{classauto__explorer_1_1AutoExplorer_a11d7ddb361adb00820e2e208c59e020a} 
+float auto\+\_\+explorer.\+Auto\+Explorer.\+turn\+\_\+direction = 1.\+0}
+
+\Hypertarget{classauto__explorer_1_1AutoExplorer_a255fd71208da2b485ce127beb62ccb01}\index{auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}!turn\_end\_time@{turn\_end\_time}}
+\index{turn\_end\_time@{turn\_end\_time}!auto\_explorer.AutoExplorer@{auto\_explorer.AutoExplorer}}
+\doxysubsubsection{\texorpdfstring{turn\_end\_time}{turn\_end\_time}}
+{\footnotesize\ttfamily \label{classauto__explorer_1_1AutoExplorer_a255fd71208da2b485ce127beb62ccb01} 
+float auto\+\_\+explorer.\+Auto\+Explorer.\+turn\+\_\+end\+\_\+time = 0.\+0}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/samuisa/\+Desktop/\+COGAR\+\_\+cb/ros2\+\_\+ws/src/g1\+\_\+loc\+\_\+benchmark/scripts/\mbox{\hyperlink{auto__explorer_8py}{auto\+\_\+explorer.\+py}}\end{DoxyCompactItemize}

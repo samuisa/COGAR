@@ -1,0 +1,80 @@
+\doxysection{/home/samuisa/\+Desktop/\+COGAR\+\_\+cb/ros2\+\_\+ws/src Directory Reference}
+\hypertarget{dir_68267d1309a1af8e8297ef4c3efbcdba}{}\label{dir_68267d1309a1af8e8297ef4c3efbcdba}\index{/home/samuisa/Desktop/COGAR\_cb/ros2\_ws/src Directory Reference@{/home/samuisa/Desktop/COGAR\_cb/ros2\_ws/src Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_ab341a6ea5379b6ca91ebbe935d65661}{aws-\/robomaker-\/small-\/house-\/world}}
+\item 
+directory \mbox{\hyperlink{dir_b829c16b365d15df3ba1a0633c385c40}{g1\+\_\+description}}
+\item 
+directory \mbox{\hyperlink{dir_fd4071efdc18c1f0c29d8fb631d537a7}{g1\+\_\+loc\+\_\+benchmark}}
+\item 
+directory \mbox{\hyperlink{dir_ebea84c0369425b3285b6ec6d5df57ec}{gazebo\+\_\+g1}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{dir_68267d1309a1af8e8297ef4c3efbcdba_autotoc_md22}{}\doxysubsection{\texorpdfstring{COGAR}{COGAR}}\label{dir_68267d1309a1af8e8297ef4c3efbcdba_autotoc_md22}
+\hypertarget{dir_68267d1309a1af8e8297ef4c3efbcdba_autotoc_md23}{}\doxysubsection{\texorpdfstring{Subgroup K2\+: Localization with G1 EDU in Gazebo}{Subgroup K2\+: Localization with G1 EDU in Gazebo}}\label{dir_68267d1309a1af8e8297ef4c3efbcdba_autotoc_md23}
+\hypertarget{dir_68267d1309a1af8e8297ef4c3efbcdba_autotoc_md24}{}\doxysubsubsection{\texorpdfstring{Assignment 2\+: Standalone Localization Benchmark for Humanoid Robot Indoor Operation (SIMULATION)}{Assignment 2\+: Standalone Localization Benchmark for Humanoid Robot Indoor Operation (SIMULATION)}}\label{dir_68267d1309a1af8e8297ef4c3efbcdba_autotoc_md24}
+What to do\+: Develop and evaluate a standalone localization framework for the G1 EDU robot in Gazebo using ROS2 Humble, comparing multiple pose estimation methods in indoor environments with known maps and ground truth 1) Set up the G1 EDU robot or equivalent mobile robot base in Gazebo with Li\+DAR and/or RGB‑D sensing 2) Use a fixed indoor map provided directly in Gazebo for localization experiments 3) Implement one or more localization methods (e.\+g. AMCL, ICP scan matching, visual localization, RGB‑D relocalization) 4) Create localization benchmark scenarios including nominal conditions, sensor noise, dynamic obstacles, and kidnapped robot recovery 5) Measure translational and rotational localization error, convergence time, and robustness to disturbances 6) Compare localization performance across sensor modalities (Li\+DAR only, RGB‑D only, multimodal) 7) Analyze which localization strategy is most robust for indoor robot operation
+
+Software needed\+: Gazebo, ROS2 Humble, Nav2 localization stack, AMCL / RTAB‑\+Map / ICP / Open3D / PCL, RViz2
+
+Research needed\+: Indoor localization methods, scan matching, Monte Carlo localization, visual relocalization, sensor fusion for robot pose estimation
+
+Deliverables\+: Standalone localization benchmark pipeline, quantitative comparison across localization methods, robustness evaluation report, recommended localization strategy\hypertarget{dir_68267d1309a1af8e8297ef4c3efbcdba_autotoc_md25}{}\doxysubsubsection{\texorpdfstring{Command robot spawn}{Command robot spawn}}\label{dir_68267d1309a1af8e8297ef4c3efbcdba_autotoc_md25}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{source\ /opt/ros/humble/setup.bash\ \&\&}
+\DoxyCodeLine{colcon\ build\ \&\&}
+\DoxyCodeLine{source\ /opt/ros/humble/setup.bash}
+\DoxyCodeLine{colcon\ build}
+\DoxyCodeLine{source\ install/local\_setup.sh}
+\DoxyCodeLine{}
+\DoxyCodeLine{ros2\ launch\ bme\_gazebo\_sensors\ spawn\_robot\_ex.launch.py}
+
+\end{DoxyCode}
+\hypertarget{dir_68267d1309a1af8e8297ef4c3efbcdba_autotoc_md26}{}\doxysubsubsection{\texorpdfstring{Simulation Environment}{Simulation Environment}}\label{dir_68267d1309a1af8e8297ef4c3efbcdba_autotoc_md26}
+The simulation utilizes the {\ttfamily small\+\_\+house.\+sdf} world from the {\ttfamily aws-\/robomaker-\/small-\/house-\/world} repository as the primary environment for the G1 robot. The layout, featuring several distinct rooms, facilitates the simulation of the {\bfseries{"{}kidnapped robot scenario,"{}}}\hypertarget{dir_68267d1309a1af8e8297ef4c3efbcdba_autotoc_md27}{}\doxysubsubsection{\texorpdfstring{Sensors and Visualization (RViz2)}{Sensors and Visualization (RViz2)}}\label{dir_68267d1309a1af8e8297ef4c3efbcdba_autotoc_md27}
+The G1 robot is configured with a complete perception system integrated into Gazebo Ignition. Data is transmitted to ROS 2 via the {\ttfamily parameter\+\_\+bridge} using the following standardized topics\+:\hypertarget{dir_68267d1309a1af8e8297ef4c3efbcdba_autotoc_md28}{}\doxysubsubsubsection{\texorpdfstring{Sensor Topics}{Sensor Topics}}\label{dir_68267d1309a1af8e8297ef4c3efbcdba_autotoc_md28}
+
+\begin{DoxyItemize}
+\item {\bfseries{Li\+DAR (Mid360)}}\+:
+\begin{DoxyEnumerate}
+\item ROS 2 Topic\+: {\ttfamily /lidar/points}
+\item Msg Type\+: {\ttfamily sensor\+\_\+msgs/\+Point\+Cloud2}
+\end{DoxyEnumerate}
+\item {\bfseries{RGB Camera}}\+:
+\begin{DoxyEnumerate}
+\item ROS 2 Topic\+: {\ttfamily /camera/color/image\+\_\+raw}
+\item Msg Type\+: {\ttfamily sensor\+\_\+msgs/\+Image}
+\end{DoxyEnumerate}
+\item {\bfseries{Depth Camera}}\+:
+\begin{DoxyEnumerate}
+\item ROS 2 Topic\+: {\ttfamily /camera/depth/image\+\_\+raw}
+\item Msg Type\+: {\ttfamily sensor\+\_\+msgs/\+Image}
+\end{DoxyEnumerate}
+\item {\bfseries{Camera Info}}\+:
+\begin{DoxyEnumerate}
+\item ROS 2 Topic\+: {\ttfamily /camera/color/camera\+\_\+info}
+\item Msg Type\+: {\ttfamily sensor\+\_\+msgs/\+Camera\+Info}
+\end{DoxyEnumerate}
+\end{DoxyItemize}\hypertarget{dir_68267d1309a1af8e8297ef4c3efbcdba_autotoc_md29}{}\doxysubsubsubsection{\texorpdfstring{Visualization Guide}{Visualization Guide}}\label{dir_68267d1309a1af8e8297ef4c3efbcdba_autotoc_md29}
+To correctly visualize the robot and sensor data in {\bfseries{RViz2}}\+:
+
+
+\begin{DoxyEnumerate}
+\item {\bfseries{Fixed Frame}}\+: In the {\itshape Global Options} panel, set the {\ttfamily Fixed Frame} to {\bfseries{{\ttfamily pelvis}}}.
+\item {\bfseries{Li\+DAR}}\+: Click {\ttfamily Add} -\/\texorpdfstring{$>$}{>} {\ttfamily By Topic} and select {\ttfamily /lidar/points} ({\bfseries{Point\+Cloud2}}).
+\item {\bfseries{Camera}}\+: Click {\ttfamily Add} -\/\texorpdfstring{$>$}{>} {\ttfamily By Topic} and select {\ttfamily /camera/color/image\+\_\+raw} ({\bfseries{Image}}).
+\item {\bfseries{3D Point Cloud (Camera)}}\+:
+\begin{DoxyItemize}
+\item Add the topic {\ttfamily /camera/depth/image\+\_\+raw} using the {\bfseries{Depth\+Cloud}} display plugin.
+\end{DoxyItemize}
+\end{DoxyEnumerate}\hypertarget{dir_68267d1309a1af8e8297ef4c3efbcdba_autotoc_md30}{}\doxysubsection{\texorpdfstring{Starting point\+:}{Starting point\+:}}\label{dir_68267d1309a1af8e8297ef4c3efbcdba_autotoc_md30}
+
+\begin{DoxyItemize}
+\item The robot Unitree G1 29 degrees of freedom (DOF).
+\item 3D LIDAR (LIVOX-\/\+MID360) + Depth Camera Intel Real\+Sense (D435i) 
+\end{DoxyItemize}

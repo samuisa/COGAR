@@ -1,6 +1,10 @@
 <?xml version="1.0"?>
 <robot name="g1_29dof" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+  <gazebo>
+        <self_collide>false</self_collide>
+  </gazebo>
+
   <material name="dark">
     <color rgba="0.2 0.2 0.2 1"/>
   </material>
@@ -34,7 +38,8 @@
   <joint name="base_to_pelvis" type="fixed">
     <parent link="base_link"/>
     <child link="pelvis"/>
-    <origin xyz="0 0 0.8" rpy="0 0 0"/> </joint>
+    <origin xyz="0 0 0.8" rpy="0 0 0"/> 
+  </joint>
 
   <link name="pelvis">
     <inertial>
@@ -97,12 +102,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="left_hip_pitch_joint" type="revolute">
+  <joint name="left_hip_pitch_joint" type="fixed">
     <origin xyz="0 0.064452 -0.1027" rpy="0 0 0"/>
     <parent link="pelvis"/>
     <child link="left_hip_pitch_link"/>
-    <axis xyz="0 1 0"/>
-    <limit lower="-2.5307" upper="2.8798" effort="88" velocity="32"/>
   </joint>
 
   <link name="left_hip_roll_link">
@@ -125,12 +128,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="left_hip_roll_joint" type="revolute">
+  <joint name="left_hip_roll_joint" type="fixed">
     <origin xyz="0 0.052 -0.030465" rpy="0 -0.1749 0"/>
     <parent link="left_hip_pitch_link"/>
     <child link="left_hip_roll_link"/>
-    <axis xyz="1 0 0"/>
-    <limit lower="-0.5236" upper="2.9671" effort="88" velocity="32"/>
   </joint>
 
   <link name="left_hip_yaw_link">
@@ -153,12 +154,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="left_hip_yaw_joint" type="revolute">
+  <joint name="left_hip_yaw_joint" type="fixed">
     <origin xyz="0.025001 0 -0.12412" rpy="0 0 0"/>
     <parent link="left_hip_roll_link"/>
     <child link="left_hip_yaw_link"/>
-    <axis xyz="0 0 1"/>
-    <limit lower="-2.7576" upper="2.7576" effort="88" velocity="32"/>
   </joint>
 
   <link name="left_knee_link">
@@ -181,12 +180,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="left_knee_joint" type="revolute">
+  <joint name="left_knee_joint" type="fixed">
     <origin xyz="-0.078273 0.0021489 -0.17734" rpy="0 0.1749 0"/>
     <parent link="left_hip_yaw_link"/>
     <child link="left_knee_link"/>
-    <axis xyz="0 1 0"/>
-    <limit lower="-0.087267" upper="2.8798" effort="139" velocity="20"/>
   </joint>
 
   <link name="left_ankle_pitch_link">
@@ -209,12 +206,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="left_ankle_pitch_joint" type="revolute">
+  <joint name="left_ankle_pitch_joint" type="fixed">
     <origin xyz="0 -9.4445E-05 -0.30001" rpy="0 0 0"/>
     <parent link="left_knee_link"/>
     <child link="left_ankle_pitch_link"/>
-    <axis xyz="0 1 0"/>
-    <limit lower="-0.87267" upper="0.5236" effort="35" velocity="30"/>
   </joint>
 
   <link name="left_ankle_roll_link">
@@ -247,12 +242,10 @@
       <geometry><sphere radius="0.005"/></geometry>
     </collision>
   </link>
-  <joint name="left_ankle_roll_joint" type="revolute">
+  <joint name="left_ankle_roll_joint" type="fixed">
     <origin xyz="0 0 -0.017558" rpy="0 0 0"/>
     <parent link="left_ankle_pitch_link"/>
     <child link="left_ankle_roll_link"/>
-    <axis xyz="1 0 0"/>
-    <limit lower="-0.2618" upper="0.2618" effort="35" velocity="30"/>
   </joint>
 
   <link name="right_hip_pitch_link">
@@ -275,12 +268,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="right_hip_pitch_joint" type="revolute">
+  <joint name="right_hip_pitch_joint" type="fixed">
     <origin xyz="0 -0.064452 -0.1027" rpy="0 0 0"/>
     <parent link="pelvis"/>
     <child link="right_hip_pitch_link"/>
-    <axis xyz="0 1 0"/>
-    <limit lower="-2.5307" upper="2.8798" effort="88" velocity="32"/>
   </joint>
 
   <link name="right_hip_roll_link">
@@ -303,12 +294,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="right_hip_roll_joint" type="revolute">
+  <joint name="right_hip_roll_joint" type="fixed">
     <origin xyz="0 -0.052 -0.030465" rpy="0 -0.1749 0"/>
     <parent link="right_hip_pitch_link"/>
     <child link="right_hip_roll_link"/>
-    <axis xyz="1 0 0"/>
-    <limit lower="-2.9671" upper="0.5236" effort="88" velocity="32"/>
   </joint>
 
   <link name="right_hip_yaw_link">
@@ -331,12 +320,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="right_hip_yaw_joint" type="revolute">
+  <joint name="right_hip_yaw_joint" type="fixed">
     <origin xyz="0.025001 0 -0.12412" rpy="0 0 0"/>
     <parent link="right_hip_roll_link"/>
     <child link="right_hip_yaw_link"/>
-    <axis xyz="0 0 1"/>
-    <limit lower="-2.7576" upper="2.7576" effort="88" velocity="32"/>
   </joint>
 
   <link name="right_knee_link">
@@ -359,12 +346,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="right_knee_joint" type="revolute">
+  <joint name="right_knee_joint" type="fixed">
     <origin xyz="-0.078273 -0.0021489 -0.17734" rpy="0 0.1749 0"/>
     <parent link="right_hip_yaw_link"/>
     <child link="right_knee_link"/>
-    <axis xyz="0 1 0"/>
-    <limit lower="-0.087267" upper="2.8798" effort="139" velocity="20"/>
   </joint>
 
   <link name="right_ankle_pitch_link">
@@ -387,12 +372,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="right_ankle_pitch_joint" type="revolute">
+  <joint name="right_ankle_pitch_joint" type="fixed">
     <origin xyz="0 9.4445E-05 -0.30001" rpy="0 0 0"/>
     <parent link="right_knee_link"/>
     <child link="right_ankle_pitch_link"/>
-    <axis xyz="0 1 0"/>
-    <limit lower="-0.87267" upper="0.5236" effort="35" velocity="30"/>
   </joint>
 
   <link name="right_ankle_roll_link">
@@ -425,12 +408,10 @@
       <geometry><sphere radius="0.005"/></geometry>
     </collision>
   </link>
-  <joint name="right_ankle_roll_joint" type="revolute">
+  <joint name="right_ankle_roll_joint" type="fixed">
     <origin xyz="0 0 -0.017558" rpy="0 0 0"/>
     <parent link="right_ankle_pitch_link"/>
     <child link="right_ankle_roll_link"/>
-    <axis xyz="1 0 0"/>
-    <limit lower="-0.2618" upper="0.2618" effort="35" velocity="30"/>
   </joint>
 
   <link name="waist_yaw_link">
@@ -447,12 +428,10 @@
       <material name="white"/>
     </visual>
   </link>
-  <joint name="waist_yaw_joint" type="revolute">
+  <joint name="waist_yaw_joint" type="fixed">
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <parent link="pelvis"/>
     <child link="waist_yaw_link"/>
-    <axis xyz="0 0 1"/>
-    <limit lower="-2.618" upper="2.618" effort="88" velocity="32"/>
   </joint>
 
   <link name="waist_roll_link">
@@ -469,12 +448,10 @@
       <material name="white"/>
     </visual>
   </link>
-  <joint name="waist_roll_joint" type="revolute">
+  <joint name="waist_roll_joint" type="fixed">
     <origin xyz="-0.0039635 0 0.035" rpy="0 0 0"/>
     <parent link="waist_yaw_link"/>
     <child link="waist_roll_link"/>
-    <axis xyz="1 0 0"/>
-    <limit lower="-0.52" upper="0.52" effort="35" velocity="30"/>
   </joint>
 
   <link name="torso_link">
@@ -497,12 +474,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="waist_pitch_joint" type="revolute">
+  <joint name="waist_pitch_joint" type="fixed">
     <origin xyz="0 0 0.019" rpy="0 0 0"/>
     <parent link="waist_roll_link"/>
     <child link="torso_link"/>
-    <axis xyz="0 1 0"/>
-    <limit lower="-0.52" upper="0.52" effort="35" velocity="30"/>
   </joint>
 
   <joint name="logo_joint" type="fixed">
@@ -613,12 +588,10 @@
     </collision>
   </link>
   
-  <joint name="left_shoulder_pitch_joint" type="revolute">
-    <origin xyz="0.0039563 0.10022 0.23778" rpy="0.27931 1.5708 -0.00019159"/>
+  <joint name="left_shoulder_pitch_joint" type="fixed">
+    <origin xyz="0.0039563 0.10022 0.23778" rpy="0 0 0"/>
     <parent link="torso_link"/>
     <child link="left_shoulder_pitch_link"/>
-    <axis xyz="0 1 0"/>
-    <limit lower="-3.0892" upper="2.6704" effort="25" velocity="37"/>
   </joint>
 
   <link name="left_shoulder_roll_link">
@@ -637,12 +610,10 @@
       <geometry><cylinder radius="0.03" length="0.03"/></geometry>
     </collision>
   </link>
-  <joint name="left_shoulder_roll_joint" type="revolute">
-    <origin xyz="0 0.038 -0.013831" rpy="-0.27925 0 0"/>
+  <joint name="left_shoulder_roll_joint" type="fixed">
+    <origin xyz="0 0.038 -0.013831" rpy="0 0 0"/>
     <parent link="left_shoulder_pitch_link"/>
     <child link="left_shoulder_roll_link"/>
-    <axis xyz="1 0 0"/>
-    <limit lower="-1.5882" upper="2.2515" effort="25" velocity="37"/>
   </joint>
 
   <link name="left_shoulder_yaw_link">
@@ -661,12 +632,10 @@
       <geometry><mesh filename="package://g1_description/meshes/left_shoulder_yaw_link.STL"/></geometry>
     </collision>
   </link>
-  <joint name="left_shoulder_yaw_joint" type="revolute">
+  <joint name="left_shoulder_yaw_joint" type="fixed">
     <origin xyz="0 0.00624 -0.1032" rpy="0 0 0"/>
     <parent link="left_shoulder_roll_link"/>
     <child link="left_shoulder_yaw_link"/>
-    <axis xyz="0 0 1"/>
-    <limit lower="-2.618" upper="2.618" effort="25" velocity="37"/>
   </joint>
 
   <link name="left_elbow_link">
@@ -685,12 +654,10 @@
       <geometry><mesh filename="package://g1_description/meshes/left_elbow_link.STL"/></geometry>
     </collision>
   </link>
-  <joint name="left_elbow_joint" type="revolute">
-    <origin xyz="0.015783 0 -0.080518" rpy="0 0 0"/>
+  <joint name="left_elbow_joint" type="fixed">
+    <origin xyz="0.015783 0 -0.080518" rpy="0 1.2 0"/>
     <parent link="left_shoulder_yaw_link"/>
     <child link="left_elbow_link"/>
-    <axis xyz="0 1 0"/>
-    <limit lower="-1.0472" upper="2.0944" effort="25" velocity="37"/>
   </joint>
 
   <link name="left_wrist_roll_link">
@@ -705,12 +672,10 @@
       <material name="white"/>
     </visual>
   </link>
-  <joint name="left_wrist_roll_joint" type="revolute">
+  <joint name="left_wrist_roll_joint" type="fixed">
     <origin xyz="0.100 0.0018 -0.010" rpy="0 0 0"/>
     <parent link="left_elbow_link"/>
     <child link="left_wrist_roll_link"/>
-    <axis xyz="1 0 0"/>
-    <limit lower="-1.97" upper="1.97" effort="25" velocity="37"/>
   </joint>
 
   <link name="left_wrist_pitch_link">
@@ -725,12 +690,10 @@
       <material name="white"/>
     </visual>
   </link>
-  <joint name="left_wrist_pitch_joint" type="revolute">
+  <joint name="left_wrist_pitch_joint" type="fixed">
     <origin xyz="0.038 0 0" rpy="0 0 0"/>
     <parent link="left_wrist_roll_link"/>
     <child link="left_wrist_pitch_link"/>
-    <axis xyz="0 1 0"/>
-    <limit lower="-1.61" upper="1.61" effort="5" velocity="22"/>
   </joint>
 
   <link name="left_wrist_yaw_link">
@@ -745,12 +708,10 @@
       <material name="white"/>
     </visual>
   </link>
-  <joint name="left_wrist_yaw_joint" type="revolute">
+  <joint name="left_wrist_yaw_joint" type="fixed">
     <origin xyz="0.046 0 0" rpy="0 0 0"/>
     <parent link="left_wrist_pitch_link"/>
     <child link="left_wrist_yaw_link"/>
-    <axis xyz="0 0 1"/>
-    <limit lower="-1.61" upper="1.61" effort="5" velocity="22"/>
   </joint>
 
   <link name="left_rubber_hand">
@@ -788,12 +749,10 @@
     </collision>
   </link>
   
-  <joint name="right_shoulder_pitch_joint" type="revolute">
-    <origin xyz="0.0039563 -0.10021 0.23778" rpy="-0.27931 1.5708 0.00019159"/>
+  <joint name="right_shoulder_pitch_joint" type="fixed">
+    <origin xyz="0.0039563 -0.10021 0.23778" rpy="0 0 0"/>
     <parent link="torso_link"/>
     <child link="right_shoulder_pitch_link"/>
-    <axis xyz="0 1 0"/>
-    <limit lower="-3.0892" upper="2.6704" effort="25" velocity="37"/>
   </joint>
 
   <link name="right_shoulder_roll_link">
@@ -812,12 +771,10 @@
       <geometry><cylinder radius="0.03" length="0.03"/></geometry>
     </collision>
   </link>
-  <joint name="right_shoulder_roll_joint" type="revolute">
-    <origin xyz="0 -0.038 -0.013831" rpy="0.27925 0 0"/>
+  <joint name="right_shoulder_roll_joint" type="fixed">
+    <origin xyz="0 -0.038 -0.013831" rpy="0 0 0"/>
     <parent link="right_shoulder_pitch_link"/>
     <child link="right_shoulder_roll_link"/>
-    <axis xyz="1 0 0"/>
-    <limit lower="-2.2515" upper="1.5882" effort="25" velocity="37"/>
   </joint>
 
   <link name="right_shoulder_yaw_link">
@@ -832,12 +789,10 @@
       <material name="white"/>
     </visual>
   </link>
-  <joint name="right_shoulder_yaw_joint" type="revolute">
+  <joint name="right_shoulder_yaw_joint" type="fixed">
     <origin xyz="0 -0.00624 -0.1032" rpy="0 0 0"/>
     <parent link="right_shoulder_roll_link"/>
     <child link="right_shoulder_yaw_link"/>
-    <axis xyz="0 0 1"/>
-    <limit lower="-2.618" upper="2.618" effort="25" velocity="37"/>
   </joint>
 
   <link name="right_elbow_link">
@@ -852,12 +807,10 @@
       <material name="white"/>
     </visual>
   </link>
-  <joint name="right_elbow_joint" type="revolute">
-    <origin xyz="0.015783 0 -0.080518" rpy="0 0 0"/>
+  <joint name="right_elbow_joint" type="fixed">
+    <origin xyz="0.015783 0 -0.080518" rpy="0 1.2 0"/>
     <parent link="right_shoulder_yaw_link"/>
     <child link="right_elbow_link"/>
-    <axis xyz="0 1 0"/>
-    <limit lower="-1.0472" upper="2.0944" effort="25" velocity="37"/>
   </joint>
 
   <link name="right_wrist_roll_link">
@@ -872,12 +825,10 @@
       <material name="white"/>
     </visual>
   </link>
-  <joint name="right_wrist_roll_joint" type="revolute">
+  <joint name="right_wrist_roll_joint" type="fixed">
     <origin xyz="0.100 -0.0018 -0.010" rpy="0 0 0"/>
     <parent link="right_elbow_link"/>
     <child link="right_wrist_roll_link"/>
-    <axis xyz="1 0 0"/>
-    <limit lower="-1.97" upper="1.97" effort="25" velocity="37"/>
   </joint>
 
   <link name="right_wrist_pitch_link">
@@ -892,12 +843,10 @@
       <material name="white"/>
     </visual>
   </link>
-  <joint name="right_wrist_pitch_joint" type="revolute">
+  <joint name="right_wrist_pitch_joint" type="fixed">
     <origin xyz="0.038 0 0" rpy="0 0 0"/>
     <parent link="right_wrist_roll_link"/>
     <child link="right_wrist_pitch_link"/>
-    <axis xyz="0 1 0"/>
-    <limit lower="-1.61" upper="1.61" effort="5" velocity="22"/>
   </joint>
 
   <link name="right_wrist_yaw_link">
@@ -912,12 +861,10 @@
       <material name="white"/>
     </visual>
   </link>
-  <joint name="right_wrist_yaw_joint" type="revolute">
+  <joint name="right_wrist_yaw_joint" type="fixed">
     <origin xyz="0.046 0 0" rpy="0 0 0"/>
     <parent link="right_wrist_pitch_link"/>
     <child link="right_wrist_yaw_link"/>
-    <axis xyz="0 0 1"/>
-    <limit lower="-1.61" upper="1.61" effort="5" velocity="22"/>
   </joint>
 
   <link name="right_rubber_hand">
@@ -1000,62 +947,13 @@
     </sensor>
   </gazebo>
 
-  <ros2_control name="IgnitionSystem" type="system">
-    <hardware>
-      <plugin>ign_ros2_control/IgnitionSystem</plugin>
-    </hardware>
-
-    <joint name="left_hip_pitch_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="left_hip_roll_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="left_hip_yaw_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="left_knee_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="left_ankle_pitch_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="left_ankle_roll_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    
-    <joint name="right_hip_pitch_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="right_hip_roll_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="right_hip_yaw_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="right_knee_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="right_ankle_pitch_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="right_ankle_roll_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-
-    <joint name="waist_yaw_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="waist_roll_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="waist_pitch_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-
-    <joint name="left_shoulder_pitch_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="left_shoulder_roll_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="left_shoulder_yaw_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="left_elbow_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="left_wrist_roll_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="left_wrist_pitch_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="left_wrist_yaw_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-
-    <joint name="right_shoulder_pitch_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="right_shoulder_roll_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="right_shoulder_yaw_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="right_elbow_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="right_wrist_roll_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="right_wrist_pitch_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-    <joint name="right_wrist_yaw_joint"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/></joint>
-  </ros2_control>
-
-  <gazebo>
-    <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
-      <parameters>$(find g1_description)/config/ros2_controllers.yaml</parameters>
-    </plugin>
-  </gazebo>
-
-  <gazebo reference="pelvis">
-    <kinematic>true</kinematic> 
-  </gazebo>
-
   <gazebo>
     <plugin
       filename="ignition-gazebo-velocity-control-system"
       name="ignition::gazebo::systems::VelocityControl">
       <link_name>base_link</link_name> 
       <topic>/cmd_vel</topic>
+      <initial_orientation>0 0 0 1</initial_orientation>
     </plugin>
   </gazebo>
 
@@ -1068,7 +966,7 @@
       <odom_publish_frequency>50</odom_publish_frequency>
       <odom_topic>/odom</odom_topic>
       <dimensions>3</dimensions>
-      <publish_tf>true</publish_tf> 
+      <publish_tf>false</publish_tf> 
     </plugin>
   </gazebo>
 
@@ -1083,6 +981,22 @@
       <dimensions>3</dimensions>
       <publish_tf>false</publish_tf> 
     </plugin>
+  </gazebo>
+
+  <gazebo>
+        <plugin filename="gz-sim-velocity-control-system" name="gz::sim::systems::VelocityControl">
+            <topic>/cmd_vel</topic>
+        </plugin>
+  </gazebo>
+
+  <gazebo reference="left_ankle_roll_link">
+        <mu1>0.0</mu1>
+        <mu2>0.0</mu2>
+  </gazebo>
+    
+  <gazebo reference="right_ankle_roll_link">
+        <mu1>0.0</mu1>
+        <mu2>0.0</mu2>
   </gazebo>
 
 </robot>

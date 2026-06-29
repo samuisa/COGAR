@@ -1,0 +1,91 @@
+\doxysection{odom\+\_\+tf\+\_\+broadcaster.\+Odom\+TFBroadcaster Class Reference}
+\hypertarget{classodom__tf__broadcaster_1_1OdomTFBroadcaster}{}\label{classodom__tf__broadcaster_1_1OdomTFBroadcaster}\index{odom\_tf\_broadcaster.OdomTFBroadcaster@{odom\_tf\_broadcaster.OdomTFBroadcaster}}
+
+
+Node acting as a bridge by publishing odom coordinates in the TF tree.  
+
+
+
+
+Inheritance diagram for odom\+\_\+tf\+\_\+broadcaster.\+Odom\+TFBroadcaster\+:
+% FIG 0
+
+
+Collaboration diagram for odom\+\_\+tf\+\_\+broadcaster.\+Odom\+TFBroadcaster\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classodom__tf__broadcaster_1_1OdomTFBroadcaster_a59a6cc13fd58924deee561c2cd15aa9a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em Configures the topic subscriber and the TF broadcaster. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classodom__tf__broadcaster_1_1OdomTFBroadcaster_abe07c8e9b8dcb378674464e429ccaf17}{odom\+\_\+cb}} (self, Odometry msg)
+\begin{DoxyCompactList}\small\item\em Callback executed on each odometric update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classodom__tf__broadcaster_1_1OdomTFBroadcaster_a3d0be0b37a6c1057b07eb1469c341f0f}{sub}} = self.\+create\+\_\+subscription(Odometry, \textquotesingle{}/odom\textquotesingle{}, self.\+odom\+\_\+cb, 10)
+\item 
+\mbox{\hyperlink{classodom__tf__broadcaster_1_1OdomTFBroadcaster_a0326fd11bdceeff8c297cdbb413c4df9}{tf\+\_\+broadcaster}} = Transform\+Broadcaster(self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Node acting as a bridge by publishing odom coordinates in the TF tree. 
+
+\label{doc-constructors}
+\Hypertarget{classodom__tf__broadcaster_1_1OdomTFBroadcaster_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classodom__tf__broadcaster_1_1OdomTFBroadcaster_a59a6cc13fd58924deee561c2cd15aa9a}\index{odom\_tf\_broadcaster.OdomTFBroadcaster@{odom\_tf\_broadcaster.OdomTFBroadcaster}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!odom\_tf\_broadcaster.OdomTFBroadcaster@{odom\_tf\_broadcaster.OdomTFBroadcaster}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classodom__tf__broadcaster_1_1OdomTFBroadcaster_a59a6cc13fd58924deee561c2cd15aa9a} 
+odom\+\_\+tf\+\_\+broadcaster.\+Odom\+TFBroadcaster.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Configures the topic subscriber and the TF broadcaster. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{classodom__tf__broadcaster_1_1OdomTFBroadcaster_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classodom__tf__broadcaster_1_1OdomTFBroadcaster_abe07c8e9b8dcb378674464e429ccaf17}\index{odom\_tf\_broadcaster.OdomTFBroadcaster@{odom\_tf\_broadcaster.OdomTFBroadcaster}!odom\_cb@{odom\_cb}}
+\index{odom\_cb@{odom\_cb}!odom\_tf\_broadcaster.OdomTFBroadcaster@{odom\_tf\_broadcaster.OdomTFBroadcaster}}
+\doxysubsubsection{\texorpdfstring{odom\_cb()}{odom\_cb()}}
+{\footnotesize\ttfamily \label{classodom__tf__broadcaster_1_1OdomTFBroadcaster_abe07c8e9b8dcb378674464e429ccaf17} 
+odom\+\_\+tf\+\_\+broadcaster.\+Odom\+TFBroadcaster.\+odom\+\_\+cb (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Odometry}]{msg}{}\end{DoxyParamCaption})}
+
+
+
+Callback executed on each odometric update. 
+
+Transforms the Odometry message into two Transform\+Stamped and publishes them. Keeps base\+\_\+footprint rooted to the ground by zeroing heights.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Incoming message from the /odom topic. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{classodom__tf__broadcaster_1_1OdomTFBroadcaster_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classodom__tf__broadcaster_1_1OdomTFBroadcaster_a3d0be0b37a6c1057b07eb1469c341f0f}\index{odom\_tf\_broadcaster.OdomTFBroadcaster@{odom\_tf\_broadcaster.OdomTFBroadcaster}!sub@{sub}}
+\index{sub@{sub}!odom\_tf\_broadcaster.OdomTFBroadcaster@{odom\_tf\_broadcaster.OdomTFBroadcaster}}
+\doxysubsubsection{\texorpdfstring{sub}{sub}}
+{\footnotesize\ttfamily \label{classodom__tf__broadcaster_1_1OdomTFBroadcaster_a3d0be0b37a6c1057b07eb1469c341f0f} 
+odom\+\_\+tf\+\_\+broadcaster.\+Odom\+TFBroadcaster.\+sub = self.\+create\+\_\+subscription(Odometry, \textquotesingle{}/odom\textquotesingle{}, self.\+odom\+\_\+cb, 10)}
+
+\Hypertarget{classodom__tf__broadcaster_1_1OdomTFBroadcaster_a0326fd11bdceeff8c297cdbb413c4df9}\index{odom\_tf\_broadcaster.OdomTFBroadcaster@{odom\_tf\_broadcaster.OdomTFBroadcaster}!tf\_broadcaster@{tf\_broadcaster}}
+\index{tf\_broadcaster@{tf\_broadcaster}!odom\_tf\_broadcaster.OdomTFBroadcaster@{odom\_tf\_broadcaster.OdomTFBroadcaster}}
+\doxysubsubsection{\texorpdfstring{tf\_broadcaster}{tf\_broadcaster}}
+{\footnotesize\ttfamily \label{classodom__tf__broadcaster_1_1OdomTFBroadcaster_a0326fd11bdceeff8c297cdbb413c4df9} 
+odom\+\_\+tf\+\_\+broadcaster.\+Odom\+TFBroadcaster.\+tf\+\_\+broadcaster = Transform\+Broadcaster(self)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/samuisa/\+Desktop/\+COGAR\+\_\+cb/ros2\+\_\+ws/src/g1\+\_\+loc\+\_\+benchmark/scripts/\mbox{\hyperlink{odom__tf__broadcaster_8py}{odom\+\_\+tf\+\_\+broadcaster.\+py}}\end{DoxyCompactItemize}

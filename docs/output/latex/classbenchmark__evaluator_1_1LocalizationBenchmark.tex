@@ -1,0 +1,137 @@
+\doxysection{benchmark\+\_\+evaluator.\+Localization\+Benchmark Class Reference}
+\hypertarget{classbenchmark__evaluator_1_1LocalizationBenchmark}{}\label{classbenchmark__evaluator_1_1LocalizationBenchmark}\index{benchmark\_evaluator.LocalizationBenchmark@{benchmark\_evaluator.LocalizationBenchmark}}
+
+
+Node that calculates the error between the Ground Truth pose and the AMCL estimate.  
+
+
+
+
+Inheritance diagram for benchmark\+\_\+evaluator.\+Localization\+Benchmark\+:
+% FIG 0
+
+
+Collaboration diagram for benchmark\+\_\+evaluator.\+Localization\+Benchmark\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbenchmark__evaluator_1_1LocalizationBenchmark_a17832dadf0d9b205bc02c918eb53ddf8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, scenario\+\_\+name="{}amcl"{})
+\begin{DoxyCompactList}\small\item\em Initializes the node and configures the data log file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbenchmark__evaluator_1_1LocalizationBenchmark_ab7b59a7633571d27b36c1a4bc05cc259}{gt\+\_\+callback}} (self, msg)
+\begin{DoxyCompactList}\small\item\em Saves the real pose (Ground Truth) when received. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbenchmark__evaluator_1_1LocalizationBenchmark_aa3626f5cfa4cf07bcbc06b4f7a3609e3}{amcl\+\_\+callback}} (self, msg)
+\begin{DoxyCompactList}\small\item\em Calculates the error between the received AMCL pose and the GT pose. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbenchmark__evaluator_1_1LocalizationBenchmark_a4c71795bee677eb4b8e01a446f32700b}{csv\+\_\+filename}} = os.\+path.\+join(output\+\_\+dir, f\textquotesingle{}localization\+\_\+results\+\_\+\{timestamp\}.csv\textquotesingle{})
+\item 
+\mbox{\hyperlink{classbenchmark__evaluator_1_1LocalizationBenchmark_a54f1ca6b9f067958dad9b5881abb4deb}{sub\+\_\+gt}} = self.\+create\+\_\+subscription(Odometry, \textquotesingle{}/ground\+\_\+truth\+\_\+pose\textquotesingle{}, self.\+gt\+\_\+callback, 10)
+\item 
+\mbox{\hyperlink{classbenchmark__evaluator_1_1LocalizationBenchmark_a8893e3bfd3e6c5ce70f6da72834bad76}{sub\+\_\+amcl}} = self.\+create\+\_\+subscription(Pose\+With\+Covariance\+Stamped, \textquotesingle{}/amcl\+\_\+pose\textquotesingle{}, self.\+amcl\+\_\+callback, 10)
+\item 
+\mbox{\hyperlink{classbenchmark__evaluator_1_1LocalizationBenchmark_ac5def424bc7ce9efb3af6b0359e1a7ad}{latest\+\_\+gt\+\_\+pose}} = None
+\item 
+\mbox{\hyperlink{classbenchmark__evaluator_1_1LocalizationBenchmark_ae8ab7ac296cab3183c730ef91c15f1a0}{start\+\_\+time}} = time.\+time()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Node that calculates the error between the Ground Truth pose and the AMCL estimate. 
+
+Subscribes to the /ground\+\_\+truth\+\_\+pose and /amcl\+\_\+pose topics, comparing the two poses and periodically saving the metrics in a CSV file for analysis. 
+
+\label{doc-constructors}
+\Hypertarget{classbenchmark__evaluator_1_1LocalizationBenchmark_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classbenchmark__evaluator_1_1LocalizationBenchmark_a17832dadf0d9b205bc02c918eb53ddf8}\index{benchmark\_evaluator.LocalizationBenchmark@{benchmark\_evaluator.LocalizationBenchmark}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!benchmark\_evaluator.LocalizationBenchmark@{benchmark\_evaluator.LocalizationBenchmark}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classbenchmark__evaluator_1_1LocalizationBenchmark_a17832dadf0d9b205bc02c918eb53ddf8} 
+benchmark\+\_\+evaluator.\+Localization\+Benchmark.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{scenario\+\_\+name}{ = {\ttfamily "{}amcl"{}}}\end{DoxyParamCaption})}
+
+
+
+Initializes the node and configures the data log file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scenario\+\_\+name} & Destination folder name to isolate different experiments. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classbenchmark__evaluator_1_1LocalizationBenchmark_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classbenchmark__evaluator_1_1LocalizationBenchmark_aa3626f5cfa4cf07bcbc06b4f7a3609e3}\index{benchmark\_evaluator.LocalizationBenchmark@{benchmark\_evaluator.LocalizationBenchmark}!amcl\_callback@{amcl\_callback}}
+\index{amcl\_callback@{amcl\_callback}!benchmark\_evaluator.LocalizationBenchmark@{benchmark\_evaluator.LocalizationBenchmark}}
+\doxysubsubsection{\texorpdfstring{amcl\_callback()}{amcl\_callback()}}
+{\footnotesize\ttfamily \label{classbenchmark__evaluator_1_1LocalizationBenchmark_aa3626f5cfa4cf07bcbc06b4f7a3609e3} 
+benchmark\+\_\+evaluator.\+Localization\+Benchmark.\+amcl\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{msg}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the error between the received AMCL pose and the GT pose. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & geometry\+\_\+msgs/\+Pose\+With\+Covariance\+Stamped message containing the AMCL estimate. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classbenchmark__evaluator_1_1LocalizationBenchmark_ab7b59a7633571d27b36c1a4bc05cc259}\index{benchmark\_evaluator.LocalizationBenchmark@{benchmark\_evaluator.LocalizationBenchmark}!gt\_callback@{gt\_callback}}
+\index{gt\_callback@{gt\_callback}!benchmark\_evaluator.LocalizationBenchmark@{benchmark\_evaluator.LocalizationBenchmark}}
+\doxysubsubsection{\texorpdfstring{gt\_callback()}{gt\_callback()}}
+{\footnotesize\ttfamily \label{classbenchmark__evaluator_1_1LocalizationBenchmark_ab7b59a7633571d27b36c1a4bc05cc259} 
+benchmark\+\_\+evaluator.\+Localization\+Benchmark.\+gt\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{msg}{}\end{DoxyParamCaption})}
+
+
+
+Saves the real pose (Ground Truth) when received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & nav\+\_\+msgs/\+Odometry message containing real data. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{classbenchmark__evaluator_1_1LocalizationBenchmark_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classbenchmark__evaluator_1_1LocalizationBenchmark_a4c71795bee677eb4b8e01a446f32700b}\index{benchmark\_evaluator.LocalizationBenchmark@{benchmark\_evaluator.LocalizationBenchmark}!csv\_filename@{csv\_filename}}
+\index{csv\_filename@{csv\_filename}!benchmark\_evaluator.LocalizationBenchmark@{benchmark\_evaluator.LocalizationBenchmark}}
+\doxysubsubsection{\texorpdfstring{csv\_filename}{csv\_filename}}
+{\footnotesize\ttfamily \label{classbenchmark__evaluator_1_1LocalizationBenchmark_a4c71795bee677eb4b8e01a446f32700b} 
+benchmark\+\_\+evaluator.\+Localization\+Benchmark.\+csv\+\_\+filename = os.\+path.\+join(output\+\_\+dir, f\textquotesingle{}localization\+\_\+results\+\_\+\{timestamp\}.csv\textquotesingle{})}
+
+\Hypertarget{classbenchmark__evaluator_1_1LocalizationBenchmark_ac5def424bc7ce9efb3af6b0359e1a7ad}\index{benchmark\_evaluator.LocalizationBenchmark@{benchmark\_evaluator.LocalizationBenchmark}!latest\_gt\_pose@{latest\_gt\_pose}}
+\index{latest\_gt\_pose@{latest\_gt\_pose}!benchmark\_evaluator.LocalizationBenchmark@{benchmark\_evaluator.LocalizationBenchmark}}
+\doxysubsubsection{\texorpdfstring{latest\_gt\_pose}{latest\_gt\_pose}}
+{\footnotesize\ttfamily \label{classbenchmark__evaluator_1_1LocalizationBenchmark_ac5def424bc7ce9efb3af6b0359e1a7ad} 
+benchmark\+\_\+evaluator.\+Localization\+Benchmark.\+latest\+\_\+gt\+\_\+pose = None}
+
+\Hypertarget{classbenchmark__evaluator_1_1LocalizationBenchmark_ae8ab7ac296cab3183c730ef91c15f1a0}\index{benchmark\_evaluator.LocalizationBenchmark@{benchmark\_evaluator.LocalizationBenchmark}!start\_time@{start\_time}}
+\index{start\_time@{start\_time}!benchmark\_evaluator.LocalizationBenchmark@{benchmark\_evaluator.LocalizationBenchmark}}
+\doxysubsubsection{\texorpdfstring{start\_time}{start\_time}}
+{\footnotesize\ttfamily \label{classbenchmark__evaluator_1_1LocalizationBenchmark_ae8ab7ac296cab3183c730ef91c15f1a0} 
+benchmark\+\_\+evaluator.\+Localization\+Benchmark.\+start\+\_\+time = time.\+time()}
+
+\Hypertarget{classbenchmark__evaluator_1_1LocalizationBenchmark_a8893e3bfd3e6c5ce70f6da72834bad76}\index{benchmark\_evaluator.LocalizationBenchmark@{benchmark\_evaluator.LocalizationBenchmark}!sub\_amcl@{sub\_amcl}}
+\index{sub\_amcl@{sub\_amcl}!benchmark\_evaluator.LocalizationBenchmark@{benchmark\_evaluator.LocalizationBenchmark}}
+\doxysubsubsection{\texorpdfstring{sub\_amcl}{sub\_amcl}}
+{\footnotesize\ttfamily \label{classbenchmark__evaluator_1_1LocalizationBenchmark_a8893e3bfd3e6c5ce70f6da72834bad76} 
+benchmark\+\_\+evaluator.\+Localization\+Benchmark.\+sub\+\_\+amcl = self.\+create\+\_\+subscription(Pose\+With\+Covariance\+Stamped, \textquotesingle{}/amcl\+\_\+pose\textquotesingle{}, self.\+amcl\+\_\+callback, 10)}
+
+\Hypertarget{classbenchmark__evaluator_1_1LocalizationBenchmark_a54f1ca6b9f067958dad9b5881abb4deb}\index{benchmark\_evaluator.LocalizationBenchmark@{benchmark\_evaluator.LocalizationBenchmark}!sub\_gt@{sub\_gt}}
+\index{sub\_gt@{sub\_gt}!benchmark\_evaluator.LocalizationBenchmark@{benchmark\_evaluator.LocalizationBenchmark}}
+\doxysubsubsection{\texorpdfstring{sub\_gt}{sub\_gt}}
+{\footnotesize\ttfamily \label{classbenchmark__evaluator_1_1LocalizationBenchmark_a54f1ca6b9f067958dad9b5881abb4deb} 
+benchmark\+\_\+evaluator.\+Localization\+Benchmark.\+sub\+\_\+gt = self.\+create\+\_\+subscription(Odometry, \textquotesingle{}/ground\+\_\+truth\+\_\+pose\textquotesingle{}, self.\+gt\+\_\+callback, 10)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/samuisa/\+Desktop/\+COGAR\+\_\+cb/ros2\+\_\+ws/src/g1\+\_\+loc\+\_\+benchmark/scripts/\mbox{\hyperlink{benchmark__evaluator_8py}{benchmark\+\_\+evaluator.\+py}}\end{DoxyCompactItemize}

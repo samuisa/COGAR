@@ -61,10 +61,6 @@ def generate_launch_description():
                 "-y", LaunchConfiguration('y'), 
                 "-z", "0.2", 
                 "-Y", LaunchConfiguration('yaw'),
-                
-                # 🟢 AGGIUNGI QUESTE DUE RIGHE: Abbassa le braccia di ~90 gradi
-                "-J", "left_shoulder_pitch_joint", "1.57",
-                "-J", "right_shoulder_pitch_joint", "1.57"
             ],
             parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
         ),
@@ -82,8 +78,8 @@ def generate_launch_description():
                 "/camera/camera_info@sensor_msgs/msg/CameraInfo[ignition.msgs.CameraInfo",
                 "/camera/points@sensor_msgs/msg/PointCloud2[ignition.msgs.PointCloudPacked",
                 "/ground_truth_pose@nav_msgs/msg/Odometry[ignition.msgs.Odometry",
-                "/model/g1_robot/tf@tf2_msgs/msg/TFMessage[ignition.msgs.Pose_V",
-                "/tf@tf2_msgs/msg/TFMessage[ignition.msgs.Pose_V"
+                "/model/g1_robot/tf@tf2_msgs/msg/TFMessage[ignition.msgs.Pose_V", 
+                "/tf@tf2_msgs/msg/TFMessage[ignition.msgs.Pose_V"                 
             ],
             remappings=[
                 ("/lidar/points/points", "/lidar/points"),
@@ -91,18 +87,17 @@ def generate_launch_description():
                 ("/camera/depth_image", "/camera/depth/image_raw"),
                 ("/camera/camera_info", "/camera/color/camera_info"),
                 ("/camera/points",      "/camera/depth/color/points"),
-                ("/model/g1_robot/tf",  "/tf")
+                ("/model/g1_robot/tf",  "/tf") 
             ],
             output='screen'
         ),
 
-        TimerAction(
-            period=5.0,
-            actions=[
-                Node(package="controller_manager", executable="spawner", arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"]),
-                Node(package="controller_manager", executable="spawner", arguments=["position_controller", "--controller-manager", "/controller_manager"])
-            ]
-        ),
+        # NODI CONTROLLER MANAGER DISATTIVATI (Tutti i giunti ora sono fissi)
+        # Node(
+        #     package="controller_manager", 
+        #     executable="spawner", 
+        #     arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"]
+        # ),
 
         Node(
             package='rviz2',

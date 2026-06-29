@@ -1,0 +1,430 @@
+\doxysection{g1\+\_\+controller.\+Fake\+Walk\+Animator Class Reference}
+\hypertarget{classg1__controller_1_1FakeWalkAnimator}{}\label{classg1__controller_1_1FakeWalkAnimator}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+
+
+Node that receives Twist commands and generates joint trajectories.  
+
+
+
+
+Inheritance diagram for g1\+\_\+controller.\+Fake\+Walk\+Animator\+:
+% FIG 0
+
+
+Collaboration diagram for g1\+\_\+controller.\+Fake\+Walk\+Animator\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_af48d6eccf77cc1ff0adb0e5cb98e05c6}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em Animator constructor and limits/periods parameters declaration. \end{DoxyCompactList}\item 
+None \mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_ac9f44f8d22434d2e4c137affaade256a}{cmd\+\_\+callback}} (self, Twist msg)
+\begin{DoxyCompactList}\small\item\em Callback to intercept velocity commands. \end{DoxyCompactList}\item 
+Tuple\mbox{[}float, float, float\mbox{]} \mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_a632ee7a3cf43dc3ba29e855a6d9317e9}{calculate\+\_\+leg\+\_\+ik}} (self, float x, float z\+\_\+depth)
+\begin{DoxyCompactList}\small\item\em Calculates the inverse kinematics for the bipedal robot leg joints. \end{DoxyCompactList}\item 
+Tuple\mbox{[}float, float\mbox{]} \mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_ae0d1a357c975af51a0e050827f21ea95}{get\+\_\+foot\+\_\+trajectory}} (self, float \mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_aee64538966ee041706b2a1b2faa106a1}{phase}}, float step\+\_\+length)
+\begin{DoxyCompactList}\small\item\em Determines the foot\textquotesingle{}s spatial position (X, Z) based on the gait phase. \end{DoxyCompactList}\item 
+None \mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_ab82330b95c8bc0165e0f000e513827a9}{publish\+\_\+trajectory}} (self, Dict\mbox{[}str, float\mbox{]} posture)
+\begin{DoxyCompactList}\small\item\em Sends the translated posture to the trajectory controller in Joint\+Trajectory format. \end{DoxyCompactList}\item 
+None \mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_ab9f540c9fc26cfeca27a4d214033e338}{on\+\_\+timer}} (self)
+\begin{DoxyCompactList}\small\item\em Main timer callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_a8c816cf8aabec82463b6111c4317429d}{clamp}} (float value, float low, float high)
+\begin{DoxyCompactList}\small\item\em Auxiliary function to constrain a value within two limits. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_aa946735fb2d4f5f38f962adb51ca657a}{lerp}} (float a, float b, float t)
+\begin{DoxyCompactList}\small\item\em Linear interpolation between two values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_aee64538966ee041706b2a1b2faa106a1}{phase}} = 0.\+0
+\item 
+\mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_a873ff808549d0d7d0f39b89e5b8fc8fe}{last\+\_\+cmd}} = Twist()
+\item 
+float \mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_a32566a0a85c4d4a622a9aa037d2bcb07}{filtered\+\_\+v}} = 0.\+0
+\item 
+float \mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_a25244d38b24c34d7587457625961bba8}{filtered\+\_\+w}} = 0.\+0
+\item 
+\mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_ad2aabe31d64efdf20ad634ad0bc50d9d}{timer\+\_\+period}} = float(self.\+get\+\_\+parameter(\textquotesingle{}timer\+\_\+period\textquotesingle{}).value)
+\item 
+\mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_a298a492413f05c1ce7f40c1bb2612dad}{filter\+\_\+alpha}} = float(self.\+get\+\_\+parameter(\textquotesingle{}filter\+\_\+alpha\textquotesingle{}).value)
+\item 
+\mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_a4f299501ef8ae9304b7be6b373af620b}{l1}} = float(self.\+get\+\_\+parameter(\textquotesingle{}l1\textquotesingle{}).value)
+\item 
+\mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_a30c3872a07027876c1f81a82e7fe43aa}{l2}} = float(self.\+get\+\_\+parameter(\textquotesingle{}l2\textquotesingle{}).value)
+\item 
+\mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_a738eb4c2424e036fefe2e7516a74aad1}{pelvis\+\_\+height}} = float(self.\+get\+\_\+parameter(\textquotesingle{}pelvis\+\_\+height\textquotesingle{}).value)
+\item 
+\mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_ad599802ea0b7e1627eff92a27955045f}{step\+\_\+height}} = float(self.\+get\+\_\+parameter(\textquotesingle{}step\+\_\+height\textquotesingle{}).value)
+\item 
+\mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_a9e39c52f53ba9b7a7942df4fc53fbefa}{max\+\_\+step\+\_\+length}} = float(self.\+get\+\_\+parameter(\textquotesingle{}max\+\_\+step\+\_\+length\textquotesingle{}).value)
+\item 
+\mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_a709426102bde665e5b7afbcded1c5e45}{speed\+\_\+freq\+\_\+gain}} = float(self.\+get\+\_\+parameter(\textquotesingle{}speed\+\_\+freq\+\_\+gain\textquotesingle{}).value)
+\item 
+\mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_aa437f6d9fab20828bf0544bf622f1de7}{max\+\_\+linear\+\_\+speed}} = float(self.\+get\+\_\+parameter(\textquotesingle{}max\+\_\+linear\+\_\+speed\textquotesingle{}).value)
+\item 
+\mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_a500ef0128fbf3132de270068de312e52}{max\+\_\+angular\+\_\+speed}} = float(self.\+get\+\_\+parameter(\textquotesingle{}max\+\_\+angular\+\_\+speed\textquotesingle{}).value)
+\item 
+\mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_ae690f1785b232c879e7a13fb7d9216ec}{move\+\_\+linear\+\_\+threshold}} = float(self.\+get\+\_\+parameter(\textquotesingle{}move\+\_\+linear\+\_\+threshold\textquotesingle{}).value)
+\item 
+\mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_aabe64c8d67bd940c93f87392b35571cf}{move\+\_\+angular\+\_\+threshold}} = float(self.\+get\+\_\+parameter(\textquotesingle{}move\+\_\+angular\+\_\+threshold\textquotesingle{}).value)
+\item 
+\mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_ae919f05f379d6c927e8bb8bbadbc3c9f}{cmd\+\_\+topic}} = str(self.\+get\+\_\+parameter(\textquotesingle{}cmd\+\_\+topic\textquotesingle{}).value)
+\item 
+\mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_abf682fc6b0f46de5f3c81d32e8430212}{traj\+\_\+topic}} = str(self.\+get\+\_\+parameter(\textquotesingle{}traj\+\_\+topic\textquotesingle{}).value)
+\item 
+\mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_ae5e2896d34b3ade885dcf50e1ad86975}{cmd\+\_\+sub}} = self.\+create\+\_\+subscription(Twist, self.\+cmd\+\_\+topic, self.\+cmd\+\_\+callback, 10)
+\item 
+\mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_a1931924801ce23cda5de52f1c9780175}{traj\+\_\+pub}} = self.\+create\+\_\+publisher(Joint\+Trajectory, self.\+traj\+\_\+topic, 10)
+\item 
+\mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_a9d33701f38baf42ecfefe12c03671fb4}{timer}} = self.\+create\+\_\+timer(self.\+timer\+\_\+period, self.\+on\+\_\+timer)
+\item 
+list \mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_af0e42caf6f900aede3d615eae629582e}{joint\+\_\+names}}
+\item 
+dict \mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_a7a47982067be4f62147e0dc2969e6943}{base\+\_\+posture}} = \{name\+: 0.\+0 for name in self.\+joint\+\_\+names\}
+\item 
+dict \mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_a921094e5a9ed8a17e1311a8eb319da98}{stand\+\_\+posture}} = self.\+base\+\_\+posture.\+copy()
+\item 
+dict \mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_ac5649e15d15312c9a521aec2de5b1897}{current\+\_\+posture}} = self.\+stand\+\_\+posture.\+copy()
+\item 
+\mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_a48a596d14c02f3f237931cbd1e42a432}{last\+\_\+cmd\+\_\+time}} = self.\+get\+\_\+clock().now()
+\item 
+float \mbox{\hyperlink{classg1__controller_1_1FakeWalkAnimator_a6769bb6476e0c69dd13182b7e9835e6d}{cmd\+\_\+timeout}} = 0.\+5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Node that receives Twist commands and generates joint trajectories. 
+
+Includes a highly simplified inverse kinematics (IK) logic applied to base joint axes to emulate a bipedal walking robot\textquotesingle{}s behavior. 
+
+\label{doc-constructors}
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_af48d6eccf77cc1ff0adb0e5cb98e05c6}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_af48d6eccf77cc1ff0adb0e5cb98e05c6} 
+ None g1\+\_\+controller.\+Fake\+Walk\+Animator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Animator constructor and limits/periods parameters declaration. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_a632ee7a3cf43dc3ba29e855a6d9317e9}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!calculate\_leg\_ik@{calculate\_leg\_ik}}
+\index{calculate\_leg\_ik@{calculate\_leg\_ik}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{calculate\_leg\_ik()}{calculate\_leg\_ik()}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_a632ee7a3cf43dc3ba29e855a6d9317e9} 
+ Tuple\mbox{[}float, float, float\mbox{]} g1\+\_\+controller.\+Fake\+Walk\+Animator.\+calculate\+\_\+leg\+\_\+ik (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{float}]{x}{, }\item[{float}]{z\+\_\+depth}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the inverse kinematics for the bipedal robot leg joints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Step X-\/axis extension. \\
+\hline
+{\em z\+\_\+depth} & Pelvis height Z-\/axis compression. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Calculated angles in radians (hip, knee, ankle). 
+\end{DoxyReturn}
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_a8c816cf8aabec82463b6111c4317429d}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!clamp@{clamp}}
+\index{clamp@{clamp}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{clamp()}{clamp()}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_a8c816cf8aabec82463b6111c4317429d} 
+ float g1\+\_\+controller.\+Fake\+Walk\+Animator.\+clamp (\begin{DoxyParamCaption}\item[{float}]{value}{, }\item[{float}]{low}{, }\item[{float}]{high}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Auxiliary function to constrain a value within two limits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to limit. \\
+\hline
+{\em low} & Lower limit. \\
+\hline
+{\em high} & Upper limit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The constrained value within the provided bounds. 
+\end{DoxyReturn}
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_ac9f44f8d22434d2e4c137affaade256a}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!cmd\_callback@{cmd\_callback}}
+\index{cmd\_callback@{cmd\_callback}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{cmd\_callback()}{cmd\_callback()}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_ac9f44f8d22434d2e4c137affaade256a} 
+ None g1\+\_\+controller.\+Fake\+Walk\+Animator.\+cmd\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Twist}]{msg}{}\end{DoxyParamCaption})}
+
+
+
+Callback to intercept velocity commands. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & geometry\+\_\+msgs/\+Twist object coming from the nav stack/teleop. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_ae0d1a357c975af51a0e050827f21ea95}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!get\_foot\_trajectory@{get\_foot\_trajectory}}
+\index{get\_foot\_trajectory@{get\_foot\_trajectory}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{get\_foot\_trajectory()}{get\_foot\_trajectory()}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_ae0d1a357c975af51a0e050827f21ea95} 
+ Tuple\mbox{[}float, float\mbox{]} g1\+\_\+controller.\+Fake\+Walk\+Animator.\+get\+\_\+foot\+\_\+trajectory (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{float}]{phase}{, }\item[{float}]{step\+\_\+length}{}\end{DoxyParamCaption})}
+
+
+
+Determines the foot\textquotesingle{}s spatial position (X, Z) based on the gait phase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em phase} & Angle (in radians) representing the gait cycle. \\
+\hline
+{\em step\+\_\+length} & Preset step length. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tuple containing (x, z\+\_\+depth). 
+\end{DoxyReturn}
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_aa946735fb2d4f5f38f962adb51ca657a}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!lerp@{lerp}}
+\index{lerp@{lerp}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{lerp()}{lerp()}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_aa946735fb2d4f5f38f962adb51ca657a} 
+ float g1\+\_\+controller.\+Fake\+Walk\+Animator.\+lerp (\begin{DoxyParamCaption}\item[{float}]{a}{, }\item[{float}]{b}{, }\item[{float}]{t}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Linear interpolation between two values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Starting value. \\
+\hline
+{\em b} & Ending value. \\
+\hline
+{\em t} & Progress index (0.\+0 to 1.\+0). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The interpolated value at that instant t. 
+\end{DoxyReturn}
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_ab9f540c9fc26cfeca27a4d214033e338}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!on\_timer@{on\_timer}}
+\index{on\_timer@{on\_timer}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{on\_timer()}{on\_timer()}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_ab9f540c9fc26cfeca27a4d214033e338} 
+ None g1\+\_\+controller.\+Fake\+Walk\+Animator.\+on\+\_\+timer (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Main timer callback. 
+
+Generates the synchronous movement step by step. \Hypertarget{classg1__controller_1_1FakeWalkAnimator_ab82330b95c8bc0165e0f000e513827a9}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!publish\_trajectory@{publish\_trajectory}}
+\index{publish\_trajectory@{publish\_trajectory}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{publish\_trajectory()}{publish\_trajectory()}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_ab82330b95c8bc0165e0f000e513827a9} 
+ None g1\+\_\+controller.\+Fake\+Walk\+Animator.\+publish\+\_\+trajectory (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Dict\mbox{[}str, float\mbox{]}}]{posture}{}\end{DoxyParamCaption})}
+
+
+
+Sends the translated posture to the trajectory controller in Joint\+Trajectory format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posture} & Dictionary mapping the joint name to its requested angle. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_a7a47982067be4f62147e0dc2969e6943}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!base\_posture@{base\_posture}}
+\index{base\_posture@{base\_posture}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{base\_posture}{base\_posture}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_a7a47982067be4f62147e0dc2969e6943} 
+dict g1\+\_\+controller.\+Fake\+Walk\+Animator.\+base\+\_\+posture = \{name\+: 0.\+0 for name in self.\+joint\+\_\+names\}}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_ae5e2896d34b3ade885dcf50e1ad86975}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!cmd\_sub@{cmd\_sub}}
+\index{cmd\_sub@{cmd\_sub}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{cmd\_sub}{cmd\_sub}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_ae5e2896d34b3ade885dcf50e1ad86975} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+cmd\+\_\+sub = self.\+create\+\_\+subscription(Twist, self.\+cmd\+\_\+topic, self.\+cmd\+\_\+callback, 10)}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_a6769bb6476e0c69dd13182b7e9835e6d}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!cmd\_timeout@{cmd\_timeout}}
+\index{cmd\_timeout@{cmd\_timeout}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{cmd\_timeout}{cmd\_timeout}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_a6769bb6476e0c69dd13182b7e9835e6d} 
+float g1\+\_\+controller.\+Fake\+Walk\+Animator.\+cmd\+\_\+timeout = 0.\+5}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_ae919f05f379d6c927e8bb8bbadbc3c9f}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!cmd\_topic@{cmd\_topic}}
+\index{cmd\_topic@{cmd\_topic}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{cmd\_topic}{cmd\_topic}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_ae919f05f379d6c927e8bb8bbadbc3c9f} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+cmd\+\_\+topic = str(self.\+get\+\_\+parameter(\textquotesingle{}cmd\+\_\+topic\textquotesingle{}).value)}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_ac5649e15d15312c9a521aec2de5b1897}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!current\_posture@{current\_posture}}
+\index{current\_posture@{current\_posture}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{current\_posture}{current\_posture}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_ac5649e15d15312c9a521aec2de5b1897} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+current\+\_\+posture = self.\+stand\+\_\+posture.\+copy()}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_a298a492413f05c1ce7f40c1bb2612dad}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!filter\_alpha@{filter\_alpha}}
+\index{filter\_alpha@{filter\_alpha}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{filter\_alpha}{filter\_alpha}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_a298a492413f05c1ce7f40c1bb2612dad} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+filter\+\_\+alpha = float(self.\+get\+\_\+parameter(\textquotesingle{}filter\+\_\+alpha\textquotesingle{}).value)}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_a32566a0a85c4d4a622a9aa037d2bcb07}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!filtered\_v@{filtered\_v}}
+\index{filtered\_v@{filtered\_v}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{filtered\_v}{filtered\_v}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_a32566a0a85c4d4a622a9aa037d2bcb07} 
+float g1\+\_\+controller.\+Fake\+Walk\+Animator.\+filtered\+\_\+v = 0.\+0}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_a25244d38b24c34d7587457625961bba8}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!filtered\_w@{filtered\_w}}
+\index{filtered\_w@{filtered\_w}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{filtered\_w}{filtered\_w}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_a25244d38b24c34d7587457625961bba8} 
+float g1\+\_\+controller.\+Fake\+Walk\+Animator.\+filtered\+\_\+w = 0.\+0}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_af0e42caf6f900aede3d615eae629582e}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!joint\_names@{joint\_names}}
+\index{joint\_names@{joint\_names}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{joint\_names}{joint\_names}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_af0e42caf6f900aede3d615eae629582e} 
+list g1\+\_\+controller.\+Fake\+Walk\+Animator.\+joint\+\_\+names}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'left\_hip\_pitch\_joint'},\ \textcolor{stringliteral}{'left\_hip\_roll\_joint'},\ \textcolor{stringliteral}{'left\_hip\_yaw\_joint'},\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'left\_knee\_joint'},\ \textcolor{stringliteral}{'left\_ankle\_pitch\_joint'},\ \textcolor{stringliteral}{'left\_ankle\_roll\_joint'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'right\_hip\_pitch\_joint'},\ \textcolor{stringliteral}{'right\_hip\_roll\_joint'},\ \textcolor{stringliteral}{'right\_hip\_yaw\_joint'},\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'right\_knee\_joint'},\ \textcolor{stringliteral}{'right\_ankle\_pitch\_joint'},\ \textcolor{stringliteral}{'right\_ankle\_roll\_joint'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'waist\_yaw\_joint'},\ \textcolor{stringliteral}{'waist\_roll\_joint'},\ \textcolor{stringliteral}{'waist\_pitch\_joint'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'left\_shoulder\_pitch\_joint'},\ \textcolor{stringliteral}{'left\_shoulder\_roll\_joint'},\ \textcolor{stringliteral}{'left\_shoulder\_yaw\_joint'},\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'left\_elbow\_joint'},\ \textcolor{stringliteral}{'left\_wrist\_roll\_joint'},\ \textcolor{stringliteral}{'left\_wrist\_pitch\_joint'},\ \textcolor{stringliteral}{'left\_wrist\_yaw\_joint'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'right\_shoulder\_pitch\_joint'},\ \textcolor{stringliteral}{'right\_shoulder\_roll\_joint'},\ \textcolor{stringliteral}{'right\_shoulder\_yaw\_joint'},\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'right\_elbow\_joint'},\ \textcolor{stringliteral}{'right\_wrist\_roll\_joint'},\ \textcolor{stringliteral}{'right\_wrist\_pitch\_joint'},\ \textcolor{stringliteral}{'right\_wrist\_yaw\_joint'}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_a4f299501ef8ae9304b7be6b373af620b}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!l1@{l1}}
+\index{l1@{l1}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{l1}{l1}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_a4f299501ef8ae9304b7be6b373af620b} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+l1 = float(self.\+get\+\_\+parameter(\textquotesingle{}l1\textquotesingle{}).value)}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_a30c3872a07027876c1f81a82e7fe43aa}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!l2@{l2}}
+\index{l2@{l2}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{l2}{l2}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_a30c3872a07027876c1f81a82e7fe43aa} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+l2 = float(self.\+get\+\_\+parameter(\textquotesingle{}l2\textquotesingle{}).value)}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_a873ff808549d0d7d0f39b89e5b8fc8fe}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!last\_cmd@{last\_cmd}}
+\index{last\_cmd@{last\_cmd}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{last\_cmd}{last\_cmd}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_a873ff808549d0d7d0f39b89e5b8fc8fe} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+last\+\_\+cmd = Twist()}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_a48a596d14c02f3f237931cbd1e42a432}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!last\_cmd\_time@{last\_cmd\_time}}
+\index{last\_cmd\_time@{last\_cmd\_time}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{last\_cmd\_time}{last\_cmd\_time}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_a48a596d14c02f3f237931cbd1e42a432} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+last\+\_\+cmd\+\_\+time = self.\+get\+\_\+clock().now()}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_a500ef0128fbf3132de270068de312e52}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!max\_angular\_speed@{max\_angular\_speed}}
+\index{max\_angular\_speed@{max\_angular\_speed}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{max\_angular\_speed}{max\_angular\_speed}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_a500ef0128fbf3132de270068de312e52} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+max\+\_\+angular\+\_\+speed = float(self.\+get\+\_\+parameter(\textquotesingle{}max\+\_\+angular\+\_\+speed\textquotesingle{}).value)}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_aa437f6d9fab20828bf0544bf622f1de7}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!max\_linear\_speed@{max\_linear\_speed}}
+\index{max\_linear\_speed@{max\_linear\_speed}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{max\_linear\_speed}{max\_linear\_speed}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_aa437f6d9fab20828bf0544bf622f1de7} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+max\+\_\+linear\+\_\+speed = float(self.\+get\+\_\+parameter(\textquotesingle{}max\+\_\+linear\+\_\+speed\textquotesingle{}).value)}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_a9e39c52f53ba9b7a7942df4fc53fbefa}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!max\_step\_length@{max\_step\_length}}
+\index{max\_step\_length@{max\_step\_length}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{max\_step\_length}{max\_step\_length}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_a9e39c52f53ba9b7a7942df4fc53fbefa} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+max\+\_\+step\+\_\+length = float(self.\+get\+\_\+parameter(\textquotesingle{}max\+\_\+step\+\_\+length\textquotesingle{}).value)}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_aabe64c8d67bd940c93f87392b35571cf}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!move\_angular\_threshold@{move\_angular\_threshold}}
+\index{move\_angular\_threshold@{move\_angular\_threshold}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{move\_angular\_threshold}{move\_angular\_threshold}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_aabe64c8d67bd940c93f87392b35571cf} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+move\+\_\+angular\+\_\+threshold = float(self.\+get\+\_\+parameter(\textquotesingle{}move\+\_\+angular\+\_\+threshold\textquotesingle{}).value)}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_ae690f1785b232c879e7a13fb7d9216ec}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!move\_linear\_threshold@{move\_linear\_threshold}}
+\index{move\_linear\_threshold@{move\_linear\_threshold}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{move\_linear\_threshold}{move\_linear\_threshold}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_ae690f1785b232c879e7a13fb7d9216ec} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+move\+\_\+linear\+\_\+threshold = float(self.\+get\+\_\+parameter(\textquotesingle{}move\+\_\+linear\+\_\+threshold\textquotesingle{}).value)}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_a738eb4c2424e036fefe2e7516a74aad1}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!pelvis\_height@{pelvis\_height}}
+\index{pelvis\_height@{pelvis\_height}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{pelvis\_height}{pelvis\_height}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_a738eb4c2424e036fefe2e7516a74aad1} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+pelvis\+\_\+height = float(self.\+get\+\_\+parameter(\textquotesingle{}pelvis\+\_\+height\textquotesingle{}).value)}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_aee64538966ee041706b2a1b2faa106a1}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!phase@{phase}}
+\index{phase@{phase}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{phase}{phase}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_aee64538966ee041706b2a1b2faa106a1} 
+float g1\+\_\+controller.\+Fake\+Walk\+Animator.\+phase = 0.\+0}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_a709426102bde665e5b7afbcded1c5e45}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!speed\_freq\_gain@{speed\_freq\_gain}}
+\index{speed\_freq\_gain@{speed\_freq\_gain}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{speed\_freq\_gain}{speed\_freq\_gain}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_a709426102bde665e5b7afbcded1c5e45} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+speed\+\_\+freq\+\_\+gain = float(self.\+get\+\_\+parameter(\textquotesingle{}speed\+\_\+freq\+\_\+gain\textquotesingle{}).value)}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_a921094e5a9ed8a17e1311a8eb319da98}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!stand\_posture@{stand\_posture}}
+\index{stand\_posture@{stand\_posture}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{stand\_posture}{stand\_posture}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_a921094e5a9ed8a17e1311a8eb319da98} 
+dict g1\+\_\+controller.\+Fake\+Walk\+Animator.\+stand\+\_\+posture = self.\+base\+\_\+posture.\+copy()}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_ad599802ea0b7e1627eff92a27955045f}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!step\_height@{step\_height}}
+\index{step\_height@{step\_height}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{step\_height}{step\_height}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_ad599802ea0b7e1627eff92a27955045f} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+step\+\_\+height = float(self.\+get\+\_\+parameter(\textquotesingle{}step\+\_\+height\textquotesingle{}).value)}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_a9d33701f38baf42ecfefe12c03671fb4}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!timer@{timer}}
+\index{timer@{timer}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_a9d33701f38baf42ecfefe12c03671fb4} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+timer = self.\+create\+\_\+timer(self.\+timer\+\_\+period, self.\+on\+\_\+timer)}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_ad2aabe31d64efdf20ad634ad0bc50d9d}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!timer\_period@{timer\_period}}
+\index{timer\_period@{timer\_period}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{timer\_period}{timer\_period}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_ad2aabe31d64efdf20ad634ad0bc50d9d} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+timer\+\_\+period = float(self.\+get\+\_\+parameter(\textquotesingle{}timer\+\_\+period\textquotesingle{}).value)}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_a1931924801ce23cda5de52f1c9780175}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!traj\_pub@{traj\_pub}}
+\index{traj\_pub@{traj\_pub}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{traj\_pub}{traj\_pub}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_a1931924801ce23cda5de52f1c9780175} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+traj\+\_\+pub = self.\+create\+\_\+publisher(Joint\+Trajectory, self.\+traj\+\_\+topic, 10)}
+
+\Hypertarget{classg1__controller_1_1FakeWalkAnimator_abf682fc6b0f46de5f3c81d32e8430212}\index{g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}!traj\_topic@{traj\_topic}}
+\index{traj\_topic@{traj\_topic}!g1\_controller.FakeWalkAnimator@{g1\_controller.FakeWalkAnimator}}
+\doxysubsubsection{\texorpdfstring{traj\_topic}{traj\_topic}}
+{\footnotesize\ttfamily \label{classg1__controller_1_1FakeWalkAnimator_abf682fc6b0f46de5f3c81d32e8430212} 
+g1\+\_\+controller.\+Fake\+Walk\+Animator.\+traj\+\_\+topic = str(self.\+get\+\_\+parameter(\textquotesingle{}traj\+\_\+topic\textquotesingle{}).value)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/samuisa/\+Desktop/\+COGAR\+\_\+cb/ros2\+\_\+ws/src/g1\+\_\+loc\+\_\+benchmark/scripts/\mbox{\hyperlink{g1__controller_8py}{g1\+\_\+controller.\+py}}\end{DoxyCompactItemize}

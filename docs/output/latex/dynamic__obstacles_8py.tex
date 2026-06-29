@@ -1,0 +1,35 @@
+\doxysection{/home/samuisa/\+Desktop/\+COGAR\+\_\+cb/ros2\+\_\+ws/src/g1\+\_\+loc\+\_\+benchmark/scripts/dynamic\+\_\+obstacles.py File Reference}
+\hypertarget{dynamic__obstacles_8py}{}\label{dynamic__obstacles_8py}\index{/home/samuisa/Desktop/COGAR\_cb/ros2\_ws/src/g1\_loc\_benchmark/scripts/dynamic\_obstacles.py@{/home/samuisa/Desktop/COGAR\_cb/ros2\_ws/src/g1\_loc\_benchmark/scripts/dynamic\_obstacles.py}}
+
+
+Manager and spawner of dynamic obstacles in Gazebo.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdynamic__obstacles_1_1DynamicObstacles}{dynamic\+\_\+obstacles.\+Dynamic\+Obstacles}}
+\begin{DoxyCompactList}\small\item\em Node that periodically sends velocities to Gazebo topics to animate obstacles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacedynamic__obstacles}{dynamic\+\_\+obstacles}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedynamic__obstacles_a019e18737d3d1debe143dd321ee6c8f2}{dynamic\+\_\+obstacles.\+spawn\+\_\+actor}} (name, x, y, r, g, b)
+\begin{DoxyCompactList}\small\item\em Creates an SDF file on the fly and calls the system to insert the obstacle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacedynamic__obstacles_ad3209f64b54da6eb0d800b6b85df2d45}{dynamic\+\_\+obstacles.\+main}} (args=None)
+\begin{DoxyCompactList}\small\item\em Main function that summons the models and creates the bridge to ros\+\_\+gz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacedynamic__obstacles_a152d8cdb313e397300299641917c19ea}{dynamic\+\_\+obstacles.\+ACTOR\+\_\+\+SDF}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manager and spawner of dynamic obstacles in Gazebo. 
+
+Generates simplified models (humans) via system commands on Ignition Gazebo and manages their rhythmic locomotion. 

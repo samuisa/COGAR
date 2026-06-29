@@ -1,0 +1,148 @@
+\doxysection{dynamic\+\_\+obstacles.\+Dynamic\+Obstacles Class Reference}
+\hypertarget{classdynamic__obstacles_1_1DynamicObstacles}{}\label{classdynamic__obstacles_1_1DynamicObstacles}\index{dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}}
+
+
+Node that periodically sends velocities to Gazebo topics to animate obstacles.  
+
+
+
+
+Inheritance diagram for dynamic\+\_\+obstacles.\+Dynamic\+Obstacles\+:
+% FIG 0
+
+
+Collaboration diagram for dynamic\+\_\+obstacles.\+Dynamic\+Obstacles\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdynamic__obstacles_1_1DynamicObstacles_a0c8a60f41d5487b06b23f231f654a43a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em Creates Twist publishers for each actor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classdynamic__obstacles_1_1DynamicObstacles_a26a8d07f5b1d6d4ed2b3ae696d252de7}{timer\+\_\+cb}} (self)
+\begin{DoxyCompactList}\small\item\em Periodic callback that moves the actors forward and reverses their direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdynamic__obstacles_1_1DynamicObstacles_a77b3cbea65b528fc1fd2b80d5ace43db}{pub1}} = self.\+create\+\_\+publisher(Twist, \textquotesingle{}/model/actor1/cmd\+\_\+vel\textquotesingle{}, 10)
+\item 
+\mbox{\hyperlink{classdynamic__obstacles_1_1DynamicObstacles_aefb9c57335bc744486444c729b15a420}{pub2}} = self.\+create\+\_\+publisher(Twist, \textquotesingle{}/model/actor2/cmd\+\_\+vel\textquotesingle{}, 10)
+\item 
+\mbox{\hyperlink{classdynamic__obstacles_1_1DynamicObstacles_a7c93ba07cdf8592cd8d49afd5d6979d2}{pub3}} = self.\+create\+\_\+publisher(Twist, \textquotesingle{}/model/actor3/cmd\+\_\+vel\textquotesingle{}, 10)
+\item 
+\mbox{\hyperlink{classdynamic__obstacles_1_1DynamicObstacles_a8c6b00d85fd09deaca2323d436d0dc1e}{pub4}} = self.\+create\+\_\+publisher(Twist, \textquotesingle{}/model/actor4/cmd\+\_\+vel\textquotesingle{}, 10)
+\item 
+\mbox{\hyperlink{classdynamic__obstacles_1_1DynamicObstacles_a06e267533c75368183b29151f5504be2}{pub5}} = self.\+create\+\_\+publisher(Twist, \textquotesingle{}/model/actor5/cmd\+\_\+vel\textquotesingle{}, 10)
+\item 
+\mbox{\hyperlink{classdynamic__obstacles_1_1DynamicObstacles_a19a903663a515890845bfc8a0b6b9017}{pub6}} = self.\+create\+\_\+publisher(Twist, \textquotesingle{}/model/actor6/cmd\+\_\+vel\textquotesingle{}, 10)
+\item 
+\mbox{\hyperlink{classdynamic__obstacles_1_1DynamicObstacles_ab606e4f2d1e1181bb96e31225f4123a8}{timer}} = self.\+create\+\_\+timer(0.\+1, self.\+timer\+\_\+cb)
+\item 
+float \mbox{\hyperlink{classdynamic__obstacles_1_1DynamicObstacles_ad47cac46079addae4d76dc860929c813}{state\+\_\+time}} = 8.\+0
+\item 
+\mbox{\hyperlink{classdynamic__obstacles_1_1DynamicObstacles_a57e8d4e32877f99a5f549b2b489a720d}{last\+\_\+switch}} = self.\+get\+\_\+clock().now()
+\item 
+float \mbox{\hyperlink{classdynamic__obstacles_1_1DynamicObstacles_a4493470dec264eabb0fef8f7eaf6bec1}{direction}} = 1.\+0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Node that periodically sends velocities to Gazebo topics to animate obstacles. 
+
+\label{doc-constructors}
+\Hypertarget{classdynamic__obstacles_1_1DynamicObstacles_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdynamic__obstacles_1_1DynamicObstacles_a0c8a60f41d5487b06b23f231f654a43a}\index{dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdynamic__obstacles_1_1DynamicObstacles_a0c8a60f41d5487b06b23f231f654a43a} 
+dynamic\+\_\+obstacles.\+Dynamic\+Obstacles.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Creates Twist publishers for each actor. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdynamic__obstacles_1_1DynamicObstacles_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdynamic__obstacles_1_1DynamicObstacles_a26a8d07f5b1d6d4ed2b3ae696d252de7}\index{dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}!timer\_cb@{timer\_cb}}
+\index{timer\_cb@{timer\_cb}!dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}}
+\doxysubsubsection{\texorpdfstring{timer\_cb()}{timer\_cb()}}
+{\footnotesize\ttfamily \label{classdynamic__obstacles_1_1DynamicObstacles_a26a8d07f5b1d6d4ed2b3ae696d252de7} 
+dynamic\+\_\+obstacles.\+Dynamic\+Obstacles.\+timer\+\_\+cb (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Periodic callback that moves the actors forward and reverses their direction. 
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdynamic__obstacles_1_1DynamicObstacles_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdynamic__obstacles_1_1DynamicObstacles_a4493470dec264eabb0fef8f7eaf6bec1}\index{dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}!direction@{direction}}
+\index{direction@{direction}!dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily \label{classdynamic__obstacles_1_1DynamicObstacles_a4493470dec264eabb0fef8f7eaf6bec1} 
+float dynamic\+\_\+obstacles.\+Dynamic\+Obstacles.\+direction = 1.\+0}
+
+\Hypertarget{classdynamic__obstacles_1_1DynamicObstacles_a57e8d4e32877f99a5f549b2b489a720d}\index{dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}!last\_switch@{last\_switch}}
+\index{last\_switch@{last\_switch}!dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}}
+\doxysubsubsection{\texorpdfstring{last\_switch}{last\_switch}}
+{\footnotesize\ttfamily \label{classdynamic__obstacles_1_1DynamicObstacles_a57e8d4e32877f99a5f549b2b489a720d} 
+dynamic\+\_\+obstacles.\+Dynamic\+Obstacles.\+last\+\_\+switch = self.\+get\+\_\+clock().now()}
+
+\Hypertarget{classdynamic__obstacles_1_1DynamicObstacles_a77b3cbea65b528fc1fd2b80d5ace43db}\index{dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}!pub1@{pub1}}
+\index{pub1@{pub1}!dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}}
+\doxysubsubsection{\texorpdfstring{pub1}{pub1}}
+{\footnotesize\ttfamily \label{classdynamic__obstacles_1_1DynamicObstacles_a77b3cbea65b528fc1fd2b80d5ace43db} 
+dynamic\+\_\+obstacles.\+Dynamic\+Obstacles.\+pub1 = self.\+create\+\_\+publisher(Twist, \textquotesingle{}/model/actor1/cmd\+\_\+vel\textquotesingle{}, 10)}
+
+\Hypertarget{classdynamic__obstacles_1_1DynamicObstacles_aefb9c57335bc744486444c729b15a420}\index{dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}!pub2@{pub2}}
+\index{pub2@{pub2}!dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}}
+\doxysubsubsection{\texorpdfstring{pub2}{pub2}}
+{\footnotesize\ttfamily \label{classdynamic__obstacles_1_1DynamicObstacles_aefb9c57335bc744486444c729b15a420} 
+dynamic\+\_\+obstacles.\+Dynamic\+Obstacles.\+pub2 = self.\+create\+\_\+publisher(Twist, \textquotesingle{}/model/actor2/cmd\+\_\+vel\textquotesingle{}, 10)}
+
+\Hypertarget{classdynamic__obstacles_1_1DynamicObstacles_a7c93ba07cdf8592cd8d49afd5d6979d2}\index{dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}!pub3@{pub3}}
+\index{pub3@{pub3}!dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}}
+\doxysubsubsection{\texorpdfstring{pub3}{pub3}}
+{\footnotesize\ttfamily \label{classdynamic__obstacles_1_1DynamicObstacles_a7c93ba07cdf8592cd8d49afd5d6979d2} 
+dynamic\+\_\+obstacles.\+Dynamic\+Obstacles.\+pub3 = self.\+create\+\_\+publisher(Twist, \textquotesingle{}/model/actor3/cmd\+\_\+vel\textquotesingle{}, 10)}
+
+\Hypertarget{classdynamic__obstacles_1_1DynamicObstacles_a8c6b00d85fd09deaca2323d436d0dc1e}\index{dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}!pub4@{pub4}}
+\index{pub4@{pub4}!dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}}
+\doxysubsubsection{\texorpdfstring{pub4}{pub4}}
+{\footnotesize\ttfamily \label{classdynamic__obstacles_1_1DynamicObstacles_a8c6b00d85fd09deaca2323d436d0dc1e} 
+dynamic\+\_\+obstacles.\+Dynamic\+Obstacles.\+pub4 = self.\+create\+\_\+publisher(Twist, \textquotesingle{}/model/actor4/cmd\+\_\+vel\textquotesingle{}, 10)}
+
+\Hypertarget{classdynamic__obstacles_1_1DynamicObstacles_a06e267533c75368183b29151f5504be2}\index{dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}!pub5@{pub5}}
+\index{pub5@{pub5}!dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}}
+\doxysubsubsection{\texorpdfstring{pub5}{pub5}}
+{\footnotesize\ttfamily \label{classdynamic__obstacles_1_1DynamicObstacles_a06e267533c75368183b29151f5504be2} 
+dynamic\+\_\+obstacles.\+Dynamic\+Obstacles.\+pub5 = self.\+create\+\_\+publisher(Twist, \textquotesingle{}/model/actor5/cmd\+\_\+vel\textquotesingle{}, 10)}
+
+\Hypertarget{classdynamic__obstacles_1_1DynamicObstacles_a19a903663a515890845bfc8a0b6b9017}\index{dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}!pub6@{pub6}}
+\index{pub6@{pub6}!dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}}
+\doxysubsubsection{\texorpdfstring{pub6}{pub6}}
+{\footnotesize\ttfamily \label{classdynamic__obstacles_1_1DynamicObstacles_a19a903663a515890845bfc8a0b6b9017} 
+dynamic\+\_\+obstacles.\+Dynamic\+Obstacles.\+pub6 = self.\+create\+\_\+publisher(Twist, \textquotesingle{}/model/actor6/cmd\+\_\+vel\textquotesingle{}, 10)}
+
+\Hypertarget{classdynamic__obstacles_1_1DynamicObstacles_ad47cac46079addae4d76dc860929c813}\index{dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}!state\_time@{state\_time}}
+\index{state\_time@{state\_time}!dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}}
+\doxysubsubsection{\texorpdfstring{state\_time}{state\_time}}
+{\footnotesize\ttfamily \label{classdynamic__obstacles_1_1DynamicObstacles_ad47cac46079addae4d76dc860929c813} 
+float dynamic\+\_\+obstacles.\+Dynamic\+Obstacles.\+state\+\_\+time = 8.\+0}
+
+\Hypertarget{classdynamic__obstacles_1_1DynamicObstacles_ab606e4f2d1e1181bb96e31225f4123a8}\index{dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}!timer@{timer}}
+\index{timer@{timer}!dynamic\_obstacles.DynamicObstacles@{dynamic\_obstacles.DynamicObstacles}}
+\doxysubsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily \label{classdynamic__obstacles_1_1DynamicObstacles_ab606e4f2d1e1181bb96e31225f4123a8} 
+dynamic\+\_\+obstacles.\+Dynamic\+Obstacles.\+timer = self.\+create\+\_\+timer(0.\+1, self.\+timer\+\_\+cb)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/samuisa/\+Desktop/\+COGAR\+\_\+cb/ros2\+\_\+ws/src/g1\+\_\+loc\+\_\+benchmark/scripts/\mbox{\hyperlink{dynamic__obstacles_8py}{dynamic\+\_\+obstacles.\+py}}\end{DoxyCompactItemize}

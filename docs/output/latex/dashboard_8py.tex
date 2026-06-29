@@ -1,0 +1,70 @@
+\doxysection{/home/samuisa/\+Desktop/\+COGAR\+\_\+cb/ros2\+\_\+ws/src/g1\+\_\+loc\+\_\+benchmark/scripts/dashboard.py File Reference}
+\hypertarget{dashboard_8py}{}\label{dashboard_8py}\index{/home/samuisa/Desktop/COGAR\_cb/ros2\_ws/src/g1\_loc\_benchmark/scripts/dashboard.py@{/home/samuisa/Desktop/COGAR\_cb/ros2\_ws/src/g1\_loc\_benchmark/scripts/dashboard.py}}
+
+
+Interactive dashboard based on Plotly Dash to display results.  
+
+
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacedashboard}{dashboard}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedashboard_a3656e58a3aa1e65d7bb89beed9a750da}{dashboard.\+update\+\_\+graphs}} (selected\+\_\+run)
+\begin{DoxyCompactList}\small\item\em Updates the interactive charts based on the file selected from the dropdown menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacedashboard_a8adf42c115c3d5953e9ede6f43a4e9c2}{dashboard.\+base\+\_\+results\+\_\+dir}} = "{}/workspace/results"{}
+\item 
+dict \mbox{\hyperlink{namespacedashboard_a175273753beb0b60cedf307a9bdb4e86}{dashboard.\+search\+\_\+paths}}
+\item 
+dict \mbox{\hyperlink{namespacedashboard_a7641704376e021e40f58157e41350651}{dashboard.\+all\+\_\+runs\+\_\+data}} = \{\}
+\item 
+list \mbox{\hyperlink{namespacedashboard_a3a022ef4e56fa07d3c8d368eed33dbb7}{dashboard.\+category\+\_\+means}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacedashboard_a80de9003a4c922c88ec06c69d9af7ad9}{dashboard.\+cat\+\_\+trans\+\_\+errors}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacedashboard_a190e5eebef8ceeb5987e942b828cbaae}{dashboard.\+cat\+\_\+rot\+\_\+errors}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespacedashboard_a96cd0028ded82a077cc1a7db73b41553}{dashboard.\+df}} = pd.\+read\+\_\+csv(file\+\_\+path)
+\item 
+str \mbox{\hyperlink{namespacedashboard_a1f53a219c382172d87afd5b6e32b3a3e}{dashboard.\+run\+\_\+label}} = f"{}\{category\} -\/ \{os.\+path.\+basename(file\+\_\+path)\}"{}
+\item 
+\mbox{\hyperlink{namespacedashboard_ad9f2fac3d5c15b44284c6af0c43c1e8d}{dashboard.\+means\+\_\+df}} = pd.\+Data\+Frame(\mbox{\hyperlink{namespacedashboard_a3a022ef4e56fa07d3c8d368eed33dbb7}{category\+\_\+means}})
+\item 
+\mbox{\hyperlink{namespacedashboard_aaac31bf6fde26e8b94b22d74001f4162}{dashboard.\+fig\+\_\+compare}} = go.\+Figure()
+\item 
+\mbox{\hyperlink{namespacedashboard_a304233ad7d5775bc61cee91144b118b6}{dashboard.\+title\+\_\+text}}
+\item 
+\mbox{\hyperlink{namespacedashboard_a8d0e5c64902fccce43ae9552a93f2be4}{dashboard.\+barmode}}
+\item 
+\mbox{\hyperlink{namespacedashboard_ac3b92c79685ce652d2d9a5a275b29a4c}{dashboard.\+xaxis\+\_\+title}}
+\item 
+\mbox{\hyperlink{namespacedashboard_a5c9511da81b6f57ed0035cd1762600de}{dashboard.\+yaxis\+\_\+title}}
+\item 
+\mbox{\hyperlink{namespacedashboard_afec1669f1c226c312e04e0775803da43}{dashboard.\+template}}
+\item 
+\mbox{\hyperlink{namespacedashboard_a0dc4d8c06bb063b02c536005f36adc7c}{dashboard.\+app}} = dash.\+Dash(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+\mbox{\hyperlink{namespacedashboard_a651edf1f918ca2f360e565e52f64ff33}{dashboard.\+layout}}
+\item 
+\mbox{\hyperlink{namespacedashboard_a3a47aa412cc4aa860f0373650b7f7116}{dashboard.\+children}}
+\item 
+\mbox{\hyperlink{namespacedashboard_a12b0373c1038d60f2e6f9fc52558211a}{dashboard.\+debug}}
+\item 
+\mbox{\hyperlink{namespacedashboard_a1dd4e4347aed611ec0fa2e7ddfb5dc9d}{dashboard.\+True}}
+\item 
+\mbox{\hyperlink{namespacedashboard_aa1626afaa5e6c94ee1dfda2628d2979c}{dashboard.\+host}}
+\item 
+\mbox{\hyperlink{namespacedashboard_aba375d885134c0c576b72e2416656ae1}{dashboard.\+port}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interactive dashboard based on Plotly Dash to display results. 
+
+Loads and groups the CSV data collected by the evaluator, allowing easy visual inspection of estimated vs. real trajectories and generated error metrics. 

@@ -1,0 +1,52 @@
+\doxysection{benchmark\+\_\+evaluator Namespace Reference}
+\hypertarget{namespacebenchmark__evaluator}{}\label{namespacebenchmark__evaluator}\index{benchmark\_evaluator@{benchmark\_evaluator}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classbenchmark__evaluator_1_1LocalizationBenchmark}{Localization\+Benchmark}}
+\begin{DoxyCompactList}\small\item\em Node that calculates the error between the Ground Truth pose and the AMCL estimate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacebenchmark__evaluator_adabb25e8c43442c03ba305dde0617550}{get\+\_\+yaw\+\_\+from\+\_\+quaternion}} (q)
+\begin{DoxyCompactList}\small\item\em Extracts the yaw angle from a quaternion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacebenchmark__evaluator_a403ae93f0741794d2ee6c3970c02da34}{main}} (args=None)
+\begin{DoxyCompactList}\small\item\em Entry point for the Benchmark Evaluator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacebenchmark__evaluator_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacebenchmark__evaluator_adabb25e8c43442c03ba305dde0617550}\index{benchmark\_evaluator@{benchmark\_evaluator}!get\_yaw\_from\_quaternion@{get\_yaw\_from\_quaternion}}
+\index{get\_yaw\_from\_quaternion@{get\_yaw\_from\_quaternion}!benchmark\_evaluator@{benchmark\_evaluator}}
+\doxysubsubsection{\texorpdfstring{get\_yaw\_from\_quaternion()}{get\_yaw\_from\_quaternion()}}
+{\footnotesize\ttfamily \label{namespacebenchmark__evaluator_adabb25e8c43442c03ba305dde0617550} 
+benchmark\+\_\+evaluator.\+get\+\_\+yaw\+\_\+from\+\_\+quaternion (\begin{DoxyParamCaption}\item[{}]{q}{}\end{DoxyParamCaption})}
+
+
+
+Extracts the yaw angle from a quaternion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & Quaternion object (with x, y, z, w members). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Yaw angle expressed in radians. 
+\end{DoxyReturn}
+\Hypertarget{namespacebenchmark__evaluator_a403ae93f0741794d2ee6c3970c02da34}\index{benchmark\_evaluator@{benchmark\_evaluator}!main@{main}}
+\index{main@{main}!benchmark\_evaluator@{benchmark\_evaluator}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{namespacebenchmark__evaluator_a403ae93f0741794d2ee6c3970c02da34} 
+benchmark\+\_\+evaluator.\+main (\begin{DoxyParamCaption}\item[{}]{args}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Entry point for the Benchmark Evaluator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Default ROS 2 arguments and custom options like --scenario. \\
+\hline
+\end{DoxyParams}

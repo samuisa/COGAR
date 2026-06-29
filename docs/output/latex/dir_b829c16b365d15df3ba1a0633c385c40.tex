@@ -1,0 +1,89 @@
+\doxysection{/home/samuisa/\+Desktop/\+COGAR\+\_\+cb/ros2\+\_\+ws/src/g1\+\_\+description Directory Reference}
+\hypertarget{dir_b829c16b365d15df3ba1a0633c385c40}{}\label{dir_b829c16b365d15df3ba1a0633c385c40}\index{/home/samuisa/Desktop/COGAR\_cb/ros2\_ws/src/g1\_description Directory Reference@{/home/samuisa/Desktop/COGAR\_cb/ros2\_ws/src/g1\_description Directory Reference}}
+Directory dependency graph for g1\+\_\+description\+:
+% FIG 0
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{dir_b829c16b365d15df3ba1a0633c385c40_autotoc_md15}{}\doxysubsection{\texorpdfstring{Unitree G1 Description (URDF \& MJCF)}{Unitree G1 Description (URDF \& MJCF)}}\label{dir_b829c16b365d15df3ba1a0633c385c40_autotoc_md15}
+\hypertarget{dir_b829c16b365d15df3ba1a0633c385c40_autotoc_md16}{}\doxysubsection{\texorpdfstring{Overview}{Overview}}\label{dir_b829c16b365d15df3ba1a0633c385c40_autotoc_md16}
+This package includes a universal humanoid robot description (URDF \& MJCF) for the \href{https://www.unitree.com/g1}{\texttt{Unitree G1}}, developed by \href{https://www.unitree.com/}{\texttt{Unitree Robotics}}.
+
+The package provides two model variants\+:
+\begin{DoxyItemize}
+\item {\ttfamily urdf/g1\+\_\+23dof.\+urdf} -\/ G1 with 23 degrees of freedom (fixed waist)
+\item {\ttfamily urdf/g1\+\_\+29dof.\+urdf} -\/ G1 with 29 degrees of freedom (adding waist and wrist mobility)
+\end{DoxyItemize}
+
+Both models support simulation environments including Mu\+Jo\+Co and Gazebo.\hypertarget{dir_b829c16b365d15df3ba1a0633c385c40_autotoc_md17}{}\doxysubsection{\texorpdfstring{Robot Structure}{Robot Structure}}\label{dir_b829c16b365d15df3ba1a0633c385c40_autotoc_md17}
+G1 humanoid has either 23 or 29 joints depending on the variant. The base 23-\/DOF configuration includes\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{root\ [⚓]\ =>\ /pelvis/}
+\DoxyCodeLine{\ \ \ \ left\_hip\_pitch\_joint\ [⚙+Y]\ =>\ /left\_hip\_pitch\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ left\_hip\_roll\_joint\ [⚙+X]\ =>\ /left\_hip\_roll\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ left\_hip\_yaw\_joint\ [⚙+Z]\ =>\ /left\_hip\_yaw\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ left\_knee\_joint\ [⚙+Y]\ =>\ /left\_knee\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ left\_ankle\_pitch\_joint\ [⚙+Y]\ =>\ /left\_ankle\_pitch\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ left\_ankle\_roll\_joint\ [⚙+X]\ =>\ /left\_ankle\_roll\_link/}
+\DoxyCodeLine{\ \ \ \ right\_hip\_pitch\_joint\ [⚙+Y]\ =>\ /right\_hip\_pitch\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ right\_hip\_roll\_joint\ [⚙+X]\ =>\ /right\_hip\_roll\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ right\_hip\_yaw\_joint\ [⚙+Z]\ =>\ /right\_hip\_yaw\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ right\_knee\_joint\ [⚙+Y]\ =>\ /right\_knee\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ right\_ankle\_pitch\_joint\ [⚙+Y]\ =>\ /right\_ankle\_pitch\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ right\_ankle\_roll\_joint\ [⚙+X]\ =>\ /right\_ankle\_roll\_link/}
+\DoxyCodeLine{\ \ \ \ waist\_yaw\_joint\ [⚙+Z]\ =>\ /torso\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ left\_shoulder\_pitch\_joint\ [⚙+Y]\ =>\ /left\_shoulder\_pitch\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ left\_shoulder\_roll\_joint\ [⚙+X]\ =>\ /left\_shoulder\_roll\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ left\_shoulder\_yaw\_joint\ [⚙+Z]\ =>\ /left\_shoulder\_yaw\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ left\_elbow\_joint\ [⚙+Y]\ =>\ /left\_elbow\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ left\_wrist\_roll\_joint\ [⚙+X]\ =>\ /left\_wrist\_roll\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ right\_shoulder\_pitch\_joint\ [⚙+Y]\ =>\ /right\_shoulder\_pitch\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ right\_shoulder\_roll\_joint\ [⚙+X]\ =>\ /right\_shoulder\_roll\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ right\_shoulder\_yaw\_joint\ [⚙+Z]\ =>\ /right\_shoulder\_yaw\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ right\_elbow\_joint\ [⚙+Y]\ =>\ /right\_elbow\_link/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ right\_wrist\_roll\_joint\ [⚙+X]\ =>\ /right\_wrist\_roll\_link/}
+
+\end{DoxyCode}
+
+
+{\bfseries{29-\/DOF variant additions\+:}}
+\begin{DoxyItemize}
+\item {\ttfamily waist\+\_\+roll\+\_\+joint} and {\ttfamily waist\+\_\+pitch\+\_\+joint}
+\item Left wrist\+: {\ttfamily left\+\_\+wrist\+\_\+pitch\+\_\+joint}, {\ttfamily left\+\_\+wrist\+\_\+yaw\+\_\+joint}
+\item Right wrist\+: {\ttfamily right\+\_\+wrist\+\_\+pitch\+\_\+joint}, {\ttfamily right\+\_\+wrist\+\_\+yaw\+\_\+joint}
+\end{DoxyItemize}\hypertarget{dir_b829c16b365d15df3ba1a0633c385c40_autotoc_md18}{}\doxysubsection{\texorpdfstring{Usages}{Usages}}\label{dir_b829c16b365d15df3ba1a0633c385c40_autotoc_md18}
+\hypertarget{dir_b829c16b365d15df3ba1a0633c385c40_autotoc_md19}{}\doxysubsubsection{\texorpdfstring{\href{https://github.com/google-deepmind/mujoco}{\texttt{Mu\+Jo\+Co}} (recommend)}{\href{https://github.com/google-deepmind/mujoco}{\texttt{Mu\+Jo\+Co}} (recommend)}}\label{dir_b829c16b365d15df3ba1a0633c385c40_autotoc_md19}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{pip\ install\ mujoco}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#\ Select\ specific\ model}
+\DoxyCodeLine{python\ -\/m\ mujoco.viewer\ -\/-\/mjcf=mjcf/scene\_29dof.xml}
+\DoxyCodeLine{python\ -\/m\ mujoco.viewer\ -\/-\/mjcf=mjcf/scene\_23dof.xml}
+
+\end{DoxyCode}
+\hypertarget{dir_b829c16b365d15df3ba1a0633c385c40_autotoc_md20}{}\doxysubsubsection{\texorpdfstring{RViz}{RViz}}\label{dir_b829c16b365d15df3ba1a0633c385c40_autotoc_md20}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#\ Default\ (23-\/DOF)}
+\DoxyCodeLine{ros2\ launch\ g1\_description\ display.launch}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#\ Select\ specific\ model}
+\DoxyCodeLine{ros2\ launch\ g1\_description\ display.launch\ model:=23dof}
+\DoxyCodeLine{ros2\ launch\ g1\_description\ display.launch\ model:=29dof}
+
+\end{DoxyCode}
+\hypertarget{dir_b829c16b365d15df3ba1a0633c385c40_autotoc_md21}{}\doxysubsubsection{\texorpdfstring{Gazebo}{Gazebo}}\label{dir_b829c16b365d15df3ba1a0633c385c40_autotoc_md21}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#\ Default\ (23-\/DOF)}
+\DoxyCodeLine{ros2\ launch\ g1\_description\ gazebo.launch}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#\ Select\ specific\ model}
+\DoxyCodeLine{ros2\ launch\ g1\_description\ gazebo.launch\ model:=23dof}
+\DoxyCodeLine{ros2\ launch\ g1\_description\ gazebo.launch\ model:=29dof}
+
+\end{DoxyCode}
+ 

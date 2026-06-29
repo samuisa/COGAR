@@ -24,14 +24,11 @@ if(BUILD_TESTING)
 endif()
 
 install(DIRECTORY
-  benchmark
   launch
   worlds
   rviz
-  urdf
-  meshes
   config
-  scripts
+  maps
   DESTINATION share/${PROJECT_NAME}
 )
 
