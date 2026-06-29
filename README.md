@@ -21,7 +21,7 @@ Deliverables: Standalone localization benchmark pipeline, quantitative compariso
 ## Project Structure
 
 The repository is organized to clearly separate the Docker infrastructure from the ROS 2 application code:
-
+```bash
 .
 ├── docker/
 │   ├── Dockerfile
@@ -45,7 +45,7 @@ The repository is organized to clearly separate the Docker infrastructure from t
 │   └── g1_loc_benchmark/                  # Core launch files and Python evaluation scripts
 ├── docker-compose.yml                     # Docker Compose configuration
 └── README.md
-
+```
 
 ## How the Benchmark Works
 
