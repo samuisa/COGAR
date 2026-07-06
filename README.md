@@ -21,7 +21,7 @@ Deliverables: Standalone localization benchmark pipeline, quantitative compariso
 ## Project Structure
 
 The repository is organized to clearly separate the Docker infrastructure from the ROS 2 application code:
-```bash
+
 .
 ├── docker/
 │   ├── Dockerfile
@@ -45,7 +45,7 @@ The repository is organized to clearly separate the Docker infrastructure from t
 │   └── g1_loc_benchmark/                  # Core launch files and Python evaluation scripts
 ├── docker-compose.yml                     # Docker Compose configuration
 └── README.md
-```
+
 
 ## How the Benchmark Works
 
@@ -107,7 +107,7 @@ PROJECT MENU:
 
 - **Option 3**: Launches the benchmark_localization.launch.py file to test RTAB-Map SLAM in pure localization mode, allowing you to compare Visual (RGB-D), LiDAR-only, or Multimodal approaches.
 
-### RViz Configuration for Navigation
+### RViz Configuration for Navigation with AMCL
 
 Once the simulation and RViz are running, follow these steps to initialize the robot's navigation:
 
@@ -127,6 +127,24 @@ Once the simulation and RViz are running, follow these steps to initialize the r
 
    - Click on the 2D Goal Pose button in the top toolbar.
    - Click and drag on the map to define the destination and final orientation. The robot will start planning and moving towards it.
+
+### RViz Configuration for Navigation with ICP, RGB‑D, multimodal
+
+Once the simulation and RViz are running, follow these steps to initialize the robot's navigation:
+
+1. **Visualize the Map**:
+
+   - Click the Add button in the bottom-left corner.
+   - Switch to the By topic tab.
+   - Scroll down, expand the /map topic, and select map.
+   - In the left panel, under the newly added Map display settings, change the Durability Policy to Transient Local. The environment map should now become visible.
+
+2. **Set the Initial Pose**: * Ensure the Fixed Frame (Global Options) is set to map.
+
+   - Click on the 2D Pose Estimate button in the top toolbar.
+   - Click and drag on the grid to set the exact starting position and orientation of the robot.
+
+The initialization is reversed compared to AMCL because, upon switching the frame to 'map', the robot does not spawn at the origin (0,0). I determined the correct initial position using Gazebo as a reference.
 
 ## Data Analysis & Dashboard
 

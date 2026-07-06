@@ -20,10 +20,11 @@ def generate_launch_description():
     @return A LaunchDescription object.
     """
     pkg_gazebo_g1 = get_package_share_directory('gazebo_g1')
+    pkg_benchmark = get_package_share_directory('g1_loc_benchmark')
     
     # Python script paths
-    gui_script_path = os.path.join(pkg_gazebo_g1, 'scripts', 'g1_controller.py')
-    # explorer_script_path = os.path.join(pkg_gazebo_g1, 'scripts', 'auto_explorer.py') # 🟢 Added path
+    gui_script_path = os.path.join(pkg_benchmark, 'scripts', 'g1_controller.py')
+    # explorer_script_path = os.path.join(pkg_benchmark, 'scripts', 'auto_explorer.py') # 🟢 Added path
 
     return LaunchDescription([
         # 1. START GAZEBO SIMULATION AND 3D ROBOT
@@ -107,7 +108,7 @@ def generate_launch_description():
 
         # 5. START ODOMETRY TF BROADCASTER
         ExecuteProcess(
-            cmd=['python3', os.path.join(pkg_gazebo_g1, 'scripts', 'odom_tf_broadcaster.py')],
+            cmd=['python3', os.path.join(pkg_benchmark, 'scripts', 'odom_tf_broadcaster.py')],
             output='screen'
         ),
         
